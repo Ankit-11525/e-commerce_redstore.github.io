@@ -78,6 +78,7 @@ p {
     margin: 30px 0px;
     border-radius: 30px;
     transition: background 0.5s;
+    border: #ff523b;
     /* border:2px solid black; */
 }
 
