@@ -19,6 +19,31 @@ nav {
     text-align: right;
 }
 
+
+ nav li {
+    display: inline-block;
+    position: relative;
+    color: #ff523b;
+}
+
+nav li:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff523b;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  nav li:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
 nav ul {
     display: inline-block;
     list-style-type: none;
@@ -630,7 +655,6 @@ form a {
     .cartinfo p {
         display: none;
     }
-
 }
 
 /* --------- Scroll Bar ---------- */
