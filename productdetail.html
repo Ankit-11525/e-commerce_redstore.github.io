@@ -11,7 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
 
 </head>
 
@@ -42,7 +44,7 @@
 
     </div>
     <!----------single product details-------->
-    <div class="small-container single-product">
+    <div class="small-container single-product" data-aos="fade-up">
         <div class="row">
             <div class="col-2">
                 <img src="images/gallery-1.jpg" width="100%" id="ProductImg">
@@ -93,20 +95,20 @@
         </div>
     </div>
 
-<!-- -------------title--------------- -->
-<div class="small-container">
-    <div class="row row-2" >
-        <h2>Related Products</h2>
-        <p>View More</p>
+    <!-- -------------title--------------- -->
+    <div class="small-container">
+        <div class="row row-2" data-aos="fade-up">
+            <h2>Related Products</h2>
+            <p>View More</p>
+        </div>
     </div>
-</div>
 
 
-<!-- ---------------product---------------- -->
+    <!-- ---------------product---------------- -->
     <div class="small-container">
 
         <div class="row">
-            <div class="col-4">
+            <div class="col-4" data-aos="fade-up">
                 <img src="images/product-9.jpg">
                 <h4>Red Printed T-Shirt</h4>
                 <div class="rating">
@@ -119,7 +121,7 @@
                 </div>
                 <p> $50.00</p>
             </div>
-            <div class="col-4">
+            <div class="col-4" data-aos="fade-up">
                 <img src="images/product-10.jpg">
                 <h4>Red Printed T-Shirt</h4>
                 <div class="rating">
@@ -132,7 +134,7 @@
                 </div>
                 <p> $50.00</p>
             </div>
-            <div class="col-4">
+            <div class="col-4" data-aos="fade-up">
                 <img src="images/product-11.jpg">
                 <h4>Red Printed T-Shirt</h4>
                 <div class="rating">
@@ -145,7 +147,7 @@
                 </div>
                 <p> $50.00</p>
             </div>
-            <div class="col-4">
+            <div class="col-4" data-aos="fade-up">
                 <img src="images/product-12.jpg">
                 <h4>Red Printed T-Shirt</h4>
                 <div class="rating">
@@ -163,7 +165,7 @@
     </div>
     <!------footer--------->
     <div class="footer">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="row">
                 <div class="footer-col-1">
                     <h3>Download Our App</h3>
@@ -186,7 +188,7 @@
                         <li>Join Affiliate</li>
                     </ul>
                 </div>
-                <div class="footer-col-4">
+                <div class="footer-col-4" data-aos="fade-up">
                     <h3>Follow Us</h3>
                     <ul>
                         <li>Facebook</li>
@@ -197,7 +199,9 @@
                 </div>
             </div>
             <hr>
-            <p class="copyright">Copyright &copy <script type="text/javascript"> document.write(new Date().getFullYear());</script>-RedStore </p>
+            <p class="copyright">Copyright &copy
+                <script type="text/javascript"> document.write(new Date().getFullYear());</script>-RedStore
+            </p>
         </div>
     </div>
     <!-- --------------JS for toggle menu--------- -->
@@ -215,25 +219,25 @@
     </script>
     <!-- ----------------------JS for Product gallery------------------ -->
     <script>
-        var ProductImg=document.getElementById("ProductImg");
-        var SmallImg=document.getElementsByClassName("small-img");
-        SmallImg[0].onclick=function()
-        {
-            ProductImg.src=SmallImg[0].src;
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+        SmallImg[0].onclick = function () {
+            ProductImg.src = SmallImg[0].src;
         }
-        SmallImg[1].onclick=function()
-        {
-            ProductImg.src=SmallImg[1].src;
+        SmallImg[1].onclick = function () {
+            ProductImg.src = SmallImg[1].src;
         }
-        SmallImg[2].onclick=function()
-        {
-            ProductImg.src=SmallImg[2].src;
+        SmallImg[2].onclick = function () {
+            ProductImg.src = SmallImg[2].src;
         }
-        SmallImg[3].onclick=function()
-        {
-            ProductImg.src=SmallImg[3].src;
+        SmallImg[3].onclick = function () {
+            ProductImg.src = SmallImg[3].src;
         }
     </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
 </body>
 
 </html>

@@ -323,12 +323,12 @@ ul {
 @media only screen and (max-width:800px) {
     nav ul {
         position: absolute;
-        top: 70px;
+        top: 72px;
         left: 0;
-        background: #333;
+        background: #d94646;
         width: 100%;
         overflow: hidden;
-        transition: max-height 0.5s;
+        transition: max-height 1.5s;
     }
 
     nav ul li {
@@ -488,33 +488,39 @@ td a {
     color: #ff523b;
     font-size: 12px;
 }
-td img{
+
+td img {
     width: 80px;
     height: 80px;
     margin-left: 10px;
 }
-.total-price{
+
+.total-price {
     display: flex;
     justify-content: flex-end;
 }
-.total-price table{
+
+.total-price table {
     border-top: 3px solid #ff523b;
     width: 100%;
     max-width: 400px;
 }
-td:last-child{
+
+td:last-child {
     text-align: right;
 }
-th:last-child{
+
+th:last-child {
     text-align: right;
 }
 
 /* ----------------Account-Page ---------- */
-.account-page{
-    padding:50px 0;
-    background:radial-gradient(#fff,#ffd6d6);
+.account-page {
+    padding: 50px 0;
+    background: radial-gradient(#fff, #ffd6d6);
 }
-.form-container{
+
+.form-container {
     background: #fff;
     width: 300px;
     height: 400px;
@@ -523,29 +529,34 @@ th:last-child{
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
-    overflow: hidden; /*  to hide one form login wala */
+    overflow: hidden;
+    /*  to hide one form login wala */
 
 }
-.form-container span{
+
+.form-container span {
     font-weight: bold;
     padding: 0 10px;
     color: #555;
-    cursor:pointer;
-    width:100px;
+    cursor: pointer;
+    width: 100px;
     display: inline-block;
 }
-.form-btn{
+
+.form-btn {
     display: inline-block;
 }
-.form-container form{
+
+.form-container form {
     max-width: 300px;
-    padding:0 20px;
-    position:absolute;
-    top:130px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
     transition: transform 1s;
-    
+
 }
-form input{
+
+form input {
     width: 100%;
     height: 30px;
     margin: 10px 0;
@@ -553,32 +564,38 @@ form input{
     border: 1px solid #999;
 }
 
-form .btn{
+form .btn {
     width: 100%;
     border: none;
     cursor: pointer;
     margin: 10px 0;
 }
-form .btn:focus{
-    outline: none;     /*focus use when when click on button then border show but outline ::none hide the borderoutlint  */
+
+form .btn:focus {
+    outline: none;
+    /*focus use when when click on button then border show but outline ::none hide the borderoutlint  */
 }
-#LoginForm{
-    left:-300px;
+
+#LoginForm {
+    left: -300px;
 
 }
-#RegForm{
-    left:0;
+
+#RegForm {
+    left: 0;
 }
-form a{
+
+form a {
     font-size: 12px;
 }
-#Indicator{
+
+#Indicator {
     width: 100px;
-    border:none;
-    background:#ff523b;
+    border: none;
+    background: #ff523b;
     height: 3px;
     margin: 9px;
-    transform:translateX(100px);
+    transform: translateX(100px);
     transition: transform 1s;
 
 }
@@ -609,8 +626,30 @@ form a{
         font-size: 26px;
         line-height: 32px;
     }
-    .cartinfo p{
+
+    .cartinfo p {
         display: none;
     }
+
+}
+
+/* --------- Scroll Bar ---------- */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(102, 102, 102);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff634e;
+    border-radius: 9px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff624d;
 
 }
