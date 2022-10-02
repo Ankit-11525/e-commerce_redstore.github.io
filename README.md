@@ -87,6 +87,7 @@ Step 1: Clone project.
 
 git clone[https://github.com/Ankit-11525/e-commerce_redstore.github.io.git](https://github.com/Ankit-11525/e-commerce_redstore.github.io.git)
 cd website.
+
 Step 2: Fork project to your Githubs.
 
 Step 3: Load documentation content.
