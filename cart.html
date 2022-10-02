@@ -11,7 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/logo-white.png">
+
 
 </head>
 
@@ -51,7 +54,7 @@
             </tr>
             <tr>
                 <td>
-                    <div class="cartinfo">
+                    <div class="cartinfo" data-aos="fade-up">
                         <img src="images/buy-1.jpg">
                         <div>
                             <p>Printed Red T-Shirt</p>
@@ -66,7 +69,7 @@
             </tr>
             <tr>
                 <td>
-                    <div class="cartinfo">
+                    <div class="cartinfo" data-aos="fade-up">
                         <img src="images/buy-2.jpg">
                         <div>
                             <p>Black new shoes</p>
@@ -81,7 +84,7 @@
             </tr>
             <tr>
                 <td>
-                    <div class="cartinfo">
+                    <div class="cartinfo" data-aos="fade-up">
                         <img src="images/buy-3.jpg">
                         <div>
                             <p>Lower Grey Colour</p>
@@ -96,7 +99,7 @@
             </tr>
 
         </table>
-        <div class="total-price">
+        <div class="total-price" data-aos="fade-up">
             <table>
                 <tr>
                     <td>Subtotal</td>
@@ -122,7 +125,7 @@
 
     <!------footer--------->
     <div class="footer">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="row">
                 <div class="footer-col-1">
                     <h3>Download Our App</h3>
@@ -147,16 +150,20 @@
                 </div>
                 <div class="footer-col-4">
                     <h3>Follow Us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>Youtube</li>
-                    </ul>
+                    <div class="socialbtns" align="centre">
+                        <ul>
+                            <li><a href="#" class="fa fa-lg fa-facebook"></a>Facebook</li><br>
+                            <li><a href="#" class="fa fa-lg fa-twitter"></a>Twitter</li><br>
+                            <li><a href="#" class="fa fa-lg fa-instagram"></a>Instagram</li><br>
+                            <li><a href="#" class="fa fa-lg fa-youtube"></a>Youtube</li><br>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <hr>
-            <p class="copyright">Copyright &copy <script type="text/javascript"> document.write(new Date().getFullYear());</script>-RedStore </p>
+            <p class="copyright">Copyright &copy
+                <script type="text/javascript"> document.write(new Date().getFullYear());</script>-RedStore
+            </p>
         </div>
     </div>
     <!-- --------------JS for toggle menu--------- -->
@@ -172,6 +179,10 @@
             }
         }
     </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
 </body>
 
 </html>
