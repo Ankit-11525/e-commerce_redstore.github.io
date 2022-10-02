@@ -159,6 +159,7 @@ linear for gradiancy on basis to vertically  */
 
 .header .row {
     margin: 70px;
+    margin-top:0;
 }
 
 .categories {
