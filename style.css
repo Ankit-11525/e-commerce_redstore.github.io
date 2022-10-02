@@ -677,3 +677,45 @@ form a {
     background: #ff624d;
 
 }
+
+/* --------Feature Categories Hover Zoom----- */
+.zoom {
+    padding: 30px;
+    transition: transform .2s;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+  }
+  /* --------Testimonial Heading----- */
+  .testimoinial-heading{
+    text-align: center;
+    padding-bottom: 10px;
+    
+  }
+  .effects {
+    position: relative;
+    color: #000;
+  }
+  
+  .effects::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      border-radius: 4px;
+      background-color: #18272F;
+      bottom: 0;
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .3s ease-in-out;
+    }
+  
+  .effects:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
