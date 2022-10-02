@@ -6,6 +6,13 @@
 <table>
 <tr>
     <td align="center">
+        <a href="https://github.com/rtewari056">
+            <img src="https://avatars.githubusercontent.com/u/75976169?v=4" width="100;" alt="rtewari056"/>
+            <br />
+            <sub><b>Rohit Tewari</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/Ankit-11525">
             <img src="https://avatars.githubusercontent.com/u/76417084?v=4" width="100;" alt="Ankit-11525"/>
             <br />
@@ -31,13 +38,6 @@
             <img src="https://avatars.githubusercontent.com/u/107562768?v=4" width="100;" alt="minhaj-313"/>
             <br />
             <sub><b>Shaikh Minhaj</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/rtewari056">
-            <img src="https://avatars.githubusercontent.com/u/75976169?v=4" width="100;" alt="rtewari056"/>
-            <br />
-            <sub><b>Rohit Tewari</b></sub>
         </a>
     </td>
     <td align="center">
