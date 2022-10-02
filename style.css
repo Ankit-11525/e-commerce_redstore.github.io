@@ -7,6 +7,7 @@ a, a:hover {
 .socialbtns, .socialbtns ul, .socialbtns li {
     margin: 0;
     padding: 5px;
+    cursor: pointer;
 }
 
 .socialbtns li {
@@ -143,6 +144,7 @@ p {
     border-radius: 30px;
     transition: background 0.5s;
     border: #ff523b;
+    cursor: pointer;
     /* border:2px solid black; */
 }
 
@@ -422,6 +424,7 @@ ul {
 select {
     border: 1px solid #ff523b;
     padding: 5px;
+    cursor: pointer;
 }
 
 select:focus {
