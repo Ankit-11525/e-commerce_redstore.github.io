@@ -132,6 +132,13 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/YatharthaRana">
+            <img src="https://avatars.githubusercontent.com/u/95047694?v=4" width="100;" alt="YatharthaRana"/>
+            <br />
+            <sub><b>Yathartha Rana</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/harikesh409">
             <img src="https://avatars.githubusercontent.com/u/3501554?v=4" width="100;" alt="harikesh409"/>
             <br />
@@ -158,15 +165,15 @@ git push -u origin <your_branch_name>
             <br />
             <sub><b>Shaikh Minhaj</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/SandeshGC">
             <img src="https://avatars.githubusercontent.com/u/59115123?v=4" width="100;" alt="SandeshGC"/>
             <br />
             <sub><b>Sandesh GC</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/atom540">
             <img src="https://avatars.githubusercontent.com/u/102367845?v=4" width="100;" alt="atom540"/>
