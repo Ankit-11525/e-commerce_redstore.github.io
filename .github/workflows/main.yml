@@ -12,5 +12,6 @@ jobs:
               uses: akhilmhdh/contributors-readme-action@v2.3.6
               with:
                 collaborators: 'all'
+                AVATAR_SHAPE: 'round'
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
