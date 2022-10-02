@@ -1,188 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Details</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="images/logo-white.png" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart Details </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/x-icon" href="images/logo-white.png">
-
-
-</head>
-
-<body>
-
+  <body>
     <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" width="125px">
-                </a>
-            </div>
-            <nav>
-                <ul id="MenuItems">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="allproducts.html">Products</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="account.html">Account</a></li>
-                </ul>
-            </nav>
-            <a href="cart.html">
-                <img src="images/cart.png" width="30px" height="30px">
-            </a>
-            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
-
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" width="125px" />
+          </a>
         </div>
-
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="allproducts.html">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html">
+          <img src="images/cart.png" width="30px" height="30px" />
+        </a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+      </div>
     </div>
     <!-- --------------------cart item details--------->
     <div class="small-container cart-page">
-        <table>
-            <tr>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Subtotal</th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="cartinfo" data-aos="fade-up">
-                        <img src="images/buy-1.jpg">
-                        <div>
-                            <p>Printed Red T-Shirt</p>
-                            <small>Price: 450 Rs.</small>
-                            <br>
-                            <a href="">Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td><input type="number"></td>
-                <td>450 Rs.</td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="cartinfo" data-aos="fade-up">
-                        <img src="images/buy-2.jpg">
-                        <div>
-                            <p>Black new shoes</p>
-                            <small>Price: 500 Rs.</small>
-                            <br>
-                            <a href="">Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td><input type="number"></td>
-                <td>500 Rs.</td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="cartinfo" data-aos="fade-up">
-                        <img src="images/buy-3.jpg">
-                        <div>
-                            <p>Lower Grey Colour</p>
-                            <small>Price: 350 Rs.</small>
-                            <br>
-                            <a href="">Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td><input type="number"></td>
-                <td>350 Rs.</td>
-            </tr>
-
-        </table>
-        <div class="total-price" data-aos="fade-up">
-            <table>
-                <tr>
-                    <td>Subtotal</td>
-                    <td>
-                        1300 Rs.
-                    </td>
-                </tr>
-                <tr>
-                    <td>GST</td>
-                    <td>
-                        165 Rs.
-                    </td>
-                </tr>
-                <tr>
-                    <td>Total</td>
-                    <td>
-                        1465 Rs.
-                    </td>
-                </tr>
-            </table>
-        </div>
+      <table id="table">
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+        <!-- <tr>
+          <td>
+            <div class="cartinfo" data-aos="fade-up">
+              <img src="images/buy-1.jpg" alt="img" />
+              <div>
+                <p>Printed Red T-Shirt</p>
+                <small>Price: 450 Rs.</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" /></td>
+          <td>450 Rs.</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cartinfo" data-aos="fade-up">
+              <img src="images/buy-2.jpg" />
+              <div>
+                <p>Black new shoes</p>
+                <small>Price: 500 Rs.</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" /></td>
+          <td>500 Rs.</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cartinfo" data-aos="fade-up">
+              <img src="images/buy-3.jpg" />
+              <div>
+                <p>Lower Grey Colour</p>
+                <small>Price: 350 Rs.</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" /></td>
+          <td>350 Rs.</td>
+        </tr> -->
+      </table>
+      <div class="total-price" data-aos="fade-up" id="subtotal-section">
+        <!-- <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>1300 Rs.</td>
+          </tr>
+          <tr>
+            <td>GST</td>
+            <td>165 Rs.</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>1465 Rs.</td>
+          </tr>
+        </table> -->
+      </div>
+      <div id="storedItems"></div>
     </div>
 
     <!------footer--------->
     <div class="footer">
-        <div class="container" data-aos="fade-up">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Download Our App</h3>
-                    <p>Download App for Android and ios mobile phone</p>
-                    <div class="app-logo">
-                        <img src="images/play-store.png">
-                        <img src="images/app-store.png">
-                    </div>
-                </div>
-                <div class="footer-col-2">
-                    <img src="images/logo-white.png">
-                    <p>Our Purpose is to Sustainably make the Pleasure and Benefits of Sports Accessible to the many</p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post</li>
-                        <li>Return Policy</li>
-                        <li>Join Affiliate</li>
-                    </ul>
-                </div>
-                <div class="footer-col-4">
-                    <h3>Follow Us</h3>
-                    <div class="socialbtns" align="centre">
-                        <ul>
-                            <li><a href="#" class="fa fa-lg fa-facebook"></a>Facebook</li><br>
-                            <li><a href="#" class="fa fa-lg fa-twitter"></a>Twitter</li><br>
-                            <li><a href="#" class="fa fa-lg fa-instagram"></a>Instagram</li><br>
-                            <li><a href="#" class="fa fa-lg fa-youtube"></a>Youtube</li><br>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" />
+              <img src="images/app-store.png" />
             </div>
-            <hr>
-            <p class="copyright">Copyright &copy
-                <script type="text/javascript"> document.write(new Date().getFullYear());</script>-RedStore
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo-white.png" />
+            <p>
+              Our Purpose is to Sustainably make the Pleasure and Benefits of
+              Sports Accessible to the many
             </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
         </div>
+        <hr />
+        <p class="copyright">
+          Copyright &copy
+          <script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script>
+          -RedStore
+        </p>
+      </div>
     </div>
     <!-- --------------JS for toggle menu--------- -->
     <script>
-        var MenuItems = document.getElementById("MenuItems");
-        MenuItems.style.maxHeight = "0px";
-        function menutoggle() {
-            if (MenuItems.style.maxHeight == "0px") {
-                MenuItems.style.maxHeight = "200px";
-            }
-            else {
-                MenuItems.style.maxHeight = "0px";
-            }
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
         }
+      }
     </script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-          </script>
-</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      let itemId = -1;
+      const table = document.getElementById("table").innerHTML;
 
+      const userString = localStorage.getItem("user");
+      const retrievedUser = JSON.parse(userString);
+
+      let tbodyRef = document
+        .getElementById("table")
+        .getElementsByTagName("tbody")[0];
+
+      let subTotal = 0;
+
+      retrievedUser.cart.forEach((item) => {
+        // Insert a row at the end of table
+        let newRow = tbodyRef.insertRow();
+
+        // Insert a cell at the end of the row
+        let newCell = newRow.insertCell();
+        newCell.innerHTML = `<div class='cartinfo' data-aos='fade-up'><img src='${item.img}' /><div><p>${item.productName}</p><small>Price: ${item.productPrice} Rs.</small><br /><a href='cart.html'>Remove</a></div></div>`;
+
+        newCell = newRow.insertCell();
+        newCell.innerHTML += `<input type='number' value='${item.productQuantity}'/>`;
+
+        newCell = newRow.insertCell();
+        newCell.innerHTML += `${item.productPrice * item.productQuantity} Rs.`;
+        subTotal += item.productPrice * item.productQuantity;
+      });
+
+      document.getElementById(
+        "subtotal-section"
+      ).innerHTML = `<table><tr><td>Subtotal</td><td>${subTotal} Rs.</td></tr><tr><td>GST</td><td>${Number(
+        (subTotal / 7.78).toFixed(2)
+      )} Rs.</td></tr><tr><td>Total</td><td>${Number(
+        (subTotal + subTotal / 7.78).toFixed(2)
+      )}  Rs.</td></tr></table>`;
+    </script>
+  </body>
 </html>
