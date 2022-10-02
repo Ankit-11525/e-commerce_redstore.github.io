@@ -168,6 +168,13 @@ git push -u origin <your_branch_name>
     </td></tr>
 <tr>
     <td align="center">
+        <a href="https://github.com/PrajwalDhule">
+            <img src="https://avatars.githubusercontent.com/u/89639472?v=4" width="100;" alt="PrajwalDhule"/>
+            <br />
+            <sub><b>Prajwal Dhule</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/SandeshGC">
             <img src="https://avatars.githubusercontent.com/u/59115123?v=4" width="100;" alt="SandeshGC"/>
             <br />
