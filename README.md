@@ -125,13 +125,6 @@ git push -u origin <your_branch_name>
 <table>
 <tr>
     <td align="center">
-        <a href="https://github.com/rtewari056">
-            <img src="https://avatars.githubusercontent.com/u/75976169?v=4" width="100;" alt="rtewari056"/>
-            <br />
-            <sub><b>Rohit Tewari</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/Ankit-11525">
             <img src="https://avatars.githubusercontent.com/u/76417084?v=4" width="100;" alt="Ankit-11525"/>
             <br />
@@ -160,6 +153,13 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/rtewari056">
+            <img src="https://avatars.githubusercontent.com/u/75976169?v=4" width="100;" alt="rtewari056"/>
+            <br />
+            <sub><b>Rohit Tewari</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/SandeshGC">
             <img src="https://avatars.githubusercontent.com/u/59115123?v=4" width="100;" alt="SandeshGC"/>
             <br />
@@ -172,13 +172,6 @@ git push -u origin <your_branch_name>
             <img src="https://avatars.githubusercontent.com/u/102367845?v=4" width="100;" alt="atom540"/>
             <br />
             <sub><b>Sumit Kumar</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/aaheli8">
-            <img src="https://avatars.githubusercontent.com/u/66815283?v=4" width="100;" alt="aaheli8"/>
-            <br />
-            <sub><b>Aaheli Sadhukhan</b></sub>
         </a>
     </td></tr>
 </table>
