@@ -142,7 +142,7 @@ git push -u origin <your_branch_name>
         <a href="https://github.com/nishtha53">
             <img src="https://avatars.githubusercontent.com/u/68805896?v=4" width="100;" alt="nishtha53"/>
             <br />
-            <sub><b>Null</b></sub>
+            <sub><b>nishtha53</b></sub>
         </a>
     </td>
     <td align="center">
