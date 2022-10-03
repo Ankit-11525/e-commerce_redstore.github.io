@@ -153,20 +153,27 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/SandeshGC">
+            <img src="https://avatars.githubusercontent.com/u/59115123?v=4" width="100;" alt="SandeshGC"/>
+            <br />
+            <sub><b>Sandesh GC</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/nishtha53">
             <img src="https://avatars.githubusercontent.com/u/68805896?v=4" width="100;" alt="nishtha53"/>
             <br />
             <sub><b>Nishtha53</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/minhaj-313">
             <img src="https://avatars.githubusercontent.com/u/107562768?v=4" width="100;" alt="minhaj-313"/>
             <br />
             <sub><b>Shaikh Minhaj</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/Mohasin-Haque">
             <img src="https://avatars.githubusercontent.com/u/72180173?v=4" width="100;" alt="Mohasin-Haque"/>
@@ -182,10 +189,10 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/SandeshGC">
-            <img src="https://avatars.githubusercontent.com/u/59115123?v=4" width="100;" alt="SandeshGC"/>
+        <a href="https://github.com/SM8UTI">
+            <img src="https://avatars.githubusercontent.com/u/56423859?v=4" width="100;" alt="SM8UTI"/>
             <br />
-            <sub><b>Sandesh GC</b></sub>
+            <sub><b>Smruti Ranjan Nayak</b></sub>
         </a>
     </td>
     <td align="center">
