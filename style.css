@@ -548,14 +548,19 @@ td {
 }
 
 td input {
-    width: 40px;
+    width: 45px;
     height: 30px;
     padding: 5px;
 }
 
-td a {
+td .remove-btn {
     color: #ff523b;
     font-size: 12px;
+    cursor: pointer;
+    transition: color 250ms ease-in-out;
+}
+td .remove-btn:hover{
+    color:#b3220f;
 }
 
 td img {
@@ -697,7 +702,8 @@ form a {
     }
 
     .cartinfo p {
-        display: none;
+        /* display: none; */
+        font-size: 0.9rem;
     }
 }
 
