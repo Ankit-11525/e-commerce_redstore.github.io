@@ -1,7 +1,14 @@
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
-a, a:hover {
+a {
     text-decoration: none;
+    opacity: 0.8;    
+}
+
+a:hover{
+    text-decoration: none;
+    font-weight: bolder;
+    opacity: 1;
 }
 
 .socialbtns, .socialbtns ul, .socialbtns li {
