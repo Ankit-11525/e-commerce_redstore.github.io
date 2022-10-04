@@ -820,3 +820,8 @@ form a {
     transform-origin: left;
     transform: scaleX(1);
   }
+
+.hoverable:hover{
+  background-color:white;
+  color:black;
+}
