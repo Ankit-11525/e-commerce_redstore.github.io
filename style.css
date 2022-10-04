@@ -588,6 +588,56 @@ th:last-child {
     text-align: right;
 }
 
+/* ----------------Contact-Page ---------- */
+
+
+.contact-form-container {
+    width: 60%;
+    margin: 20px auto;
+}
+.contact-form-container h1{
+    text-align: center;
+}
+.contact-form input{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 10px;
+}
+.contact-form {
+    margin-top: 20px;
+}
+.textarea-container textarea {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0;
+    width: 100%;
+    height: 150px;
+    padding: 10px 10px;
+}
+.textarea-container textarea:focus {
+    outline: none;
+}
+
+.submit-btn{
+    text-align: center;
+}
+.submit-btn button {
+    padding: 5px 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    width: 70%;
+    color: white;
+    background-color: #ff523b;
+    border: none;
+    border-radius: 20px;
+}
+.submit-btn button:hover {
+    background-color: #563434;
+}
+
+
+
 /* ----------------Account-Page ---------- */
 .account-page {
     padding: 50px 0;

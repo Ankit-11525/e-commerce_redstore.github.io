@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | RedStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/logo-white.png">
+    <link type="text/css" rel="stylesheet" href="path-to-fontawesome/font-awesome.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" width="125px">
+                </a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="allproducts.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html">
+                <img src="images/cart.png" width="30px" height="30px">
+            </a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+        </div>
+
+    </div>
+
+    <div class="contact-form-container">
+        <h1 class="form-title">Contact Us</h1>
+        <form action="#" class="contact-form">
+            <div class="form-item">
+                <input type="email" id="email" name="email" placeholder="Email address">
+            </div>
+
+            <div class="form-item">
+                <input type="number" id="phone" name="phone" placeholder="Phone Number">
+            </div>
+
+            <div class="form-item textarea-container">
+                <textarea name="feedback" id="feedback" placeholder="Your Feedback"></textarea>
+            </div>
+
+            <div class="submit-btn">
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
