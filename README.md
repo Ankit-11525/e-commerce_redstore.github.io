@@ -153,20 +153,12 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/talkshrey">
-            <img src="https://avatars.githubusercontent.com/u/74039736?v=4" width="100;" alt="talkshrey"/>
-            <br />
-            <sub><b>Shrey Parekh</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/rtewari056">
             <img src="https://avatars.githubusercontent.com/u/75976169?v=4" width="100;" alt="rtewari056"/>
             <br />
             <sub><b>Rohit Tewari</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/asubodh">
             <img src="https://avatars.githubusercontent.com/u/43497160?v=4" width="100;" alt="asubodh"/>
@@ -180,7 +172,8 @@ git push -u origin <your_branch_name>
             <br />
             <sub><b>Nishtha53</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/Aarav238">
             <img src="https://avatars.githubusercontent.com/u/95538627?v=4" width="100;" alt="Aarav238"/>
@@ -237,7 +230,8 @@ git push -u origin <your_branch_name>
             <br />
             <sub><b>Praphulla Mishra</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/SM8UTI">
             <img src="https://avatars.githubusercontent.com/u/56423859?v=4" width="100;" alt="SM8UTI"/>
