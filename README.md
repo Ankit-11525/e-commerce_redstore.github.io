@@ -153,27 +153,20 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/talkshrey">
-            <img src="https://avatars.githubusercontent.com/u/74039736?v=4" width="100;" alt="talkshrey"/>
-            <br />
-            <sub><b>Shrey Parekh</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/rtewari056">
             <img src="https://avatars.githubusercontent.com/u/75976169?v=4" width="100;" alt="rtewari056"/>
             <br />
             <sub><b>Rohit Tewari</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/nishtha53">
             <img src="https://avatars.githubusercontent.com/u/68805896?v=4" width="100;" alt="nishtha53"/>
             <br />
             <sub><b>Nishtha53</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/minhaj-313">
             <img src="https://avatars.githubusercontent.com/u/107562768?v=4" width="100;" alt="minhaj-313"/>
@@ -208,15 +201,15 @@ git push -u origin <your_branch_name>
             <br />
             <sub><b>Prakhar Pandey</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/Praphulla-Mishra">
             <img src="https://avatars.githubusercontent.com/u/79088582?v=4" width="100;" alt="Praphulla-Mishra"/>
             <br />
             <sub><b>Praphulla Mishra</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/SM8UTI">
             <img src="https://avatars.githubusercontent.com/u/56423859?v=4" width="100;" alt="SM8UTI"/>
