@@ -392,10 +392,11 @@ ul {
     nav ul {
         position: absolute;
         top: 72px;
-        left: 0;
+        right: 5px;
         background: #d94646;
-        width: 100%;
+        width: 40%;
         overflow: hidden;
+        z-index: 2;
         transition: max-height 1.5s;
     }
 
