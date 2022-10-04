@@ -189,6 +189,13 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/Praphulla-Mishra">
+            <img src="https://avatars.githubusercontent.com/u/79088582?v=4" width="100;" alt="Praphulla-Mishra"/>
+            <br />
+            <sub><b>Praphulla Mishra</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/SM8UTI">
             <img src="https://avatars.githubusercontent.com/u/56423859?v=4" width="100;" alt="SM8UTI"/>
             <br />
@@ -201,7 +208,8 @@ git push -u origin <your_branch_name>
             <br />
             <sub><b>Sumit Kumar</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/aaheli8">
             <img src="https://avatars.githubusercontent.com/u/66815283?v=4" width="100;" alt="aaheli8"/>
