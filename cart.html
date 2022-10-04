@@ -216,7 +216,7 @@
 
         // Insert a cell at the end of the row
         let newCell = newRow.insertCell();
-        newCell.innerHTML = `<div class='cartinfo' data-aos='fade-up'><img src='${item.img}' /><div><p>${item.productName}</p><small>Price: Rs. ${item.productPrice}</small><br /><span class="remove-btn" id="remove-${id}" onclick="removeItem()">Remove</span></div></div>`;
+        newCell.innerHTML = `<div class='cartinfo' data-aos='fade-up'><img src='${item.img}' /><div><p>${item.productName}</p><small>Size: ${item.productSize}, Price: ${item.productPrice} Rs.</small><br /><span class="remove-btn" id="remove-${id}" onclick="removeItem()">Remove</span></div></div>`;
 
         newCell = newRow.insertCell();
         newCell.innerHTML += `<input type='number' value='${item.productQuantity}' data-aos="fade-up" onchange="updateQty(this)" id="updateQty-${id}" min="1"/>`;
