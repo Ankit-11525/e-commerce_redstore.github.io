@@ -125,13 +125,6 @@ git push -u origin <your_branch_name>
 <table>
 <tr>
     <td align="center">
-        <a href="https://github.com/komalioruganti">
-            <img src="https://avatars.githubusercontent.com/u/95839946?v=4" width="100;" alt="komalioruganti"/>
-            <br />
-            <sub><b>Komali</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/Ankit-11525">
             <img src="https://avatars.githubusercontent.com/u/76417084?v=4" width="100;" alt="Ankit-11525"/>
             <br />
@@ -160,14 +153,21 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/talkshrey">
+            <img src="https://avatars.githubusercontent.com/u/74039736?v=4" width="100;" alt="talkshrey"/>
+            <br />
+            <sub><b>Shrey Parekh</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/rtewari056">
             <img src="https://avatars.githubusercontent.com/u/75976169?v=4" width="100;" alt="rtewari056"/>
             <br />
             <sub><b>Rohit Tewari</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
-
         <a href="https://github.com/nishtha53">
             <img src="https://avatars.githubusercontent.com/u/68805896?v=4" width="100;" alt="nishtha53"/>
             <br />
@@ -203,21 +203,27 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
-
+        <a href="https://github.com/prakhar-1005">
+            <img src="https://avatars.githubusercontent.com/u/94559623?v=4" width="100;" alt="prakhar-1005"/>
+            <br />
+            <sub><b>Prakhar Pandey</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
         <a href="https://github.com/Praphulla-Mishra">
             <img src="https://avatars.githubusercontent.com/u/79088582?v=4" width="100;" alt="Praphulla-Mishra"/>
             <br />
             <sub><b>Praphulla Mishra</b></sub>
         </a>
-
+    </td>
     <td align="center">
         <a href="https://github.com/SM8UTI">
             <img src="https://avatars.githubusercontent.com/u/56423859?v=4" width="100;" alt="SM8UTI"/>
             <br />
             <sub><b>Smruti Ranjan Nayak</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/atom540">
             <img src="https://avatars.githubusercontent.com/u/102367845?v=4" width="100;" alt="atom540"/>
