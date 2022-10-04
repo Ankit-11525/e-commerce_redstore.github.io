@@ -139,6 +139,13 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/SandeshGC">
+            <img src="https://avatars.githubusercontent.com/u/59115123?v=4" width="100;" alt="SandeshGC"/>
+            <br />
+            <sub><b>Sandesh GC</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/harikesh409">
             <img src="https://avatars.githubusercontent.com/u/3501554?v=4" width="100;" alt="harikesh409"/>
             <br />
@@ -158,15 +165,22 @@ git push -u origin <your_branch_name>
             <br />
             <sub><b>Nishtha53</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/minhaj-313">
             <img src="https://avatars.githubusercontent.com/u/107562768?v=4" width="100;" alt="minhaj-313"/>
             <br />
             <sub><b>Shaikh Minhaj</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
+    <td align="center">
+        <a href="https://github.com/BurhanRaja">
+            <img src="https://avatars.githubusercontent.com/u/76507095?v=4" width="100;" alt="BurhanRaja"/>
+            <br />
+            <sub><b>Burhanuddin</b></sub>
+        </a>
+    </td>
     <td align="center">
         <a href="https://github.com/Mohasin-Haque">
             <img src="https://avatars.githubusercontent.com/u/72180173?v=4" width="100;" alt="Mohasin-Haque"/>
@@ -182,10 +196,25 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/SandeshGC">
-            <img src="https://avatars.githubusercontent.com/u/59115123?v=4" width="100;" alt="SandeshGC"/>
+        <a href="https://github.com/prakhar-1005">
+            <img src="https://avatars.githubusercontent.com/u/94559623?v=4" width="100;" alt="prakhar-1005"/>
             <br />
-            <sub><b>Sandesh GC</b></sub>
+            <sub><b>Prakhar Pandey</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Praphulla-Mishra">
+            <img src="https://avatars.githubusercontent.com/u/79088582?v=4" width="100;" alt="Praphulla-Mishra"/>
+            <br />
+            <sub><b>Praphulla Mishra</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
+        <a href="https://github.com/SM8UTI">
+            <img src="https://avatars.githubusercontent.com/u/56423859?v=4" width="100;" alt="SM8UTI"/>
+            <br />
+            <sub><b>Smruti Ranjan Nayak</b></sub>
         </a>
     </td>
     <td align="center">
