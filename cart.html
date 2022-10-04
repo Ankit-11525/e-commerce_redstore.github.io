@@ -140,10 +140,10 @@
           <div class="footer-col-3">
             <h3>Useful Links</h3>
             <ul>
-              <li>Coupons</li>
-              <li>Blog Post</li>
-              <li>Return Policy</li>
-              <li>Join Affiliate</li>
+              <li><a href="#">Coupons</a></li>
+              <li><a href="#">Blog Post</a></li>
+              <li><a href="#">Return Policy</a></li>
+              <li><a href="#">Join Affiliate</a></li>
             </ul>
           </div>
           <div class="footer-col-4">
@@ -200,8 +200,8 @@
         localStorage.setItem("user",JSON.stringify(updatedCart)) //updating the localStorage cart items
         renderItemsAndCosts();
       }
-      
-    function renderItemsAndCosts(){      
+
+    function renderItemsAndCosts(){
       let id = -1;
       let subTotal = 0;
       let tbodyRef = document
@@ -216,7 +216,7 @@
 
         // Insert a cell at the end of the row
         let newCell = newRow.insertCell();
-        newCell.innerHTML = `<div class='cartinfo' data-aos='fade-up'><img src='${item.img}' /><div><p>${item.productName}</p><small>Price: Rs. ${item.productPrice}</small><br /><span class="remove-btn" id="remove-${id}" onclick="removeItem()">Remove</span></div></div>`;
+        newCell.innerHTML = `<div class='cartinfo' data-aos='fade-up'><img src='${item.img}' /><div><p>${item.productName}</p><small>Size: ${item.productSize}, Price: ${item.productPrice} Rs.</small><br /><span class="remove-btn" id="remove-${id}" onclick="removeItem()">Remove</span></div></div>`;
 
         newCell = newRow.insertCell();
         newCell.innerHTML += `<input type='number' value='${item.productQuantity}' data-aos="fade-up" onchange="updateQty(this)" id="updateQty-${id}" min="1"/>`;

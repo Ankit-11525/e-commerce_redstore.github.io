@@ -187,19 +187,21 @@
           <div class="footer-col-3">
             <h3>Useful Links</h3>
             <ul>
-              <li>Coupons</li>
-              <li>Blog Post</li>
-              <li>Return Policy</li>
-              <li>Join Affiliate</li>
+              <li><a href="#">Coupons</a></li>
+              <li><a href="#">Blog Post</a></li>
+              <li><a href="#">Return Policy</a></li>
+              <li><a href="#">Join Affiliate</a></li>
             </ul>
           </div>
           <div class="footer-col-4" data-aos="fade-up">
             <h3>Follow Us</h3>
             <ul>
-              <li class="hoverable">Facebook</li>
-              <li class="hoverable">Twitter</li>
-              <li class="hoverable">Instagram</li>
-              <li class="hoverable">Youtube</li>
+
+              <li class="hoverable"><a href="#" class="fa fa-lg fa-facebook center"></a><span>Facebook</span></li><br>
+              <li class="hoverable"><a href="#" class="fa fa-lg fa-twitter center"></a><span>Twitter</span></li><br>
+              <li class="hoverable"><a href="#" class="fa fa-lg fa-instagram center"></a><span>Instagram</span></li><br>
+              <li class="hoverable"><a href="#" class="fa fa-lg fa-youtube center"></a><span>Youtube</span></li><br>
+
             </ul>
           </div>
         </div>
@@ -263,11 +265,8 @@
         let productQuantity = parseFloat(
           document.getElementById("productQuantity").value
         );
+        let isProductDuplicate = false;
         let id = 0;
-        let checkUser = JSON.parse(localStorage.getItem("user"));
-        if (checkUser) {
-          id = checkUser.cart.length;
-        }
         let product = {
           id,
           img: img.src,
@@ -280,7 +279,15 @@
         userString2 = localStorage.getItem("user");
         const retrievedUser = JSON.parse(userString2);
         console.log("user after retrieving: ", retrievedUser);
-        retrievedUser.cart.push(product);
+
+        retrievedUser.cart.forEach(cartItem => {
+          if(cartItem.id === product.id && cartItem.productSize === product.productSize) {
+            cartItem.productQuantity = +cartItem.productQuantity + +product.productQuantity
+            isProductDuplicate = true;
+          }
+        })
+        if(!isProductDuplicate) retrievedUser.cart.push(product);
+        
         console.log("user after updating: ", retrievedUser);
         const updatedUserString = JSON.stringify(retrievedUser);
         localStorage.setItem("user", updatedUserString);
