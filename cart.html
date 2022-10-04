@@ -216,23 +216,23 @@
 
         // Insert a cell at the end of the row
         let newCell = newRow.insertCell();
-        newCell.innerHTML = `<div class='cartinfo' data-aos='fade-up'><img src='${item.img}' /><div><p>${item.productName}</p><small>Price: ${item.productPrice} Rs.</small><br /><span class="remove-btn" id="remove-${id}" onclick="removeItem()">Remove</span></div></div>`;
+        newCell.innerHTML = `<div class='cartinfo' data-aos='fade-up'><img src='${item.img}' /><div><p>${item.productName}</p><small>Price: Rs. ${item.productPrice}</small><br /><span class="remove-btn" id="remove-${id}" onclick="removeItem()">Remove</span></div></div>`;
 
         newCell = newRow.insertCell();
         newCell.innerHTML += `<input type='number' value='${item.productQuantity}' data-aos="fade-up" onchange="updateQty(this)" id="updateQty-${id}" min="1"/>`;
 
         newCell = newRow.insertCell();
-        newCell.innerHTML += `<div data-aos="fade-up">${item.productPrice * item.productQuantity} Rs.</div>`;
+        newCell.innerHTML += `<div data-aos="fade-up">Rs. ${item.productPrice * item.productQuantity}</div>`;
         subTotal += item.productPrice * item.productQuantity;
       });
 
       document.getElementById(
         "subtotal-section"
-      ).innerHTML = `<table><tr><td>Subtotal</td><td>${subTotal} Rs.</td></tr><tr><td>GST</td><td>${Number(
+      ).innerHTML = `<table><tr><td>Subtotal</td><td>Rs. ${subTotal}</td></tr><tr><td>GST</td><td>Rs. ${Number(
         (subTotal / 7.78).toFixed(2)
-      )} Rs.</td></tr><tr><td>Total</td><td>${Number(
+      )}</td></tr><tr><td>Total</td><td>Rs. ${Number(
         (subTotal + subTotal / 7.78).toFixed(2)
-      )}  Rs.</td></tr></table>`;
+      )}</td></tr></table>`;
     }
     renderItemsAndCosts(); //rendering the cart items and the costs initially
     // to remove the row of item
