@@ -263,11 +263,8 @@
         let productQuantity = parseFloat(
           document.getElementById("productQuantity").value
         );
+        let isProductDuplicate = false;
         let id = 0;
-        let checkUser = JSON.parse(localStorage.getItem("user"));
-        if (checkUser) {
-          id = checkUser.cart.length;
-        }
         let product = {
           id,
           img: img.src,
@@ -280,7 +277,15 @@
         userString2 = localStorage.getItem("user");
         const retrievedUser = JSON.parse(userString2);
         console.log("user after retrieving: ", retrievedUser);
-        retrievedUser.cart.push(product);
+
+        retrievedUser.cart.forEach(cartItem => {
+          if(cartItem.id === product.id && cartItem.productSize === product.productSize) {
+            cartItem.productQuantity = +cartItem.productQuantity + +product.productQuantity
+            isProductDuplicate = true;
+          }
+        })
+        if(!isProductDuplicate) retrievedUser.cart.push(product);
+        
         console.log("user after updating: ", retrievedUser);
         const updatedUserString = JSON.stringify(retrievedUser);
         localStorage.setItem("user", updatedUserString);
