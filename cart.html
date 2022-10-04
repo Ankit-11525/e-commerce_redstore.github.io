@@ -140,10 +140,10 @@
           <div class="footer-col-3">
             <h3>Useful Links</h3>
             <ul>
-              <li>Coupons</li>
-              <li>Blog Post</li>
-              <li>Return Policy</li>
-              <li>Join Affiliate</li>
+              <li><a href="#">Coupons</a></li>
+              <li><a href="#">Blog Post</a></li>
+              <li><a href="#">Return Policy</a></li>
+              <li><a href="#">Join Affiliate</a></li>
             </ul>
           </div>
           <div class="footer-col-4">
@@ -200,8 +200,8 @@
         localStorage.setItem("user",JSON.stringify(updatedCart)) //updating the localStorage cart items
         renderItemsAndCosts();
       }
-      
-    function renderItemsAndCosts(){      
+
+    function renderItemsAndCosts(){
       let id = -1;
       let subTotal = 0;
       let tbodyRef = document
