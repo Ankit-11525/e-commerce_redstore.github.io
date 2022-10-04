@@ -1,14 +1,7 @@
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
-a {
+a, a:hover {
     text-decoration: none;
-    opacity: 0.8;
-}
-
-a:hover{
-    text-decoration: none;
-    font-weight: bolder;
-    opacity: 1;
 }
 
 .socialbtns, .socialbtns ul, .socialbtns li {
@@ -110,10 +103,6 @@ p {
     color: #555;
 }
 
-.alignmentForText{
-  text-align: center;
-}
-
 .container {
     /* border: 2px solid red; */
     max-width: 1300px;
@@ -166,7 +155,7 @@ p {
 
 .header {
     background: radial-gradient(#fff, #ffd6d6);
-    /* radial for gradiancy on basis to radius
+    /* radial for gradiancy on basis to radius 
 linear for gradiancy on basis to vertically  */
 }
 
@@ -796,36 +785,23 @@ form a {
     transition: transform .2s;
     margin: 0 auto;
   }
-
+  
   .zoom:hover {
-    -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
   }
-
-.zoomForImage {
-      padding: 28px;
-      transition: transform .2s;
-      margin: 0 auto;
-    }
-
-  .zoomForImage:hover {
-      -ms-transform: scale(1.2);
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2);
-    }
-
   /* --------Testimonial Heading----- */
   .testimoinial-heading{
     text-align: center;
     padding-bottom: 10px;
-
+    
   }
   .effects {
     position: relative;
     color: #000;
   }
-
+  
   .effects::before {
       content: '';
       position: absolute;
@@ -839,7 +815,7 @@ form a {
       transform: scaleX(0);
       transition: transform .3s ease-in-out;
     }
-
+  
   .effects:hover::before {
     transform-origin: left;
     transform: scaleX(1);
