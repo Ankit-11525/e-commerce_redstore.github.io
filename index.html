@@ -15,10 +15,46 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="images/logo-white.png">
     <link type="text/css" rel="stylesheet" href="path-to-fontawesome/font-awesome.css">
+    <link type="stylesheet" href="/theme.css">
+    <style>
+     .switch input {
+  position: absolute;
+  opacity: 0;
+}
+.none{
+    background-color:black ;
+}
 
+.switch {
+  display: inline-block;
+  font-size: 20px; /* 1 */
+  height: 1em;
+  width: 2em;
+  background: whitesmoke;
+  border-radius: 1em;
+}
+
+.switch div {
+  height: 1em;
+  width: 1em;
+  border-radius: 1em;
+  background: blueviolet;
+  box-shadow: 0 0.1em 0.3em rgba(0,0,0,0.3);
+  -webkit-transition: all 300ms;
+     -moz-transition: all 300ms;
+          transition: all 300ms;
+}
+
+.switch input:checked + div {
+  -webkit-transform: translate3d(100%, 0, 0);
+     -moz-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+    background: grey;
+}
+
+    </style>
 </head>
-
-<body>
+<body class="notnone" id="body">
     <div class="header">
         <div class="container">
             <div class="navbar">
@@ -34,14 +70,16 @@
                         <li><a href="">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="account.html">Account</a></li>
+                        <!-- <input type="checkbox" onchange="toggleTheme()" id="slider"> -->
                     </ul>
                 </nav>
                     <a href="cart.html" class="cart-hover">
                     <img src="images/cart.png" width="30px" height="30px">
                 </a>
-
-
-
+                <div class="container">
+                    <label class="switch"><input type="checkbox" onclick="toggleTheme()" />  <div></div>
+                    </label>
+                  </div>
                 <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
 
             </div>
@@ -492,10 +530,22 @@
                 MenuItems.style.maxHeight = "0px";
             }
         }
+
+        function toggleTheme(){
+         const element = document.getElementById("body").className;
+            if(element=="notnone"){
+                document.getElementById("body").classList = "none"
+            }
+            else{
+                document.getElementById("body").classList = "notnone"
+
+            }
+        }
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+
       </script>
 </body>
 

@@ -4,6 +4,19 @@ a, a:hover {
     text-decoration: none;
 }
 
+
+.theme-light {
+    --color-primary: #0060df;
+    --color-secondary: #fbfbfe;
+    --color-accent: #fd6f53;
+    --font-color: #000000;
+  }
+  .theme-dark {
+    --color-primary: #17ed90;
+    --color-secondary: #2a2c2d;
+    --color-accent: #12cdea;
+    --font-color: #ffffff;
+}
 .socialbtns, .socialbtns ul, .socialbtns li {
     margin: 0;
     padding: 5px;
@@ -893,3 +906,6 @@ form a {
   /* .glassBox:hover .glassBox__imgBox img { */
     /* animation-name: fade-up; */
   /* } */
+
+
+  
