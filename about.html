@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account Details </title>
+    <title>About Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,10 +14,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="images/logo-white.png">
 
-</head>
-
-<body>
-
+  </head>
+  <body>
     <div class="container">
         <div class="navbar">
             <div class="logo">
@@ -28,12 +25,12 @@
             </div>
             <nav>
                 <ul id="MenuItems">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="allproducts.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="account.html">Account</a></li>
-                  </ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="allproducts.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
             </nav>
             <a href="cart.html">
                 <img src="images/cart.png" width="30px" height="30px">
@@ -42,37 +39,29 @@
 
         </div>
     </div>
-    <!-- -----------Account-Page------------------->
-    <div class="account-page">
-        <div class="container" data-aos="fade-up">
-            <div class="row">
-                <div class="col-2">
-                    <img src="images/image1.png" width="100%">
-                </div>
-                <div class="col-2">
-                    <div class="form-container">
-                        <div class="form-btn">
-                            <span onclick="login()">Login</span>
-                            <span onclick="register()">Register</span>
-                            <hr id="Indicator">
-                        </div>
-                        <form id="LoginForm">
-                            <input class="input-field" type="text" placeholder="Username">
-                            <input class="input-field" type="password" placeholder="Password">
-                            <button type="submit" class="btn">Login</button>
-                            <a href="">Forgot Password ?</a>
-                        </form>
-                        <form id="RegForm">
-                            <input class="input-field" type="text" placeholder="Username">
-                            <input class="input-field" type="email" placeholder="Email">
-                            <input class="input-field" type="password" placeholder="Password">
-                            <button type="submit" class="btn">Register</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!--About Page-->
+    <div class="about-page" data-aos="fade-up">
+
+
+
+      <img src="images/logo.png" width="100%" class="About-logo">
+
+  <div class="about-body" data-aos="fade-up">
+    <center>
+      <p class = "about-info">
+       Welcome to the RedStore!
+       RedStore is a sports goods store wherein you can find various clothes, shoes and accessories.
+       Our Purpose is to Sustainably make the Pleasure and Benefits of Sports Accessible to the many.
+  </p>
+    </center>
+
+      </div>
+</div>
+
+
+
+
+    <!--FOOTER SECTION-->
     <!------footer--------->
     <div class="footer">
         <div class="container" data-aos="fade-up">
@@ -92,10 +81,10 @@
                 <div class="footer-col-3">
                     <h3>Useful Links</h3>
                     <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post</li>
-                        <li>Return Policy</li>
-                        <li>Join Affiliate</li>
+                      <li><a href="#">Coupons</a></li>
+                      <li><a href="#">Blog Post</a></li>
+                      <li><a href="#">Return Policy</a></li>
+                      <li><a href="#">Join Affiliate</a></li>
                     </ul>
                 </div>
                 <div class="footer-col-4">
@@ -112,7 +101,7 @@
             </div>
             <hr>
             <p class="copyright">Copyright &copy
-                <script type="text/javascript"> document.write(new Date().getFullYear());</script> - RedStore
+                <script type="text/javascript"> document.write(new Date().getFullYear());</script>-RedStore
             </p>
         </div>
     </div>
@@ -152,6 +141,5 @@
         <script>
             AOS.init();
           </script>
-</body>
-
+  </body>
 </html>
