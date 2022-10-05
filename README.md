@@ -168,6 +168,13 @@ git push -u origin <your_branch_name>
     </td></tr>
 <tr>
     <td align="center">
+        <a href="https://github.com/komalioruganti">
+            <img src="https://avatars.githubusercontent.com/u/95839946?v=4" width="100;" alt="komalioruganti"/>
+            <br />
+            <sub><b>Komali</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/talkshrey">
             <img src="https://avatars.githubusercontent.com/u/74039736?v=4" width="100;" alt="talkshrey"/>
             <br />
@@ -196,13 +203,6 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/komalioruganti">
-            <img src="https://avatars.githubusercontent.com/u/95839946?v=4" width="100;" alt="komalioruganti"/>
-            <br />
-            <sub><b>Komali</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/AnshuPathak-88825">
             <img src="https://avatars.githubusercontent.com/u/78332454?v=4" width="100;" alt="AnshuPathak-88825"/>
             <br />
@@ -215,6 +215,13 @@ git push -u origin <your_branch_name>
             <img src="https://avatars.githubusercontent.com/u/76507095?v=4" width="100;" alt="BurhanRaja"/>
             <br />
             <sub><b>Burhanuddin</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Juhii16">
+            <img src="https://avatars.githubusercontent.com/u/88276540?v=4" width="100;" alt="Juhii16"/>
+            <br />
+            <sub><b>Null</b></sub>
         </a>
     </td>
     <td align="center">
@@ -244,15 +251,15 @@ git push -u origin <your_branch_name>
             <br />
             <sub><b>Praphulla Mishra</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/SM8UTI">
             <img src="https://avatars.githubusercontent.com/u/56423859?v=4" width="100;" alt="SM8UTI"/>
             <br />
             <sub><b>Smruti Ranjan Nayak</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/atom540">
             <img src="https://avatars.githubusercontent.com/u/102367845?v=4" width="100;" alt="atom540"/>
