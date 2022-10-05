@@ -759,6 +759,7 @@ form a {
 
 /* --------- Scroll Bar ---------- */
 
+/*
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -776,6 +777,26 @@ form a {
 ::-webkit-scrollbar-thumb:hover {
   background: #ff624d;
 }
+*/
+
+::-webkit-scrollbar
+{
+  width: 12px;
+  height: 18px;
+
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(102, 102, 102);
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background:linear-gradient(transparent,#d6926a);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background:linear-gradient(transparent,#f33809);
+}
+
 
 /* --------Feature Categories Hover Zoom----- */
 .zoom {
