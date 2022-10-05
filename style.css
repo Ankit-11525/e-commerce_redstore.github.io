@@ -776,3 +776,32 @@ form a {
     transform-origin: left;
     transform: scaleX(1);
   }
+  .About-logo{
+  width: 325px;
+  height: 135px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 60px;
+}
+.about-body{
+  background-color: #ff523b;
+  height: 400px;
+  width:100%;
+  margin-left:0;
+
+
+}
+.about-info{
+ color: white;
+  font-size: 150%;
+padding-top: 40px;
+display: inline-block;
+float:left;
+padding:40px;
+
+}
+.about-page{
+  width:100%;
+  height:500px;
+}
