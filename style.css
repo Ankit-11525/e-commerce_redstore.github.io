@@ -878,37 +878,6 @@ form a {
     width: 100%;
     height: auto;
   }
-
-  .About-logo{
-  width: 325px;
-  height: 135px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  padding-bottom: 60px;
-}
-.about-body{
-  background-color: #ff523b;
-  height: 400px;
-  width:100%;
-  margin-left:0;
-
-
-}
-.about-info{
- color: white;
-  font-size: 150%;
-padding-top: 40px;
-display: inline-block;
-float:left;
-padding:40px;
-
-}
-.about-page{
-  width:100%;
-  height:500px;
-}
-=======
   .glassBox__title {
     text-align: center;
     margin-top: 15px;
@@ -945,4 +914,3 @@ padding:40px;
 }
 
  
-
