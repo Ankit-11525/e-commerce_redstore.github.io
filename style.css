@@ -821,3 +821,10 @@ form a {
     transform-origin: left;
     transform: scaleX(1);
   }
+
+
+  /* HOVER EFFECT */
+  #box:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
