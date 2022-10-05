@@ -883,9 +883,13 @@ form a {
 		z-index: 2;
 
   }
-  /* .glassBox:hover .glassBox__imgBox {
-     animation-name: bounce;;
-  } */
-  /* .glassBox:hover .glassBox__imgBox img { */
-    /* animation-name: fade-up; */
-  /* } */
+
+
+
+  /* HOVER EFFECT */
+  #box:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+ 
