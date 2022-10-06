@@ -153,20 +153,34 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/rtewari056">
+            <img src="https://avatars.githubusercontent.com/u/75976169?v=4" width="100;" alt="rtewari056"/>
+            <br />
+            <sub><b>Rohit Tewari</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Aarav238">
+            <img src="https://avatars.githubusercontent.com/u/95538627?v=4" width="100;" alt="Aarav238"/>
+            <br />
+            <sub><b>Null</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
+        <a href="https://github.com/komalioruganti">
+            <img src="https://avatars.githubusercontent.com/u/95839946?v=4" width="100;" alt="komalioruganti"/>
+            <br />
+            <sub><b>Komali</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/talkshrey">
             <img src="https://avatars.githubusercontent.com/u/74039736?v=4" width="100;" alt="talkshrey"/>
             <br />
             <sub><b>Shrey Parekh</b></sub>
         </a>
     </td>
-    <td align="center">
-        <a href="https://github.com/rtewari056">
-            <img src="https://avatars.githubusercontent.com/u/75976169?v=4" width="100;" alt="rtewari056"/>
-            <br />
-            <sub><b>Rohit Tewari</b></sub>
-        </a>
-    </td></tr>
-<tr>
     <td align="center">
         <a href="https://github.com/asubodh">
             <img src="https://avatars.githubusercontent.com/u/43497160?v=4" width="100;" alt="asubodh"/>
@@ -182,13 +196,6 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/Aarav238">
-            <img src="https://avatars.githubusercontent.com/u/95538627?v=4" width="100;" alt="Aarav238"/>
-            <br />
-            <sub><b>Null</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/minhaj-313">
             <img src="https://avatars.githubusercontent.com/u/107562768?v=4" width="100;" alt="minhaj-313"/>
             <br />
@@ -196,20 +203,27 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/komalioruganti">
-            <img src="https://avatars.githubusercontent.com/u/95839946?v=4" width="100;" alt="komalioruganti"/>
+        <a href="https://github.com/AnshuPathak-88825">
+            <img src="https://avatars.githubusercontent.com/u/78332454?v=4" width="100;" alt="AnshuPathak-88825"/>
             <br />
-            <sub><b>Komali</b></sub>
+            <sub><b>Anshu Pathak</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/BurhanRaja">
             <img src="https://avatars.githubusercontent.com/u/76507095?v=4" width="100;" alt="BurhanRaja"/>
             <br />
             <sub><b>Burhanuddin</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Juhii16">
+            <img src="https://avatars.githubusercontent.com/u/88276540?v=4" width="100;" alt="Juhii16"/>
+            <br />
+            <sub><b>Null</b></sub>
+        </a>
+    </td>
     <td align="center">
         <a href="https://github.com/Mohasin-Haque">
             <img src="https://avatars.githubusercontent.com/u/72180173?v=4" width="100;" alt="Mohasin-Haque"/>
@@ -237,7 +251,8 @@ git push -u origin <your_branch_name>
             <br />
             <sub><b>Praphulla Mishra</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/SM8UTI">
             <img src="https://avatars.githubusercontent.com/u/56423859?v=4" width="100;" alt="SM8UTI"/>
@@ -251,8 +266,7 @@ git push -u origin <your_branch_name>
             <br />
             <sub><b>Sumit Kumar</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/aaheli8">
             <img src="https://avatars.githubusercontent.com/u/66815283?v=4" width="100;" alt="aaheli8"/>
