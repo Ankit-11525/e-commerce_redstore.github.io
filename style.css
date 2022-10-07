@@ -1,21 +1,41 @@
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
 a,
 a:hover {
   text-decoration: none;
 }
 
-.socialbtns,
-.socialbtns ul,
-.socialbtns li {
-  margin: 0;
-  padding: 5px;
-  cursor: pointer;
+.socialbtns-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
 }
 
-.socialbtns li {
+.socialbtns-wrapper div {
+  width: 100%;
+  margin-left: 30%;
+}
+
+.socialbtns-wrapper div ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 80%;
+}
+
+.socialbtns-wrapper div ul li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 3px;
+  cursor: pointer;
   list-style: none outside none;
-  display: inline-block;
+}
+
+.socialbtns-wrapper div ul li a {
+  margin-right: 10px;
 }
 
 .socialbtns .fa {
@@ -48,7 +68,7 @@ a:hover {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .navbar {
@@ -69,7 +89,7 @@ nav li {
 }
 
 nav li:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -176,8 +196,8 @@ linear for gradiancy on basis to vertically  */
 }
 
 .col-3 img {
-    width: 100%;
-    border-radius: 35px;
+  width: 100%;
+  border-radius: 35px;
 }
 
 .small-container {
@@ -209,7 +229,7 @@ linear for gradiancy on basis to vertically  */
 }
 
 .title::after {
-  content: "";
+  content: '';
   background: #ff523b;
   width: 80px;
   height: 5px;
@@ -598,7 +618,7 @@ th:last-child {
 }
 .contact-form input {
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding: 20px 10px;
 }
 .contact-form {
@@ -606,7 +626,7 @@ th:last-child {
 }
 .textarea-container textarea {
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 10px 0;
   width: 100%;
   height: 150px;
@@ -623,7 +643,7 @@ th:last-child {
   padding: 5px 8px;
   font-size: 16px;
   cursor: pointer;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   width: 70%;
   color: white;
   background-color: #ff523b;
@@ -779,24 +799,21 @@ form a {
 }
 */
 
-::-webkit-scrollbar
-{
+::-webkit-scrollbar {
   width: 12px;
   height: 18px;
-
 }
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px rgb(102, 102, 102);
-    border-radius: 8px;
+  box-shadow: inset 0 0 5px rgb(102, 102, 102);
+  border-radius: 8px;
 }
-::-webkit-scrollbar-thumb{
-  background:linear-gradient(transparent,#d6926a);
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #d6926a);
   border-radius: 6px;
 }
-::-webkit-scrollbar-thumb:hover{
-  background:linear-gradient(transparent,#f33809);
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #f33809);
 }
-
 
 /* --------Feature Categories Hover Zoom----- */
 .zoom {
@@ -821,7 +838,7 @@ form a {
 }
 
 .effects::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 4px;
@@ -839,18 +856,14 @@ form a {
   transform: scaleX(1);
 }
 
-  /* HOVER ANIMATION */
+/* HOVER ANIMATION */
 
-  
-#box:hover{
-    transform: scale(1.3);
-    z-index: 2;
-    
-    
+#box:hover {
+  transform: scale(1.3);
+  z-index: 2;
 }
 
-
-  /* .glassBox {
+/* .glassBox {
     width: 100%;
     height: 400px;
     max-width: 300px;
@@ -899,18 +912,13 @@ form a {
     opacity: 0;
   } */
 
-  .glassBox__imgBox:hover{
-    transform: scale(1.3);
-		z-index: 2;
-
-  }
-
-
-
-  /* HOVER EFFECT */
-  #box:hover{
-    transform: scale(1.2);
-    z-index: 2;
+.glassBox__imgBox:hover {
+  transform: scale(1.3);
+  z-index: 2;
 }
 
- 
+/* HOVER EFFECT */
+#box:hover {
+  transform: scale(1.2);
+  z-index: 2;
+}
