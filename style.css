@@ -973,6 +973,11 @@ form a {
 }
 
 
+.menu-icon.active{
+  color: white;
+}
+
+
 .row.active{
   background-color: #000;
   color: white;
