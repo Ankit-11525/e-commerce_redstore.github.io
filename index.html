@@ -46,6 +46,11 @@
           <a href="cart.html" class="cart-hover">
             <img src="images/cart.png" width="30px" height="30px" />
           </a>
+          <div class="toggle">
+            <i class="fa-solid fa-moon toggle-icon"></i>
+            <i class="fa-solid fa-sun toggle-icon"></i>
+            <div class="toggle-ball"></div>
+         </div>
 
           <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
         </div>
@@ -495,7 +500,18 @@
         } else {
           MenuItems.style.maxHeight = '0px'
         }
+      
       }
+
+      const ball = document.querySelector(".toggle-ball");
+        const items = document.querySelectorAll(".row,body,.container,.navbar,.header,.toggle");
+        ball.addEventListener("click",()=>{
+
+            items.forEach(item=>{
+                item.classList.toggle("active")
+            })
+            ball.classList.toggle("active")
+        })
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

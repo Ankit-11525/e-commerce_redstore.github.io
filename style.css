@@ -922,3 +922,75 @@ form a {
   transform: scale(1.2);
   z-index: 2;
 }
+
+/* THEME BUTTON */
+
+
+.toggle{
+  width: 40px;
+  height: 22px;
+  margin-left: 30px;
+  background-color: whitesmoke;
+  border-radius: 30px;    
+  display: flex;
+  align-items: center;
+  justify-content:  space-around;
+  position: relative;
+
+}
+
+
+.toggle-icon{
+  color: goldenrod;
+}
+
+
+
+.toggle-ball{
+
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  position: absolute;
+  right: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
+
+.header.active{
+  background-color: #000;
+}
+.container.active{
+  background-color: #000;
+}
+
+.navbar.active{
+  background-color: #000;
+  color: white;
+
+}
+
+
+.row.active{
+  background-color: #000;
+  color: white;
+}
+
+
+body.active{
+  background-color: #000;
+}
+
+
+.toggle.active{
+  background-color: #000;
+}
+
+.toggle-ball.active{
+  background-color: white;
+  transform: translateX(-20px);
+
+
+}
