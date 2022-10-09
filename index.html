@@ -18,6 +18,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://kit.fontawesome.com/f390425e8d.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="images/logo-white.png" />
     <link
       type="text/css"
@@ -50,6 +51,11 @@
           <a href="cart.html" class="cart-hover">
             <img src="images/cart.png" width="30px" height="30px" />
           </a>
+          <div class="toggle">
+            <i class="fa-solid fa-moon toggle-icon"></i>
+            <i class="fa-solid fa-sun toggle-icon"></i>
+            <div class="toggle-ball"></div>
+         </div>
 
           <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
         </div>
@@ -499,7 +505,19 @@
         } else {
           MenuItems.style.maxHeight = '0px'
         }
+      
       }
+
+
+      const ball = document.querySelector(".toggle-ball");
+        const items = document.querySelectorAll(".row,body,.menu-icon,.container,.navbar,.header,.toggle");
+        ball.addEventListener("click",()=>{
+
+            items.forEach(item=>{
+                item.classList.toggle("active")
+            })
+            ball.classList.toggle("active")
+        })
 
       const btnScrollToTop = document.getElementById("btnScrollToTop");
       btnScrollToTop.addEventListener("click", function(){
@@ -509,6 +527,7 @@
         behavior: "smooth"
         });
       });
+
 
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

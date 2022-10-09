@@ -38,6 +38,11 @@
             <a href="cart.html">
                 <img src="images/cart.png" width="30px" height="30px">
             </a>
+            <div class="toggle">
+                <i class="fa-solid fa-moon toggle-icon"></i>
+                <i class="fa-solid fa-sun toggle-icon"></i>
+                <div class="toggle-ball"></div>
+             </div>
             <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
 
         </div>
@@ -145,6 +150,15 @@
             LoginForm.style.transform = "translateX(300px)";
             Indicator.style.transform = "translateX(0px)";
         }
+        const ball = document.querySelector(".toggle-ball");
+        const items = document.querySelectorAll(".row,body,.container,.menu-icon,.navbar,.header,.toggle");
+        ball.addEventListener("click",()=>{
+
+            items.forEach(item=>{
+                item.classList.toggle("active")
+            })
+            ball.classList.toggle("active")
+        })
 
 
     </script>

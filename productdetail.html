@@ -40,6 +40,11 @@
         <a href="cart.html">
           <img src="images/cart.png" width="30px" height="30px" />
         </a>
+        <div class="toggle">
+          <i class="fa-solid fa-moon toggle-icon"></i>
+          <i class="fa-solid fa-sun toggle-icon"></i>
+          <div class="toggle-ball"></div>
+       </div>
         <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
       </div>
     </div>
@@ -290,6 +295,16 @@
         const updatedUserString = JSON.stringify(retrievedUser);
         localStorage.setItem("user", updatedUserString);
       };
+
+      const ball = document.querySelector(".toggle-ball");
+        const items = document.querySelectorAll(".row,body,.menu-icon,.container,.navbar,.header,.toggle");
+        ball.addEventListener("click",()=>{
+
+            items.forEach(item=>{
+                item.classList.toggle("active")
+            })
+            ball.classList.toggle("active")
+        })
       //   const myObjectString = JSON.stringify(myObject);
       //   localStorage.setItem("objectGreeting", myObjectString);
     </script>
