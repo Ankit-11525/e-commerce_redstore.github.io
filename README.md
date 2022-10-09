@@ -261,6 +261,13 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/rushikesh1799">
+            <img src="https://avatars.githubusercontent.com/u/68096217?v=4" width="100;" alt="rushikesh1799"/>
+            <br />
+            <sub><b>Rushikesh Bunge</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/SM8UTI">
             <img src="https://avatars.githubusercontent.com/u/56423859?v=4" width="100;" alt="SM8UTI"/>
             <br />
