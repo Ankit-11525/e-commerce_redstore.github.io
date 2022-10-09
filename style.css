@@ -141,6 +141,28 @@ p {
   justify-content: space-around;
 }
 
+/* scroll-up button starts */
+#btnScrollToTop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ff523b;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#btnScrollToTop:active{
+  background: rgb(12, 214, 12);
+}
+
+/* scroll-up button ends */
+
 .col-2 {
   flex-basis: 50%;
   min-width: 300px;
