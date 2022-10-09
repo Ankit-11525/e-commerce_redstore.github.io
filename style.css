@@ -944,3 +944,8 @@ form a {
   transform: scale(1.2);
   z-index: 2;
 }
+
+/* curser effect to footer img */
+.footer-img{
+  cursor: pointer;
+}
