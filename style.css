@@ -1025,3 +1025,8 @@ body.active{
 
 
 }
+
+/*footer image mouse style to pointer*/
+.footer-img{
+  cursor: pointer;
+}
