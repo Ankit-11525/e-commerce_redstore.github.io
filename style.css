@@ -1030,3 +1030,7 @@ body.active{
 .footer-img{
   cursor: pointer;
 }
+/* usefull links */
+.useful-links:hover{
+  border-bottom: #fff 1px solid;
+}
