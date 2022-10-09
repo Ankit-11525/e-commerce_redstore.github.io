@@ -945,3 +945,7 @@ form a {
   z-index: 2;
 }
 
+/* curser effect to footer img */
+.footer-img{
+  cursor: pointer;
+}
