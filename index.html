@@ -7,6 +7,7 @@
     <title>RedStore | Ecommerce Website Design</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -27,6 +28,9 @@
   </head>
 
   <body>
+    <button id = "btnScrollToTop">
+      <i class = "material-icons">arrow_upward</i>
+    </button>
     <div class="header">
       <div class="container">
         <div class="navbar">
@@ -504,6 +508,7 @@
       
       }
 
+
       const ball = document.querySelector(".toggle-ball");
         const items = document.querySelectorAll(".row,body,.menu-icon,.container,.navbar,.header,.toggle");
         ball.addEventListener("click",()=>{
@@ -513,6 +518,17 @@
             })
             ball.classList.toggle("active")
         })
+
+      const btnScrollToTop = document.getElementById("btnScrollToTop");
+      btnScrollToTop.addEventListener("click", function(){
+        window.scrollTo({
+        top: 0, 
+        left: 0,
+        behavior: "smooth"
+        });
+      });
+
+
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
