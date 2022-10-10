@@ -427,6 +427,8 @@ ul {
   display: none;
 }
 
+
+
 /* --------media query for menu----- */
 
 @media only screen and (max-width: 800px) {
@@ -1025,6 +1027,7 @@ form a {
 
 body.active{
   background-color: #000;
+  
 }
 
 
@@ -1039,6 +1042,7 @@ body.active{
 
 }
 
+
 /*footer image mouse style to pointer*/
 .footer-img{
   cursor: pointer;
@@ -1046,4 +1050,8 @@ body.active{
 /* usefull links */
 .useful-links:hover{
   border-bottom: #fff 1px solid;
+}
+
+p:hover {
+  color: rgb(186, 186, 186);
 }
