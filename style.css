@@ -70,7 +70,7 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 20px 5px;
 }
 
 nav {
@@ -151,6 +151,7 @@ p {
   border: none;
   outline: none;
   cursor: pointer;
+  z-index: 1;
 }
 
 #btnScrollToTop:active{
@@ -161,7 +162,7 @@ p {
 
 .col-2 {
   flex-basis: 50%;
-  min-width: 300px;
+  min-width: 280px;
 }
 
 .col-2 img {
@@ -422,7 +423,7 @@ ul {
 
 .menu-icon {
   width: 28px;
-  margin-left: 20px;
+  margin-left: 10px;
   display: none;
 }
 
@@ -786,6 +787,10 @@ form a {
     flex-basis: 100%;
   }
 
+  .col-2 p {
+    margin: auto;
+  }
+
   .single-product .row {
     text-align: left;
   }
@@ -963,7 +968,7 @@ form a {
 .toggle{
   width: 40px;
   height: 22px;
-  margin-left: 30px;
+  margin-left: 25px;
   background-color: whitesmoke;
   border-radius: 30px;    
   display: flex;
