@@ -1,9 +1,5 @@
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
-a,
-a:hover {
-  text-decoration: none;
-}
 
 .socialbtns-wrapper {
   display: flex;
@@ -563,7 +559,14 @@ input:focus {
   flex-basis: 24%;
   cursor: pointer;
 }
-
+.viewMore--btn{
+  transition: border 150ms ease-in-out;
+}
+.viewMore--btn:hover{
+  /* text-decoration: underline; */
+  border-width: 0 0 1.5px 0;
+  border-style: solid;
+}
 /* ---------cart item details---------- */
 .cart-page {
   margin: 80px auto;
@@ -844,14 +847,14 @@ form a {
 /* --------Feature Categories Hover Zoom----- */
 .zoom {
   padding: 30px;
-  transition: transform 0.2s;
+  transition: transform 150ms ease-out;
   margin: 0 auto;
+  cursor: pointer;
 }
-
 .zoom:hover {
-  -ms-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 /* --------Testimonial Heading----- */
 .testimoinial-heading {
@@ -884,10 +887,10 @@ form a {
 
 /* HOVER ANIMATION */
 
-#box:hover {
+/* #box:hover {
   transform: scale(1.3);
   z-index: 2;
-}
+} */
 
 /* .glassBox {
     width: 100%;
@@ -945,10 +948,15 @@ form a {
 
 /* HOVER EFFECT */
 #box:hover {
-  transform: scale(1.2);
+  /* transform: scale(1.025); */
+  border-radius: 5px;
+  box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.1);
   z-index: 2;
+  transition: all 250ms;
 }
-
+.zoomForImage{
+  border-radius: 3px;
+}
 /* THEME BUTTON */
 
 
