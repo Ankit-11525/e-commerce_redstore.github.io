@@ -1,533 +1,501 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RedStore | Ecommerce Website Design</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="https://kit.fontawesome.com/f390425e8d.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="images/logo-white.png" />
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="path-to-fontawesome/font-awesome.css"
-    />
-  </head>
 
-  <body>
-    <button id = "btnScrollToTop">
-      <i class = "material-icons">arrow_upward</i>
-    </button>
-    <div class="header">
-      <div class="container">
-        <div class="navbar">
-          <div class="logo">
-            <a href="index.html">
-              <img src="images/logo.png" width="125px" />
-            </a>
-          </div>
-          <nav>
-            <ul id="MenuItems">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="allproducts.html">Products</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="account.html">Account</a></li>
-            </ul>
-          </nav>
-          <a href="cart.html" class="cart-hover">
-            <img src="images/cart.png" width="30px" height="30px" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RedStore | Ecommerce Website Design</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://kit.fontawesome.com/f390425e8d.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="images/logo-white.png" />
+  <link type="text/css" rel="stylesheet" href="path-to-fontawesome/font-awesome.css" />
+</head>
+
+<body>
+  <button id="btnScrollToTop">
+    <i class="material-icons">arrow_upward</i>
+  </button>
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" width="125px" />
           </a>
-          <div class="toggle">
-            <i class="fa-solid fa-moon toggle-icon"></i>
-            <i class="fa-solid fa-sun toggle-icon"></i>
-            <div class="toggle-ball"></div>
-         </div>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="allproducts.html">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html" class="cart-hover">
+          <img src="images/cart.png" width="30px" height="30px" />
+        </a>
+        <div class="toggle">
+          <i class="fa-solid fa-moon toggle-icon"></i>
+          <i class="fa-solid fa-sun toggle-icon"></i>
+          <div class="toggle-ball"></div>
+        </div>
 
-          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <h1 data-aos="fade-up">
+            Give Your Workout<br />
+            A New Style!
+          </h1>
+          <p data-aos="fade-up">
+            Success isn't always about greatness.It's about
+            consistency.Consistent<br />
+            hard work gains success .Greatness will come.
+          </p>
+          <a href="./allproducts.html"><button class="btn">Explore Now &#8594;</button>
+          </a>
         </div>
-        <div class="row">
-          <div class="col-2">
-            <h1 data-aos="fade-up">
-              Give Your Workout<br />
-              A New Style!
-            </h1>
-            <p data-aos="fade-up">
-              Success isn't always about greatness.It's about
-              consistency.Consistent<br />
-              hard work gains success .Greatness will come.
-            </p>
-            <a href="./allproducts.html"
-              ><button class="btn">Explore Now &#8594;</button>
-            </a>
-          </div>
-          <div class="col-2">
-            <img src="images/image1.png" />
-          </div>
+        <div class="col-2">
+          <img src="images/image1.png" />
         </div>
       </div>
     </div>
-    <!-------------feature categories------->
-    <div class="categories">
-      <div class="small-container" data-aos="fade-up">
-      <h2 class="title">Top Categories</h2>
-        <div class="row">
-          <div class="col-3 position-relative">
-            <img class="zoom position-absolute" src="images/category-1.jpg" />
-          </div>
-          <div class="col-3">
-            <img class="zoom" src="images/category-2.jpg" />
-          </div>
-          <div class="col-3">
-            <img class="zoom" src="images/category-3.jpg" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--------------featured Products-->
+  </div>
+  <!-------------feature categories------->
+  <div class="categories">
     <div class="small-container" data-aos="fade-up">
-      <h2 class="title">Featured Products</h2>
+      <h2 class="title">Top Categories</h2>
       <div class="row">
-        <div class="col-4" id="box" data-aos="fade-up">
+        <div class="col-3 position-relative">
+          <img class="zoom position-absolute" src="images/category-1.jpg" />
+        </div>
+        <div class="col-3">
+          <img class="zoom" src="images/category-2.jpg" />
+        </div>
+        <div class="col-3">
+          <img class="zoom" src="images/category-3.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--------------featured Products-->
+  <div class="small-container" data-aos="fade-up">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+      <div class="col-4" id="box" data-aos="fade-up">
+        <a href="productdetail.html">
+          <img class="zoomForImage" src="images/product-1.jpg" />
+        </a>
+        <div class="alignmentForText">
           <a href="productdetail.html">
-            <img class="zoomForImage" src="images/product-1.jpg" />
+            <h4>Red Printed T-Shirt</h4>
           </a>
-          <div class="alignmentForText">
-            <a href="productdetail.html">
-              <h4>Red Printed T-Shirt</h4>
-            </a>
 
-            <div class="rating">
-              <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <p>Rs. 500</p>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
           </div>
-        </div>
-        <div class="col-4" id="box" data-aos="fade-up">
-          <img class="zoomForImage" src="images/product-2.jpg" />
-          <div class="alignmentForText">
-            <h4>HRX- Shoes</h4>
-            <div class="rating">
-              <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <p>Rs. 600</p>
-          </div>
-        </div>
-        <div class="col-4" id="box" data-aos="fade-up">
-          <img class="zoomForImage" src="images/product-3.jpg" />
-          <div class="alignmentForText">
-            <h4>Grey Jogger</h4>
-            <div class="rating">
-              <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-o"></i>
-            </div>
-            <p>Rs. 950</p>
-          </div>
-        </div>
-        <div class="col-4" id="box" data-aos="fade-up">
-          <img class="zoomForImage" src="images/product-4.jpg" />
-          <div class="alignmentForText">
-            <h4>Navy Blue Puma Tshirt</h4>
-            <div class="rating">
-              <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-o"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <p>Rs. 250</p>
-          </div>
+          <p>Rs. 500</p>
         </div>
       </div>
-      <h2 class="title">Latest Products</h2>
-      <div class="row">
-        <div class="col-4" id="box" data-aos="fade-up">
-          <img class="zoomForImage" src="images/product-5.jpg" />
-          <div class="alignmentForText">
-            <h4>Jogging Shoes</h4>
-            <div class="rating">
-              <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <p>Rs. 750</p>
+      <div class="col-4" id="box" data-aos="fade-up">
+        <img class="zoomForImage" src="images/product-2.jpg" />
+        <div class="alignmentForText">
+          <h4>HRX- Shoes</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
           </div>
-        </div>
-        <div class="col-4" id="box" data-aos="fade-up">
-          <img class="zoomForImage" src="images/product-6.jpg" />
-          <div class="alignmentForText">
-            <h4>Puma Tshirt</h4>
-            <div class="rating">
-              <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <p>Rs. 450</p>
-          </div>
-        </div>
-        <div class="col-4" id="box" data-aos="fade-up">
-          <img class="zoomForImage" src="images/product-7.jpg" />
-          <div class="alignmentForText">
-            <h4>Exclusive socks</h4>
-            <div class="rating">
-              <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-o"></i>
-            </div>
-            <p>Rs. 50</p>
-          </div>
-        </div>
-        <div class="col-4" id="box" data-aos="fade-up">
-          <img class="zoomForImage" src="images/product-8.jpg" />
-          <div class="alignmentForText">
-            <h4>Wrist Watch</h4>
-            <div class="rating">
-              <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-o"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <p>Rs. 650</p>
-          </div>
+          <p>Rs. 600</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-4" id="box" data-aos="fade-up">
-          <img class="zoomForImage" src="images/product-9.jpg" />
-          <div class="alignmentForText">
-            <h4>Wrist Watch</h4>
-            <div class="rating">
-              <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <p>Rs. 450</p>
+      <div class="col-4" id="box" data-aos="fade-up">
+        <img class="zoomForImage" src="images/product-3.jpg" />
+        <div class="alignmentForText">
+          <h4>Grey Jogger</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
           </div>
+          <p>Rs. 950</p>
         </div>
-        <div class="col-4" id="box" data-aos="fade-up">
-          <img class="zoomForImage" src="images/product-10.jpg" />
-          <div class="alignmentForText">
-            <h4>Black Ranger shoes</h4>
-            <div class="rating">
-              <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <p>Rs. 850</p>
+      </div>
+      <div class="col-4" id="box" data-aos="fade-up">
+        <img class="zoomForImage" src="images/product-4.jpg" />
+        <div class="alignmentForText">
+          <h4>Navy Blue Puma Tshirt</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
           </div>
-        </div>
-        <div class="col-4" id="box" data-aos="fade-up">
-          <img class="zoomForImage" src="images/product-11.jpg" />
-          <div class="alignmentForText">
-            <h4>New style shoes</h4>
-            <div class="rating">
-              <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-o"></i>
-            </div>
-            <p>Rs. 450</p>
-          </div>
-        </div>
-        <div class="col-4" id="box" data-aos="fade-up">
-          <img class="zoomForImage" src="images/product-12.jpg" />
-          <div class="alignmentForText">
-            <h4>Black jogger Puma</h4>
-            <div class="rating">
-              <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-o"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <p>Rs. 550</p>
-          </div>
+          <p>Rs. 250</p>
         </div>
       </div>
     </div>
+    <h2 class="title">Latest Products</h2>
+    <div class="row">
+      <div class="col-4" id="box" data-aos="fade-up">
+        <img class="zoomForImage" src="images/product-5.jpg" />
+        <div class="alignmentForText">
+          <h4>Jogging Shoes</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs. 750</p>
+        </div>
+      </div>
+      <div class="col-4" id="box" data-aos="fade-up">
+        <img class="zoomForImage" src="images/product-6.jpg" />
+        <div class="alignmentForText">
+          <h4>Puma Tshirt</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs. 450</p>
+        </div>
+      </div>
+      <div class="col-4" id="box" data-aos="fade-up">
+        <img class="zoomForImage" src="images/product-7.jpg" />
+        <div class="alignmentForText">
+          <h4>Exclusive socks</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>Rs. 50</p>
+        </div>
+      </div>
+      <div class="col-4" id="box" data-aos="fade-up">
+        <img class="zoomForImage" src="images/product-8.jpg" />
+        <div class="alignmentForText">
+          <h4>Wrist Watch</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs. 650</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4" id="box" data-aos="fade-up">
+        <img class="zoomForImage" src="images/product-9.jpg" />
+        <div class="alignmentForText">
+          <h4>Wrist Watch</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs. 450</p>
+        </div>
+      </div>
+      <div class="col-4" id="box" data-aos="fade-up">
+        <img class="zoomForImage" src="images/product-10.jpg" />
+        <div class="alignmentForText">
+          <h4>Black Ranger shoes</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs. 850</p>
+        </div>
+      </div>
+      <div class="col-4" id="box" data-aos="fade-up">
+        <img class="zoomForImage" src="images/product-11.jpg" />
+        <div class="alignmentForText">
+          <h4>New style shoes</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>Rs. 450</p>
+        </div>
+      </div>
+      <div class="col-4" id="box" data-aos="fade-up">
+        <img class="zoomForImage" src="images/product-12.jpg" />
+        <div class="alignmentForText">
+          <h4>Black jogger Puma</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs. 550</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!---offer-->
-    <div class="offer">
-      <div class="small-container" data-aos="fade-up">
-        <div class="row">
-          <div class="col-2">
-            <img src="images/exclusive.png" class="offer-img" />
-          </div>
-          <div class="col-2">
-            <p>Exclusively Available on RedStore</p>
-            <h1>Smart Band 4</h1>
-            <small
-              >The Mi Smart Band 4 feature a 39.9% larger(than Mi Band 3) AMOLCD
-              color full touch display with adjustable brightness ,so everything
-              is clear as can be.</small
-            >
-            <a href="./allproducts.html"
-              ><button class="btn">Buy Now &#8594;</button>
-            </a>
-          </div>
+  <!---offer-->
+  <div class="offer">
+    <div class="small-container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-2">
+          <img src="images/exclusive.png" class="offer-img" />
+        </div>
+        <div class="col-2">
+          <p>Exclusively Available on RedStore</p>
+          <h1>Smart Band 4</h1>
+          <small>The Mi Smart Band 4 feature a 39.9% larger(than Mi Band 3) AMOLCD
+            color full touch display with adjustable brightness ,so everything
+            is clear as can be.</small>
+          <a href="./allproducts.html"><button class="btn">Buy Now &#8594;</button>
+          </a>
         </div>
       </div>
     </div>
-    <!-------testimonial------->
-    <div class="testimonial">
-      <h2 class="testimoinial-heading">
-        <a class="effects">What our Customers say</a>
-      </h2>
-      <br />
-      <div class="small-container" data-aos="fade-up">
-        <div class="row">
-          <div class="col-3">
-            <i class="fa fa-quote-left"></i>
-            <p>
-              The variety of products which are available in the website is amazing. The customers get a wide variety of options to choose from and select their favourite one. I would highly recommend everyone to check it out.
-            </p>
-            <div class="rating">
-              <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <img src="images/user-1.png" />
-            <h3>Sean Parker</h3>
+  </div>
+  <!-------testimonial------->
+  <div class="testimonial">
+    <h2 class="testimoinial-heading">
+      <a class="effects">What our Customers say</a>
+    </h2>
+    <br />
+    <div class="small-container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+          <p>
+            The variety of products which are available in the website is amazing. The customers get a wide variety of
+            options to choose from and select their favourite one. I would highly recommend everyone to check it out.
+          </p>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
           </div>
-          <div class="col-3">
-            <i class="fa fa-quote-left"></i>
-            <p>
-              This is the one website which has all what you need for your fashion needs like wrist watches, shoes, tshirts, shirts, jeans, smart watches and a variety of other items. The customer service is also excellent.
-            </p>
-            <div class="rating">
-              <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <img src="images/user-2.png" />
-            <h3>Mike Smith</h3>
+          <img src="images/user-1.png" />
+          <h3>Sean Parker</h3>
+        </div>
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+          <p>
+            This is the one website which has all what you need for your fashion needs like wrist watches, shoes,
+            tshirts, shirts, jeans, smart watches and a variety of other items. The customer service is also excellent.
+          </p>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
           </div>
-          <div class="col-3">
-            <i class="fa fa-quote-left"></i>
-            <p>
-              What I liked most about this website is it's delivery time. I received my order one day after I placed the order which is super fast. Also the prices are very nominal for the quality which you get.
-            </p>
-            <div class="rating">
-              <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <img src="images/user-3.png" />
-            <h3>Mabel Joe</h3>
+          <img src="images/user-2.png" />
+          <h3>Mike Smith</h3>
+        </div>
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+          <p>
+            What I liked most about this website is it's delivery time. I received my order one day after I placed the
+            order which is super fast. Also the prices are very nominal for the quality which you get.
+          </p>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
           </div>
+          <img src="images/user-3.png" />
+          <h3>Mabel Joe</h3>
         </div>
       </div>
     </div>
-    <!----------Brands-->
-    <div class="brands">
-      <div class="small-container" data-aos="fade-up">
-        <div class="row">
-          <div class="col-5">
-            <a
-              href="https://www.godrej.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img src="images/logo-godrej.png"
-            /></a>
-          </div>
-          <div class="col-5">
-            <a
-              href="https://www.oppo.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img src="images/logo-oppo.png"
-            /></a>
-          </div>
-          <div class="col-5">
-            <a
-              href="https://www.coca-colacompany.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img src="images/logo-coca-cola.png"
-            /></a>
-          </div>
-          <div class="col-5">
-            <a
-              href="https://www.paypal.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img src="images/logo-paypal.png"
-            /></a>
-          </div>
-          <div class="col-5">
-            <a
-              href="https://www.philips.co.in/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img src="images/logo-philips.png"
-            /></a>
-          </div>
+  </div>
+  <!----------Brands-->
+  <div class="brands">
+    <div class="small-container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-5">
+          <a href="https://www.godrej.com/" target="_blank" rel="noopener noreferrer"><img
+              src="images/logo-godrej.png" /></a>
+        </div>
+        <div class="col-5">
+          <a href="https://www.oppo.com/" target="_blank" rel="noopener noreferrer"><img
+              src="images/logo-oppo.png" /></a>
+        </div>
+        <div class="col-5">
+          <a href="https://www.coca-colacompany.com/" target="_blank" rel="noopener noreferrer"><img
+              src="images/logo-coca-cola.png" /></a>
+        </div>
+        <div class="col-5">
+          <a href="https://www.paypal.com/" target="_blank" rel="noopener noreferrer"><img
+              src="images/logo-paypal.png" /></a>
+        </div>
+        <div class="col-5">
+          <a href="https://www.philips.co.in/" target="_blank" rel="noopener noreferrer"><img
+              src="images/logo-philips.png" /></a>
         </div>
       </div>
     </div>
-    <!------footer--------->
-    <div class="footer">
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="footer-col-1">
-            <h3>Download Our App</h3>
-            <p>Download App for Android and ios mobile phone</p>
-            <div class="app-logo">
-              <img src="images/play-store.png" class="footer-img"/>
-              <img src="images/app-store.png" class="footer-img"/>
-            </div>
+  </div>
+  <!------footer--------->
+  <div class="footer">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Download App for Android and ios mobile phone</p>
+          <div class="app-logo">
+            <img src="images/play-store.png" class="footer-img" />
+            <img src="images/app-store.png" class="footer-img" />
           </div>
-          <div class="footer-col-2">
-            <img src="images/logo-white.png" />
-            <p>
-              Our Purpose is to Sustainably make the Pleasure and Benefits of
-              Sports Accessible to the many
-            </p>
-          </div>
-          <div class="footer-col-3">
-            <h3>Useful Links</h3>
-            <ul>
-              <li><a href="#" class="useful-links"> Coupons </a></li>
-              <li><a href="#" class="useful-links"> Blog Post </a></li>
-              <li><a href="#" class="useful-links"> Return Policy</a></li>
-              <li><a href="#" class="useful-links"> Join Affiliate </a></li>
-            </ul>
-          </div>
-          <div class="footer-col-4">
-            <h3>Follow Us</h3>
-            <div class="socialbtns-wrapper">
-              <div class="socialbtns">
-                <ul>
-                  <li>
-                    <a href="#" class="fa fa-lg fa-facebook center"></a
-                    ><span>Facebook</span>
-                  </li>
-                  <br />
-                  <li>
-                    <a href="#" class="fa fa-lg fa-twitter center"></a
-                    ><span>Twitter</span>
-                  </li>
-                  <br />
-                  <li>
-                    <a href="#" class="fa fa-lg fa-instagram center"></a
-                    ><span>Instagram</span>
-                  </li>
-                  <br />
-                  <li>
-                    <a href="#" class="fa fa-lg fa-youtube center"></a
-                    ><span>Youtube</span>
-                  </li>
-                  <br />
-                </ul>
-              </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/logo-white.png" />
+          <p>
+            Our Purpose is to Sustainably make the Pleasure and Benefits of
+            Sports Accessible to the many
+          </p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#" class="useful-links"> Coupons </a></li>
+            <li><a href="#" class="useful-links"> Blog Post </a></li>
+            <li><a href="#" class="useful-links"> Return Policy</a></li>
+            <li><a href="#" class="useful-links"> Join Affiliate </a></li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Follow Us</h3>
+          <div class="socialbtns-wrapper">
+            <div class="socialbtns">
+              <ul>
+                <li>
+                  <a href="#" class="fa fa-lg fa-facebook center"></a><span>Facebook</span>
+                </li>
+                <br />
+                <li>
+                  <a href="#" class="fa fa-lg fa-twitter center"></a><span>Twitter</span>
+                </li>
+                <br />
+                <li>
+                  <a href="#" class="fa fa-lg fa-instagram center"></a><span>Instagram</span>
+                </li>
+                <br />
+                <li>
+                  <a href="#" class="fa fa-lg fa-youtube center"></a><span>Youtube</span>
+                </li>
+                <br />
+              </ul>
             </div>
           </div>
         </div>
-        <hr />
-        <p class="copyright">
-          Copyright &copy
-          <script type="text/javascript">
-            document.write(new Date().getFullYear())
-          </script>
-          -RedStore
-        </p>
       </div>
+      <hr />
+      <p class="copyright">
+        Copyright &copy
+        <script type="text/javascript">
+          document.write(new Date().getFullYear())
+        </script>
+        -RedStore
+      </p>
     </div>
-    <script>
-      var MenuItems = document.getElementById('MenuItems')
-      MenuItems.style.maxHeight = '0px'
-      function menutoggle() {
-        if (MenuItems.style.maxHeight == '0px') {
-          MenuItems.style.maxHeight = '250px'
-          MenuItems.style.maxWidth = '100%'
-        } else {
-          MenuItems.style.maxHeight = '0px'
-        }
-      
+  </div>
+  <script>
+    var MenuItems = document.getElementById('MenuItems')
+    MenuItems.style.maxHeight = '0px'
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == '0px') {
+        MenuItems.style.maxHeight = '250px'
+        MenuItems.style.maxWidth = '100%'
+      } else {
+        MenuItems.style.maxHeight = '0px'
       }
 
+    }
 
-      const ball = document.querySelector(".toggle-ball");
-        const items = document.querySelectorAll(".row,body,.menu-icon,.container,.navbar,.header,.toggle");
-        ball.addEventListener("click",()=>{
 
-            items.forEach(item=>{
-                item.classList.toggle("active")
-            })
-            ball.classList.toggle("active")
-        })
+    const ball = document.querySelector(".toggle-ball");
+    const items = document.querySelectorAll(".row,body,.menu-icon,.container,.navbar,.header,.toggle");
+    ball.addEventListener("click", () => {
 
-      const btnScrollToTop = document.getElementById("btnScrollToTop");
-      btnScrollToTop.addEventListener("click", function(){
-        window.scrollTo({
-        top: 0, 
+      items.forEach(item => {
+        item.classList.toggle("active")
+      })
+      ball.classList.toggle("active")
+    })
+
+    const btnScrollToTop = document.getElementById("btnScrollToTop");
+    btnScrollToTop.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
         left: 0,
         behavior: "smooth"
-        });
       });
+    });
 
 
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init()
-    </script>
-  </body>
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init()
+  </script>
+</body>
+
 </html>
