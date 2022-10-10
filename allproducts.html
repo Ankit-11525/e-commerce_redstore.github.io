@@ -1,310 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>All Products | RedStore</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/x-icon" href="images/logo-white.png">
-
-
-</head>
-
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="images/logo-white.png" />
+  </head>
+  <body>
     <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" width="125px">
-                </a>
-            </div>
-            <nav>
-                <ul id="MenuItems">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="allproducts.html">Products</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="account.html">Account</a></li>
-                </ul>
-            </nav>
-            <a href="cart.html">
-                <img src="images/cart.png" width="30px" height="30px">
-            </a>
-            <div class="toggle">
-                <i class="fa-solid fa-moon toggle-icon"></i>
-                <i class="fa-solid fa-sun toggle-icon"></i>
-                <div class="toggle-ball"></div>
-             </div>
-            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
-
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" width="125px" />
+          </a>
         </div>
-
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="allproducts.html">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html">
+          <img src="images/cart.png" width="30px" height="30px" />
+        </a>
+        <div class="toggle">
+          <i class="fa-solid fa-moon toggle-icon"></i>
+          <i class="fa-solid fa-sun toggle-icon"></i>
+          <div class="toggle-ball"></div>
+        </div>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+      </div>
     </div>
 
     <div class="small-container">
-        <div class="row row-2" data-aos="fade-up">
-            <h2>Our Products</h2>
-            <select>
-                <option>Default Sorting</option>
-                <option>Sort By Price</option>
-                <option>Sort By Popularity</option>
-                <option>Sort By Rating</option>
-                <option>Sort By Sales</option>
-            </select>
-
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        Scroll to Top
+      </button>
+      <div class="row row-2" data-aos="fade-up">
+        <h2>Our Products</h2>
+        <select>
+          <option>Default Sorting</option>
+          <option>Sort By Price</option>
+          <option>Sort By Popularity</option>
+          <option>Sort By Rating</option>
+          <option>Sort By Sales</option>
+        </select>
+      </div>
+      <div class="row">
+        <div class="col-4" id="box" data-aos="fade-up">
+          <a href="productdetail.html">
+            <img src="images/product-1.jpg" />
+          </a>
+          <a href="productdetail.html">
+            <h4>Red Printed T-Shirt</h4>
+          </a>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs. 450</p>
         </div>
-        <div class="row">
-            <div class="col-4" id="box" data-aos="fade-up">
-                <a href="productdetail.html">
-                    <img src="images/product-1.jpg">
-                </a>
-                <a href="productdetail.html">
-                    <h4>Red Printed T-Shirt</h4>
-                </a>
-                <div class="rating">
-                    <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>Rs. 450</p>
-            </div>
-            <div class="col-4"  id="box" data-aos="fade-up">
-                <img src="images/product-2.jpg">
-                <h4>HRX- Shoes</h4>
-                <div class="rating">
-                    <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>Rs. 600</p>
-            </div>
-            <div class="col-4"  id="box" data-aos="fade-up">
-                <img src="images/product-3.jpg">
-                <h4>Grry Jogger</h4>
-                <div class="rating">
-                    <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>Rs. 950</p>
-            </div>
-            <div class="col-4"  id="box" data-aos="fade-up">
-                <img src="images/product-4.jpg">
-                <h4>Navy Blue Puma Tshirt</h4>
-                <div class="rating">
-                    <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>Rs. 250</p>
-            </div>
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img src="images/product-2.jpg" />
+          <h4>HRX- Shoes</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs. 600</p>
         </div>
-        <div class="row">
-            <div class="col-4"  id="box" data-aos="fade-up">
-                <img src="images/product-5.jpg">
-                <h4>Jogging Shoes</h4>
-                <div class="rating">
-                    <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>Rs. 750</p>
-            </div>
-            <div class="col-4"  id="box" data-aos="fade-up">
-                <img src="images/product-6.jpg">
-                <h4>Puma tshirt</h4>
-                <div class="rating">
-                    <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>Rs. 450</p>
-            </div>
-            <div class="col-4"  id="box" data-aos="fade-up">
-                <img src="images/product-7.jpg">
-                <h4>Exclusive socks</h4>
-                <div class="rating">
-                    <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>Rs. 50</p>
-            </div>
-            <div class="col-4"  id="box" data-aos="fade-up">
-                <img src="images/product-8.jpg">
-                <h4>Wrist Watch</h4>
-                <div class="rating">
-                    <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>Rs. 650</p>
-            </div>
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img src="images/product-3.jpg" />
+          <h4>Grry Jogger</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>Rs. 950</p>
         </div>
-        <div class="row">
-            <div class="col-4"  id="box" data-aos="fade-up">
-                <img src="images/product-9.jpg">
-                <h4>Wrist Watch</h4>
-                <div class="rating">
-                    <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>Rs. 450</p>
-            </div>
-            <div class="col-4"  id="box" data-aos="fade-up">
-                <img src="images/product-10.jpg">
-                <h4>Black Ranger shoes</h4>
-                <div class="rating">
-                    <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>Rs. 850</p>
-            </div>
-            <div class="col-4"  id="box" data-aos="fade-up">
-                <img src="images/product-11.jpg">
-                <h4>New style shoes</h4>
-                <div class="rating">
-                    <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>Rs. 450</p>
-            </div>
-            <div class="col-4"  id="box" data-aos="fade-up">
-                <img src="images/product-12.jpg">
-                <h4>Black jogger Puma</h4>
-                <div class="rating">
-                    <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>Rs. 550</p>
-            </div>
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img src="images/product-4.jpg" />
+          <h4>Navy Blue Puma Tshirt</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs. 250</p>
         </div>
-        <div class="page-btn">
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>&#8594;</span>
-
+      </div>
+      <div class="row">
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img src="images/product-5.jpg" />
+          <h4>Jogging Shoes</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs. 750</p>
         </div>
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img src="images/product-6.jpg" />
+          <h4>Puma tshirt</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs. 450</p>
+        </div>
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img src="images/product-7.jpg" />
+          <h4>Exclusive socks</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>Rs. 50</p>
+        </div>
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img src="images/product-8.jpg" />
+          <h4>Wrist Watch</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs. 650</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img src="images/product-9.jpg" />
+          <h4>Wrist Watch</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs. 450</p>
+        </div>
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img src="images/product-10.jpg" />
+          <h4>Black Ranger shoes</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs. 850</p>
+        </div>
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img src="images/product-11.jpg" />
+          <h4>New style shoes</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>Rs. 450</p>
+        </div>
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img src="images/product-12.jpg" />
+          <h4>Black jogger Puma</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs. 550</p>
+        </div>
+      </div>
+      <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
+      </div>
     </div>
     <!------footer--------->
     <div class="footer">
-        <div class="container" data-aos="fade-up">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Download Our App</h3>
-                    <p>Download App for Android and ios mobile phone</p>
-                    <div class="app-logo">
-                        <img src="images/play-store.png">
-                        <img src="images/app-store.png">
-                    </div>
-                </div>
-                <div class="footer-col-2">
-                    <img src="images/logo-white.png">
-                    <p>Our Purpose is to Sustainably make the Pleasure and Benefits of Sports Accessible to the many</p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post</li>
-                        <li>Return Policy</li>
-                        <li>Join Affiliate</li>
-                    </ul>
-                </div>
-                <div class="footer-col-4" data-aos="fade-up">
-                    <h3>Follow Us</h3>
-                    <div class="socialbtns" align="centre">
-                        <ul>
-                            <li><a href="#" class="fa fa-lg fa-facebook"></a>Facebook</li><br>
-                            <li><a href="#" class="fa fa-lg fa-twitter"></a>Twitter</li><br>
-                            <li><a href="#" class="fa fa-lg fa-instagram"></a>Instagram</li><br>
-                            <li><a href="#" class="fa fa-lg fa-youtube"></a>Youtube</li><br>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" />
+              <img src="images/app-store.png" />
             </div>
-            <hr>
-            <p class="copyright">Copyright &copy
-                <script type="text/javascript"> document.write(new Date().getFullYear());</script> - RedStore
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo-white.png" />
+            <p>
+              Our Purpose is to Sustainably make the Pleasure and Benefits of
+              Sports Accessible to the many
             </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4" data-aos="fade-up">
+            <h3>Follow Us</h3>
+            <div class="socialbtns" align="centre">
+              <ul>
+                <li><a href="#" class="fa fa-lg fa-facebook"></a>Facebook</li>
+                <br />
+                <li><a href="#" class="fa fa-lg fa-twitter"></a>Twitter</li>
+                <br />
+                <li><a href="#" class="fa fa-lg fa-instagram"></a>Instagram</li>
+                <br />
+                <li><a href="#" class="fa fa-lg fa-youtube"></a>Youtube</li>
+                <br />
+              </ul>
+            </div>
+          </div>
         </div>
+        <hr />
+        <p class="copyright">
+          Copyright &copy
+          <script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script>
+          - RedStore
+        </p>
+      </div>
     </div>
     <script>
-        var MenuItems = document.getElementById("MenuItems");
-        MenuItems.style.maxHeight = "0px";
-        function menutoggle() {
-            if (MenuItems.style.maxHeight == "0px") {
-                MenuItems.style.maxHeight = "200px";
-            }
-            else {
-                MenuItems.style.maxHeight = "0px";
-            }
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
         }
-        const ball = document.querySelector(".toggle-ball");
-        const items = document.querySelectorAll(".row,body,.menu-icon,.container,.navbar,.header,.toggle");
-        ball.addEventListener("click",()=>{
+      }
 
-            items.forEach(item=>{
-                item.classList.toggle("active")
-            })
-            ball.classList.toggle("active")
-        })
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     </script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-          </script>
-</body>
-
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+      const ball = document.querySelector(".toggle-ball");
+      const items = document.querySelectorAll(
+        ".row,body,.menu-icon,.container,.navbar,.header,.toggle"
+      );
+      ball.addEventListener("click", () => {
+        items.forEach((item) => {
+          item.classList.toggle("active");
+        });
+        ball.classList.toggle("active");
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
