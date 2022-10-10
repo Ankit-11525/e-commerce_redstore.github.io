@@ -559,7 +559,14 @@ input:focus {
   flex-basis: 24%;
   cursor: pointer;
 }
-
+.viewMore--btn{
+  transition: border 150ms ease-in-out;
+}
+.viewMore--btn:hover{
+  /* text-decoration: underline; */
+  border-width: 0 0 1.5px 0;
+  border-style: solid;
+}
 /* ---------cart item details---------- */
 .cart-page {
   margin: 80px auto;
