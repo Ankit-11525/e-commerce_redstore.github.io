@@ -6,14 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Details </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/x-icon" href="images/logo-white.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f390425e8d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/x-icon" href="images/logo-white.png" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="path-to-fontawesome/font-awesome.css"
+    />
 
 </head>
 
@@ -36,7 +54,7 @@
                 </ul>
             </nav>
             <a href="cart.html">
-                <img src="images/cart.png" width="30px" height="30px">
+                <img class="nav-img" src="images/cart.png" width="30px" height="30px">
             </a>
             <div class="toggle">
                 <i class="fa-solid fa-moon toggle-icon"></i>
@@ -152,13 +170,18 @@
         }
         const ball = document.querySelector(".toggle-ball");
         const items = document.querySelectorAll(".row,body,.container,.menu-icon,.navbar,.header,.toggle");
+        const navImg = document.querySelector(".nav-img");
+        console.log(navImg);
         ball.addEventListener("click",()=>{
 
             items.forEach(item=>{
                 item.classList.toggle("active")
             })
             ball.classList.toggle("active")
+            navImg.classList.toggle("bgm-change")
         })
+
+
 
 
     </script>

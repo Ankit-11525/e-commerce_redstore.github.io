@@ -7,7 +7,10 @@
     <title>RedStore | Ecommerce Website Design</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -18,7 +21,10 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="https://kit.fontawesome.com/f390425e8d.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f390425e8d.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="icon" type="image/x-icon" href="images/logo-white.png" />
     <link
       type="text/css"
@@ -28,8 +34,8 @@
   </head>
 
   <body>
-    <button id = "btnScrollToTop">
-      <i class = "material-icons">arrow_upward</i>
+    <button id="btnScrollToTop">
+      <i class="material-icons">arrow_upward</i>
     </button>
     <div class="header">
       <div class="container">
@@ -49,13 +55,18 @@
             </ul>
           </nav>
           <a href="cart.html" class="cart-hover">
-            <img src="images/cart.png" width="30px" height="30px" />
+            <img
+              class="nav-img"
+              src="images/cart.png"
+              width="30px"
+              height="30px"
+            />
           </a>
           <div class="toggle">
             <i class="fa-solid fa-moon toggle-icon"></i>
             <i class="fa-solid fa-sun toggle-icon"></i>
             <div class="toggle-ball"></div>
-         </div>
+          </div>
 
           <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
         </div>
@@ -83,7 +94,7 @@
     <!-------------feature categories------->
     <div class="categories">
       <div class="small-container" data-aos="fade-up">
-      <h2 class="title">Top Categories</h2>
+        <h2 class="title">Top Categories</h2>
         <div class="row">
           <div class="col-3 position-relative">
             <img class="zoom position-absolute" src="images/category-1.jpg" />
@@ -327,7 +338,10 @@
           <div class="col-3">
             <i class="fa fa-quote-left"></i>
             <p>
-              The variety of products which are available in the website is amazing. The customers get a wide variety of options to choose from and select their favourite one. I would highly recommend everyone to check it out.
+              The variety of products which are available in the website is
+              amazing. The customers get a wide variety of options to choose
+              from and select their favourite one. I would highly recommend
+              everyone to check it out.
             </p>
             <div class="rating">
               <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
@@ -343,7 +357,10 @@
           <div class="col-3">
             <i class="fa fa-quote-left"></i>
             <p>
-              This is the one website which has all what you need for your fashion needs like wrist watches, shoes, tshirts, shirts, jeans, smart watches and a variety of other items. The customer service is also excellent.
+              This is the one website which has all what you need for your
+              fashion needs like wrist watches, shoes, tshirts, shirts, jeans,
+              smart watches and a variety of other items. The customer service
+              is also excellent.
             </p>
             <div class="rating">
               <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
@@ -359,7 +376,10 @@
           <div class="col-3">
             <i class="fa fa-quote-left"></i>
             <p>
-              What I liked most about this website is it's delivery time. I received my order one day after I placed the order which is super fast. Also the prices are very nominal for the quality which you get.
+              What I liked most about this website is it's delivery time. I
+              received my order one day after I placed the order which is super
+              fast. Also the prices are very nominal for the quality which you
+              get.
             </p>
             <div class="rating">
               <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
@@ -430,8 +450,8 @@
             <h3>Download Our App</h3>
             <p>Download App for Android and ios mobile phone</p>
             <div class="app-logo">
-              <img src="images/play-store.png" class="footer-img"/>
-              <img src="images/app-store.png" class="footer-img"/>
+              <img src="images/play-store.png" class="footer-img" />
+              <img src="images/app-store.png" class="footer-img" />
             </div>
           </div>
           <div class="footer-col-2">
@@ -484,50 +504,49 @@
         <p class="copyright">
           Copyright &copy
           <script type="text/javascript">
-            document.write(new Date().getFullYear())
+            document.write(new Date().getFullYear());
           </script>
           -RedStore
         </p>
       </div>
     </div>
     <script>
-      var MenuItems = document.getElementById('MenuItems')
-      MenuItems.style.maxHeight = '0px'
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
       function menutoggle() {
-        if (MenuItems.style.maxHeight == '0px') {
-          MenuItems.style.maxHeight = '250px'
-          MenuItems.style.maxWidth = '100%'
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "250px";
+          MenuItems.style.maxWidth = "100%";
         } else {
-          MenuItems.style.maxHeight = '0px'
+          MenuItems.style.maxHeight = "0px";
         }
-      
       }
 
-
       const ball = document.querySelector(".toggle-ball");
-        const items = document.querySelectorAll(".row,body,.menu-icon,.container,.navbar,.header,.toggle");
-        ball.addEventListener("click",()=>{
-
-            items.forEach(item=>{
-                item.classList.toggle("active")
-            })
-            ball.classList.toggle("active")
-        })
-
-      const btnScrollToTop = document.getElementById("btnScrollToTop");
-      btnScrollToTop.addEventListener("click", function(){
-        window.scrollTo({
-        top: 0, 
-        left: 0,
-        behavior: "smooth"
+      const items = document.querySelectorAll(
+        ".row,body,.menu-icon,.container,.navbar,.header,.toggle"
+      );
+      const navImg = document.querySelector(".nav-img");
+      ball.addEventListener("click", () => {
+        items.forEach((item) => {
+          item.classList.toggle("active");
         });
+        ball.classList.toggle("active");
+        navImg.classList.toggle("bgm-change");
       });
 
-
+      const btnScrollToTop = document.getElementById("btnScrollToTop");
+      btnScrollToTop.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
+      });
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init()
+      AOS.init();
     </script>
   </body>
 </html>

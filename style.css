@@ -1003,12 +1003,17 @@ form a {
 }
 .container.active{
   background-color: #000;
+  color: white;
 }
 
 .navbar.active{
   background-color: #000;
   color: white;
 
+}
+
+.navbar.active li a {
+  color: whitesmoke;
 }
 
 
@@ -1037,6 +1042,10 @@ body.active{
   transform: translateX(-20px);
 
 
+}
+
+.nav-img.bgm-change {
+  background-color: whitesmoke;
 }
 
 /*footer image mouse style to pointer*/
