@@ -227,15 +227,62 @@ linear for gradiancy on basis to vertically  */
 }
 
 .col-4 {
+  position: relative;
   flex-basis: 25%;
-  padding: 10px;
+  padding: 12px;
+
   min-width: 200px;
   margin-bottom: 50px;
   transition: transform 0.5s;
   cursor: pointer;
+  z-index:0;
 }
 
+.col-4::before{
+  content: "";
+  position: absolute;
+  top: -0.27em;
+  bottom: -0.27em;
+  left: -0.20em;
+  right: -0.20em;
+  border-top: 2px solid rgb(214, 88, 15);
+  border-bottom: 2px solid rgb(214, 88, 15);
+  /* background:orange;*/
+  transform: scale(0, 1);
+  transition: transform ease-out 2s;
+  z-index: -1;
+}
+
+.col-4::after{
+
+  content: "";
+  position: absolute;
+  top: -0.27em;
+  bottom: -0.27em;
+  left: -0.27em;
+  right: -0.27em;
+  border-left: 2px solid rgb(214, 88, 15);
+  border-right: 2px solid rgb(214, 88, 15);
+  background: #ea9e3a;
+  opacity: 0.4;
+  transform: scale(1.1, 0);
+  transition: transform ease-out 2s;
+  z-index: -1;
+}
+
+.col-4:hover::before{
+  transform: scale(1.05, 1);
+  /* width: 330px;
+  height: 300px;  */
+}
+
+.col-4:hover::after{
+  transform: scale(1, 1.05);
+}
+
+
 .col-4 img {
+ 
   width: 100%;
 }
 
