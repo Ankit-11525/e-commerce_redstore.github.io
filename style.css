@@ -1047,3 +1047,7 @@ body.active{
 .useful-links:hover{
   border-bottom: #fff 1px solid;
 }
+
+.useful-links,.socialbtns{
+  color:#D3D3D3;
+}
