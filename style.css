@@ -154,6 +154,13 @@ p {
     z-index: 1;
 }
 
+#btnScrollToTop:hover {
+    width: 52px;
+    height: 52px;
+    margin: 2px;
+    background: #b41919;
+}
+
 #btnScrollToTop:active {
     background: rgb(12, 214, 12);
 }
@@ -1150,4 +1157,9 @@ body.active {
         bottom: 0;
         opacity: 0;
     }
+}
+
+.useful-links,
+.socialbtns {
+    color: #D3D3D3;
 }
