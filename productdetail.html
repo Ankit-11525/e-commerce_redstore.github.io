@@ -7,12 +7,14 @@
     <title>Product Details</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script src="https://kit.fontawesome.com/f390425e8d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/f390425e8d.js" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -38,7 +40,7 @@
           </ul>
         </nav>
         <a href="cart.html">
-          <img src="images/cart.png" width="30px" height="30px" />
+          <i class="cartIcon fa-sharp fa-solid fa-bag-shopping"></i>
         </a>
         <div class="toggle">
           <i class="fa-solid fa-moon toggle-icon"></i>
@@ -297,7 +299,7 @@
       };
 
       const ball = document.querySelector(".toggle-ball");
-        const items = document.querySelectorAll(".row,body,.menu-icon,.container,.navbar,.header,.toggle");
+        const items = document.querySelectorAll(".row,body,.cartIcon,.menu-icon,.container,.navbar,.header,.toggle");
         ball.addEventListener("click",()=>{
 
             items.forEach(item=>{

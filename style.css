@@ -897,6 +897,7 @@ form a {
   transform: scaleX(1);
 }
 
+
 /* HOVER ANIMATION */
 
 /* #box:hover {
@@ -1044,6 +1045,15 @@ body.active{
   transform: translateX(-20px);
 
 
+
+
+}
+
+.cartIcon.active{
+  color: white;
+}
+.page-btn.active{
+  color: white;
 }
 
 /*footer image mouse style to pointer*/
@@ -1058,4 +1068,4 @@ body.active{
 .useful-links,.socialbtns{
   color:#D3D3D3;
 }
-  
+
