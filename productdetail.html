@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,27 +10,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <script src="https://kit.fontawesome.com/f390425e8d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <script src="https://kit.fontawesome.com/f390425e8d.js" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="icon" type="image/x-icon" href="images/logo.png" />
-  </head>
 
-  <body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+</head>
+
+<body>
     <div class="container">
-      <div class="navbar">
-        <div class="logo">
-          <a href="index.html">
-            <img src="images/logo.png" width="125px" />
-          </a>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" width="125px" />
+                </a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="allproducts.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html">
+                <img src="images/cart.png" width="30px" height="30px" />
+            </a>
+            <div class="toggle">
+                <i class="fa-solid fa-moon toggle-icon"></i>
+                <i class="fa-solid fa-sun toggle-icon"></i>
+                <div class="toggle-ball"></div>
+            </div>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
         </div>
+
         <nav>
           <ul id="MenuItems">
             <li><a href="index.html">Home</a></li>
@@ -49,35 +71,37 @@
        </div>
         <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
       </div>
+
     </div>
     <!----------single product details-------->
     <div class="small-container single-product" data-aos="fade-up">
-      <div class="row">
-        <div class="col-2">
-          <img src="images/gallery-1.jpg" width="100%" id="ProductImg" />
-          <div class="small-img-row">
-            <div class="small-img-col">
-              <img src="images/gallery-1.jpg" width="100%" class="small-img" />
+        <div class="row">
+            <div class="col-2">
+                <img src="images/gallery-1.jpg" width="100%" id="ProductImg" />
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/gallery-1.jpg" width="100%" class="small-img" />
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-2.jpg" width="100%" class="small-img" />
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-3.jpg" width="100%" class="small-img" />
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-4.jpg" width="100%" class="small-img" />
+                    </div>
+                </div>
             </div>
-            <div class="small-img-col">
-              <img src="images/gallery-2.jpg" width="100%" class="small-img" />
-            </div>
-            <div class="small-img-col">
-              <img src="images/gallery-3.jpg" width="100%" class="small-img" />
-            </div>
-            <div class="small-img-col">
-              <img src="images/gallery-4.jpg" width="100%" class="small-img" />
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <p><a href="./allproducts.html">Home</a> / T-Shirt</p>
-          <h1 id="productName">Red Printed T-Shirt by PUMA</h1>
-          <h4 style="display: flex">
-            Rs.&nbsp;<p id="productPrice" style="margin-right: 0.25em">450</p>
-          </h4>
-          <!-- original html: -->
-          <!-- <select>
+            <div class="col-2">
+                <p><a href="./allproducts.html">Home</a> / T-Shirt</p>
+                <h1 id="productName">Red Printed T-Shirt by PUMA</h1>
+                <h4 style="display: flex">
+                    Rs.&nbsp;
+                    <p id="productPrice" style="margin-right: 0.25em">450</p>
+                </h4>
+                <!-- original html: -->
+                <!-- <select>
             <option>Select Size</option>
             <option>XXL</option>
             <option>XL</option>
@@ -85,230 +109,247 @@
             <option>Medium</option>
             <option>Small</option>
           </select> -->
-          <select id="productSize">
-            <option>XXL</option>
-            <option>XL</option>
-            <option>Large</option>
-            <option selected>Medium</option>
-            <option>Small</option>
-          </select>
-          <input type="number" value="1" min="1" id="productQuantity" />
-          <!-- <a href="" class="btn">Add To Cart</a> -->
-          <p onclick="func()" class="btn">Add To Cart</p>
-          <h3>Product Details<i class="fa fa-indent"></i></h3>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-            doloribus eligendi quidem hic, facere atque sit laborum maiores
-            nostrum eveniet amet non sunt deserunt. Dolor commodi voluptatibus
-            minus atque doloribus?
-          </p>
+                <select id="productSize">
+          <option>XXL</option>
+          <option>XL</option>
+          <option>Large</option>
+          <option selected>Medium</option>
+          <option>Small</option>
+        </select>
+                <input type="number" value="1" min="1" id="productQuantity" />
+                <!-- <a href="" class="btn">Add To Cart</a> -->
+                <p onclick="func()" class="btn">Add To Cart</p>
+                <h3>Product Details<i class="fa fa-indent"></i></h3>
+                <br />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum doloribus eligendi quidem hic, facere atque sit laborum maiores nostrum eveniet amet non sunt deserunt. Dolor commodi voluptatibus minus atque doloribus?
+                </p>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- -------------title--------------- -->
     <div class="small-container">
-      <div class="row row-2" data-aos="fade-up">
-        <h2>Related Products</h2>
-        <p><a href="./allproducts.html" class="viewMore--btn">View More</a></p>
-      </div>
+        <div class="row row-2" data-aos="fade-up">
+            <h2>Related Products</h2>
+            <p><a href="./allproducts.html" class="viewMore--btn">View More</a></p>
+        </div>
     </div>
 
     <!-- ---------------product---------------- -->
     <div class="small-container">
-      <div class="row">
-        <div class="col-4" id="box" data-aos="fade-up">
-          <img src="images/product-9.jpg" />
-          <h4>Wrist Watch</h4>
-          <div class="rating">
-            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>Rs. 450.00</p>
+        <div class="row">
+            <div class="col-4" id="box" data-aos="fade-up">
+                <img src="images/product-9.jpg" />
+                <h4>Wrist Watch</h4>
+                <div class="rating">
+                    <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs. 450.00</p>
+            </div>
+            <div class="col-4" id="box" data-aos="fade-up">
+                <img src="images/product-10.jpg" />
+                <h4>Black Ranger shoes</h4>
+                <div class="rating">
+                    <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs. 850.00</p>
+            </div>
+            <div class="col-4" id="box" data-aos="fade-up">
+                <img src="images/product-11.jpg" />
+                <h4>New style shoes</h4>
+                <div class="rating">
+                    <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>Rs. 450.00</p>
+            </div>
+            <div class="col-4" id="box" data-aos="fade-up">
+                <img src="images/product-12.jpg" />
+                <h4>Black jogger Puma</h4>
+                <div class="rating">
+                    <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs. 550.00</p>
+            </div>
         </div>
-        <div class="col-4" id="box" data-aos="fade-up">
-          <img src="images/product-10.jpg" />
-          <h4>Black Ranger shoes</h4>
-          <div class="rating">
-            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>Rs. 850.00</p>
-        </div>
-        <div class="col-4" id="box" data-aos="fade-up">
-          <img src="images/product-11.jpg" />
-          <h4>New style shoes</h4>
-          <div class="rating">
-            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>Rs. 450.00</p>
-        </div>
-        <div class="col-4" id="box" data-aos="fade-up">
-          <img src="images/product-12.jpg" />
-          <h4>Black jogger Puma</h4>
-          <div class="rating">
-            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>Rs. 550.00</p>
-        </div>
-      </div>
+        <div id="toast">Red Printed T-Shirt added to the cart</div>
     </div>
     <!------footer--------->
     <div class="footer">
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="footer-col-1">
-            <h3>Download Our App</h3>
-            <p>Download App for Android and ios mobile phone</p>
-            <div class="app-logo">
-              <img src="images/play-store.png" />
-              <img src="images/app-store.png" />
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" />
+                        <img src="images/app-store.png" />
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" />
+                    <p>
+                        Our Purpose is to Sustainably make the Pleasure and Benefits of Sports Accessible to the many
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4" data-aos="fade-up">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="footer-col-2">
-            <img src="images/logo-white.png" />
-            <p>
-              Our Purpose is to Sustainably make the Pleasure and Benefits of
-              Sports Accessible to the many
+            <hr />
+            <p class="copyright">
+                Copyright &copy
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script>
+                - RedStore
             </p>
-          </div>
-          <div class="footer-col-3">
-            <h3>Useful Links</h3>
-            <ul>
-              <li>Coupons</li>
-              <li>Blog Post</li>
-              <li>Return Policy</li>
-              <li>Join Affiliate</li>
-            </ul>
-          </div>
-          <div class="footer-col-4" data-aos="fade-up">
-            <h3>Follow Us</h3>
-            <ul>
-              <li>Facebook</li>
-              <li>Twitter</li>
-              <li>Instagram</li>
-              <li>Youtube</li>
-            </ul>
-          </div>
         </div>
-        <hr />
-        <p class="copyright">
-          Copyright &copy
-          <script type="text/javascript">
-            document.write(new Date().getFullYear());
-          </script>
-          - RedStore
-        </p>
-      </div>
     </div>
     <!-- --------------JS for toggle menu--------- -->
     <script>
-      var MenuItems = document.getElementById("MenuItems");
-      MenuItems.style.maxHeight = "0px";
-      function menutoggle() {
-        if (MenuItems.style.maxHeight == "0px") {
-          MenuItems.style.maxHeight = "200px";
-        } else {
-          MenuItems.style.maxHeight = "0px";
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
         }
-      }
     </script>
     <!-- ----------------------JS for Product gallery------------------ -->
     <script>
-      var ProductImg = document.getElementById("ProductImg");
-      var SmallImg = document.getElementsByClassName("small-img");
-      SmallImg[0].onclick = function () {
-        ProductImg.src = SmallImg[0].src;
-      };
-      SmallImg[1].onclick = function () {
-        ProductImg.src = SmallImg[1].src;
-      };
-      SmallImg[2].onclick = function () {
-        ProductImg.src = SmallImg[2].src;
-      };
-      SmallImg[3].onclick = function () {
-        ProductImg.src = SmallImg[3].src;
-      };
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+        SmallImg[0].onclick = function() {
+            ProductImg.src = SmallImg[0].src;
+        };
+        SmallImg[1].onclick = function() {
+            ProductImg.src = SmallImg[1].src;
+        };
+        SmallImg[2].onclick = function() {
+            ProductImg.src = SmallImg[2].src;
+        };
+        SmallImg[3].onclick = function() {
+            ProductImg.src = SmallImg[3].src;
+        };
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
     <script>
-      const user = { cart: [] };
-      let userString = JSON.stringify(user);
-      if (!localStorage.getItem("user")) {
-        localStorage.setItem("user", userString);
-      }
-      let func = () => {
-        let img = document.getElementById("ProductImg");
-        let productName = document.getElementById("productName").textContent;
-        let productPrice = parseFloat(
-          document.getElementById("productPrice").textContent
-        );
-        let select = document.getElementById("productSize");
-        let productSize = select.options[select.selectedIndex].value;
-        let productQuantity = parseFloat(
-          document.getElementById("productQuantity").value
-        );
-        let isProductDuplicate = false;
-        let id = 0;
-        let product = {
-          id,
-          img: img.src,
-          productName,
-          productPrice,
-          productSize,
-          productQuantity,
+        const user = {
+            cart: []
         };
-        console.log("product: ", product);
-        userString2 = localStorage.getItem("user");
-        const retrievedUser = JSON.parse(userString2);
-        console.log("user after retrieving: ", retrievedUser);
+        let userString = JSON.stringify(user);
+        if (!localStorage.getItem("user")) {
+            localStorage.setItem("user", userString);
+        }
+        let func = () => {
+            let img = document.getElementById("ProductImg");
+            let productName = document.getElementById("productName").textContent;
+            let productPrice = parseFloat(
+                document.getElementById("productPrice").textContent
+            );
+            let select = document.getElementById("productSize");
+            let productSize = select.options[select.selectedIndex].value;
+            let productQuantity = parseFloat(
+                document.getElementById("productQuantity").value
+            );
+            let isProductDuplicate = false;
+            let id = 0;
+            let product = {
+                id,
+                img: img.src,
+                productName,
+                productPrice,
+                productSize,
+                productQuantity,
+            };
+            console.log("product: ", product);
+            userString2 = localStorage.getItem("user");
+            const retrievedUser = JSON.parse(userString2);
+            console.log("user after retrieving: ", retrievedUser);
 
-        retrievedUser.cart.forEach(cartItem => {
-          if(cartItem.id === product.id && cartItem.productSize === product.productSize) {
-            cartItem.productQuantity = +cartItem.productQuantity + +product.productQuantity
-            isProductDuplicate = true;
-          }
-        })
-        if(!isProductDuplicate) retrievedUser.cart.push(product);
-        
-        console.log("user after updating: ", retrievedUser);
-        const updatedUserString = JSON.stringify(retrievedUser);
-        localStorage.setItem("user", updatedUserString);
-      };
+            retrievedUser.cart.forEach(cartItem => {
+                if (cartItem.id === product.id && cartItem.productSize === product.productSize) {
+                    cartItem.productQuantity = +cartItem.productQuantity + +product.productQuantity
+                    isProductDuplicate = true;
+                }
+            })
+            if (!isProductDuplicate) retrievedUser.cart.push(product);
+
+            console.log("user after updating: ", retrievedUser);
+            const updatedUserString = JSON.stringify(retrievedUser);
+            localStorage.setItem("user", updatedUserString);
+            showToast();
+        };
+
 
       const ball = document.querySelector(".toggle-ball");
         const items = document.querySelectorAll(".row,body,.cartIcon,.menu-icon,.container,.navbar,.header,.toggle");
         ball.addEventListener("click",()=>{
 
-            items.forEach(item=>{
-                item.classList.toggle("active")
+        const ball = document.querySelector(".toggle-ball");
+        const items = document.querySelectorAll(".row,body,.menu-icon,.container,.navbar,.header,.toggle");
+        ball.addEventListener("click", () => {
+
+
+                items.forEach(item => {
+                    item.classList.toggle("active")
+                })
+                ball.classList.toggle("active")
             })
-            ball.classList.toggle("active")
-        })
-      //   const myObjectString = JSON.stringify(myObject);
-      //   localStorage.setItem("objectGreeting", myObjectString);
+            //   const myObjectString = JSON.stringify(myObject);
+            //   localStorage.setItem("objectGreeting", myObjectString);
+
+        const showToast = () => {
+            let toast = document.getElementById("toast");
+            toast.className = "showToast";
+
+            setTimeout(function() {
+                toast.className = toast.className.replace("showToast", "");
+            }, 3000);
+        }
     </script>
-  </body>
+</body>
+
 </html>
