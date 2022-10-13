@@ -31,13 +31,21 @@
 .socialbtns-wrapper div ul li a {
     margin-right: 10px;
 }
+.socialbtns ul li{
+    color: #fff;
+    
+}
+.socialbtns ul li:hover{
+    color: rgb(208, 201, 201);
+
+}
 
 .socialbtns .fa {
     /*width: 40px;*/
     /*height: 36px;*/
     font-size: 15px;
-    color: black;
-    background-color: #fff;
+    color: #fff;
+    /* background-color: #fff; */
     border: 1px solid #000;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -50,8 +58,8 @@
 }
 
 .socialbtns .fa:hover {
-    color: #fff;
-    background-color: #000;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 248, 248);
     border: 1px solid #000;
 }
 
@@ -118,6 +126,14 @@ a {
 p {
     color: #555;
 }
+.card-hover{
+    transition:transform 0.3s;
+}
+.cart-hover:hover{
+   transform: scale(1.4);
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   border-radius: 30%;
+}
 
 .container {
     /* border: 2px solid red; */
@@ -183,6 +199,7 @@ p {
     line-height: 60px;
     margin: 25px 0;
 }
+/* Preloader */
 
 .btn {
     display: inline-block;
@@ -706,9 +723,11 @@ th:last-child {
     font-family: 'Poppins', sans-serif;
     width: 70%;
     color: white;
+    transition: background 0.5s;
     background-color: #ff523b;
     border: none;
     border-radius: 20px;
+    
 }
 
 .submit-btn button:hover {
