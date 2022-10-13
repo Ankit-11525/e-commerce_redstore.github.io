@@ -158,7 +158,8 @@ p {
 }
 
 #btnScrollToTop:active{
-  background: rgb(12, 214, 12);
+  background: rgb(255, 0, 0);
+  transform: scale(0.8);
 }
 
 /* scroll-up button ends */
