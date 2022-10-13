@@ -174,7 +174,7 @@ p {
 }
 
 .col-2 img {
-    max-width: 100%;
+    max-width: 76%;
     padding: 50px 0;
 }
 
@@ -189,7 +189,7 @@ p {
     background-color: #ff523b;
     color: #fff;
     padding: 8px 30px;
-    margin: 30px 0px;
+    margin: 30px 60px;
     border-radius: 30px;
     transition: background 0.5s;
     border: #ff523b;
@@ -290,7 +290,7 @@ h4 {
 .offer {
     background: radial-gradient(#fff, #ffd6d6);
     margin-top: 80px;
-    padding: 30px 0;
+    padding: 0;
 }
 
 .col-2 .offer-img {
