@@ -1,4 +1,39 @@
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+/* Center the loader */
+#loader {
+  position: fixed;
+      width: 100%;
+      height: 100vh;
+      z-index: 1;
+      overflow: visible;
+      background: #fff url('shopping.gif') no-repeat center center;
+    }
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
 .socialbtns-wrapper {
     display: flex;
     width: 100%;
@@ -203,7 +238,7 @@ p {
 
 .header {
     background: radial-gradient(#fff, #ffd6d6);
-    /* radial for gradiancy on basis to radius 
+    /* radial for gradiancy on basis to radius
 linear for gradiancy on basis to vertically  */
 }
 
