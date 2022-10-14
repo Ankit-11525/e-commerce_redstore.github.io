@@ -638,7 +638,7 @@ td .remove-btn:hover {
 td img {
     width: 80px;
     height: 80px;
-    margin-left: 10px;
+    margin: 0px 10px 0px 10px;
 }
 
 .total-price {
