@@ -28,10 +28,14 @@
     />
   </head>
 
-  <body>
+  <body onload="myFunction()" style="margin:0;">
     <button id = "btnScrollToTop">
       <i class = "material-icons">arrow_upward</i>
     </button>
+
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+
     <div class="header">
       <div class="container">
         <div class="navbar">
@@ -491,6 +495,7 @@
         </p>
       </div>
     </div>
+  </div>
     <script>
       var MenuItems = document.getElementById('MenuItems')
       MenuItems.style.maxHeight = '0px'
@@ -501,7 +506,7 @@
         } else {
           MenuItems.style.maxHeight = '0px'
         }
-      
+
       }
 
 
@@ -518,7 +523,7 @@
       const btnScrollToTop = document.getElementById("btnScrollToTop");
       btnScrollToTop.addEventListener("click", function(){
         window.scrollTo({
-        top: 0, 
+        top: 0,
         left: 0,
         behavior: "smooth"
         });
@@ -530,5 +535,17 @@
     <script>
       AOS.init()
     </script>
+    <script>
+  var myVar;
+
+  function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+  }
+
+  function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+  }
+</script>
   </body>
 </html>
