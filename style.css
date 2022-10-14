@@ -258,11 +258,8 @@ linear for gradiancy on basis to vertically  */
 }
 
 .col-3 img {
-    width: 90%;
+    width: 100%;
     border-radius: 35px;
-    padding:0;
-     box-shadow: 10px 0px 39px 18px rgb(189 20 20 / 75%);
-    -webkit-box-shadow: 15px 0px 43px 29px rgb(249 161 161 / 52%);
 }
 
 .small-container {
