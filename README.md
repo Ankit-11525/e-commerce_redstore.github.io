@@ -332,20 +332,13 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/Praphulla-Mishra">
-            <img src="https://avatars.githubusercontent.com/u/79088582?v=4" width="100;" alt="Praphulla-Mishra"/>
-            <br />
-            <sub><b>Praphulla Mishra</b></sub>
-        </a>
-    </td></tr>
-<tr>
-    <td align="center">
         <a href="https://github.com/rushikesh1799">
             <img src="https://avatars.githubusercontent.com/u/68096217?v=4" width="100;" alt="rushikesh1799"/>
             <br />
             <sub><b>Rushikesh Bunge</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/SM8UTI">
             <img src="https://avatars.githubusercontent.com/u/56423859?v=4" width="100;" alt="SM8UTI"/>
@@ -380,8 +373,7 @@ git push -u origin <your_branch_name>
             <br />
             <sub><b>Aaheli Sadhukhan</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/nayyyhaa">
             <img src="https://avatars.githubusercontent.com/u/46138150?v=4" width="100;" alt="nayyyhaa"/>
