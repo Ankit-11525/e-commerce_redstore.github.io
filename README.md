@@ -239,20 +239,27 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/AditiSingh2003">
+            <img src="https://avatars.githubusercontent.com/u/97729662?v=4" width="100;" alt="AditiSingh2003"/>
+            <br />
+            <sub><b>Null</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/Ajajahmad">
             <img src="https://avatars.githubusercontent.com/u/88666422?v=4" width="100;" alt="Ajajahmad"/>
             <br />
             <sub><b>Ajaj Ahmad</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/anmolranjan1">
             <img src="https://avatars.githubusercontent.com/u/94954582?v=4" width="100;" alt="anmolranjan1"/>
             <br />
             <sub><b>Anmol Ranjan</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/AnshuPathak-88825">
             <img src="https://avatars.githubusercontent.com/u/78332454?v=4" width="100;" alt="AnshuPathak-88825"/>
@@ -287,15 +294,15 @@ git push -u origin <your_branch_name>
             <br />
             <sub><b>Null</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/khsh13">
             <img src="https://avatars.githubusercontent.com/u/96431469?v=4" width="100;" alt="khsh13"/>
             <br />
             <sub><b>Khushi Sharma</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/Mohasin-Haque">
             <img src="https://avatars.githubusercontent.com/u/72180173?v=4" width="100;" alt="Mohasin-Haque"/>
@@ -330,15 +337,15 @@ git push -u origin <your_branch_name>
             <br />
             <sub><b>Rushikesh Bunge</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/SM8UTI">
             <img src="https://avatars.githubusercontent.com/u/56423859?v=4" width="100;" alt="SM8UTI"/>
             <br />
             <sub><b>Smruti Ranjan Nayak</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/SreenikaMyakala">
             <img src="https://avatars.githubusercontent.com/u/115220632?v=4" width="100;" alt="SreenikaMyakala"/>
