@@ -1034,7 +1034,7 @@ form a {
     height: 18px;
     background-color: black;
     position: absolute;
-    right: 1px;
+    right: 3px;
     border-radius: 50%;
     cursor: pointer;
 }
