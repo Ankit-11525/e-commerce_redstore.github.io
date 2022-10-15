@@ -25,6 +25,13 @@
       rel="stylesheet"
       href="path-to-fontawesome/font-awesome.css"
     />
+
+    <link rel="icon" type="image/x-icon" href="images/logo-white.png" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="theme.js"></script>
   </head>
 
   <body onload="myFunction()" style="margin:0;">
@@ -40,7 +47,7 @@
         <div class="navbar">
           <div class="logo">
             <a href="index.html">
-              <img src="images/logo.png" width="125px" />
+              <img src="images/logo.png" width="125px" class="icon"/>
             </a>
           </div>
           <nav>
@@ -51,21 +58,23 @@
               <li><a href="contact.html">Contact</a></li>
               <li><a href="account.html">Account</a></li>
             </ul>
+            <input type="checkbox" id="light" class="checkbox" style="margin: 3px 50px;">
+            <label for="checkbox" class="label" style="margin: 3px 50px;">
+                <i class="fa-solid fa-sun"></i>
+                <i class='fa-solid fa-moon'></i>
+                <div class='ball'>
+            </label>
           </nav>
           <a href="cart.html" class="cart-hover">
             <img class="cart-image" src="images/cart.png" width="30px" height="30px" />
           </a>
-          <div class="toggle">
-            <i class="fa-solid fa-moon toggle-icon"></i>
-            <i class="fa-solid fa-sun toggle-icon"></i>
-            <div class="toggle-ball"></div>
-         </div>
+          
 
           <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
         </div>
         <div class="row">
           <div class="col-2">
-            <h1 data-aos="fade-up">
+            <h1 data-aos="fade-up" class="heading">
               Give Your Workout<br />
               A New Style!
             </h1>
@@ -300,14 +309,14 @@
 
     <!---offer-->
     <div class="offer">
-      <div class="container-fluid" data-aos="fade-up">
+      <div class="small-container" data-aos="fade-up">
         <div class="row">
           <div class="col-2">
             <img src="images/exclusive.png" class="offer-img" />
           </div>
           <div class="col-2">
             <p>Exclusively Available on RedStore</p>
-            <h1>Smart Band 4</h1>
+            <h1 class="offer-title">Smart Band 4</h1>
             <small
               >The Mi Smart Band 4 feature a 39.9% larger(than Mi Band 3) AMOLCD
               color full touch display with adjustable brightness ,so everything
@@ -550,5 +559,9 @@
   document.getElementById("myDiv").style.display = "block";
   }
 </script>
+
+    <script src="theme.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   </body>
 </html>
