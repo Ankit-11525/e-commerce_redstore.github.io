@@ -1,37 +1,52 @@
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
 /* Center the loader */
+
 #loader {
-  position: fixed;
-      width: 100%;
-      height: 100vh;
-      z-index: 1;
-      overflow: visible;
-      background: #fff url('shopping.gif') no-repeat center center;
-    }
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    overflow: visible;
+    background: #fff url('shopping.gif') no-repeat center center;
+}
+
 
 /* Add animation to "page content" */
+
 .animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 }
-  to { bottom:0px; opacity:1 }
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
 }
 
 @keyframes animatebottom {
-  from{ bottom:-100px; opacity:0 }
-  to{ bottom:0; opacity:1 }
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
 }
 
 #myDiv {
-  display: none;
-  text-align: center;
+    display: none;
+    text-align: center;
 }
 
 .socialbtns-wrapper {
@@ -1198,4 +1213,15 @@ body.active {
 .useful-links,
 .socialbtns {
     color: #D3D3D3;
+}
+
+.btn-quantity {
+    padding: 2px 12px;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #ff523b;
+    color: #fff;
+    margin-left: -10px;
+    border: 1px solid black;
 }
