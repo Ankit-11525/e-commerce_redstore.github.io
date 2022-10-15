@@ -15,6 +15,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="images/logo-white.png">
     <link type="text/css" rel="stylesheet" href="path-to-fontawesome/font-awesome.css">
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://kit.fontawesome.com/f390425e8d.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/logo-white.png" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="theme.js"></script>
 </head>
 
 <body>
@@ -23,7 +35,7 @@
         <div class="navbar">
             <div class="logo">
                 <a href="index.html">
-                    <img src="images/logo.png" width="125px">
+                    <img src="images/logo.png" width="125px" class="icon">
                 </a>
             </div>
             <nav>
@@ -34,9 +46,16 @@
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="account.html">Account</a></li>
                 </ul>
+
+                <input type="checkbox" id="light" class="checkbox" style="margin: 3px 50px;">
+                <label for="checkbox" class="label" style="margin: 3px 50px;">
+                    <i class="fa-solid fa-sun"></i>
+                    <i class='fa-solid fa-moon'></i>
+                    <div class='ball'>
+                </label>
             </nav>
             <a href="cart.html">
-                <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/cart.png" width="30px" height="30px" class="cart">
             </a>
             <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
 
@@ -45,18 +64,18 @@
     </div>
 
     <div class="contact-form-container">
-        <h1 class="form-title">Contact Us</h1>
+        <h1 class="form-title heading">Contact Us</h1>
         <form action="#" class="contact-form">
             <div class="form-item">
-                <input type="email" id="email" name="email" placeholder="Email address">
+                <input class="input-field" type="email" id="email" name="email" placeholder="Email address">
             </div>
 
             <div class="form-item">
-                <input type="number" id="phone" name="phone" placeholder="Phone Number">
+                <input class="input-field" type="number" id="phone" name="phone" placeholder="Phone Number">
             </div>
 
             <div class="form-item textarea-container">
-                <textarea name="feedback" id="feedback" placeholder="Your Feedback"></textarea>
+                <textarea class="input-field" name="feedback" id="feedback" placeholder="Your Feedback"></textarea>
             </div>
 
             <div class="submit-btn">
@@ -78,6 +97,10 @@
             }
         }
     </script>
+
+    <script src="theme.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
 </body>
 

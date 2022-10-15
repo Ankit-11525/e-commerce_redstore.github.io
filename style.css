@@ -1,5 +1,9 @@
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
+:root{
+  --textColor:#555;
+}
+
 
 .socialbtns-wrapper {
   display: flex;
@@ -114,11 +118,11 @@ nav ul li {
 
 a {
   text-decoration: none;
-  color: #555;
+  color: var(--textColor);
 }
 
 p {
-  color: #555;
+  color: var(--textColor);
 }
 
 .container {
@@ -251,7 +255,7 @@ linear for gradiancy on basis to vertically  */
   margin: 0 auto 80px;
   position: relative;
   line-height: 60px;
-  color: #555;
+  color: var(--textColor);
 }
 
 .title::after {
@@ -267,7 +271,7 @@ linear for gradiancy on basis to vertically  */
 }
 
 h4 {
-  color: #555;
+  color: var(--textColor);
   font-weight: normal;
 }
 
@@ -295,7 +299,7 @@ h4 {
 }
 
 small {
-  color: #555;
+  color: var(--textColor);
 }
 
 /* .testmonial */
@@ -334,7 +338,7 @@ small {
 
 .testimonial .col-3 h3 {
   font-weight: 600;
-  color: #555;
+  color: var(--textColor);
   font-size: 16px;
 }
 
@@ -713,7 +717,7 @@ th:last-child {
 .form-container span {
   font-weight: bold;
   padding: 0 10px;
-  color: #555;
+  color: var(--textColor);
   cursor: pointer;
   width: 100px;
   display: inline-block;
@@ -969,82 +973,7 @@ form a {
 .zoomForImage{
   border-radius: 3px;
 }
-/* THEME BUTTON */
 
-
-.toggle{
-  width: 40px;
-  height: 22px;
-  margin-left: 25px;
-  background-color: whitesmoke;
-  border-radius: 30px;    
-  display: flex;
-  align-items: center;
-  justify-content:  space-around;
-  position: relative;
-
-}
-
-
-.toggle-icon{
-  color: goldenrod;
-}
-
-
-
-.toggle-ball{
-
-  width: 18px;
-  height: 18px;
-  background-color: black;
-  position: absolute;
-  right: 1px;
-  border-radius: 50%;
-  cursor: pointer;
-
-}
-
-
-.header.active{
-  background-color: #000;
-}
-.container.active{
-  background-color: #000;
-}
-
-.navbar.active{
-  background-color: #000;
-  color: white;
-
-}
-
-
-.menu-icon.active{
-  color: white;
-}
-
-
-.row.active{
-  background-color: #000;
-  color: white;
-}
-
-
-body.active{
-  background-color: #000;
-}
-
-
-.toggle.active{
-  background-color: #000;
-}
-
-.toggle-ball.active{
-  background-color: white;
-  transform: translateX(-20px);
-
-
-}
 
 /*footer image mouse style to pointer*/
 .footer-img{
@@ -1057,5 +986,57 @@ body.active{
 
 .useful-links,.socialbtns{
   color:#D3D3D3;
+}
+
+
+/* Toogle Button */ 
+.checkbox {
+  margin: 10px 10px;
+  opacity: 0;
+  position: absolute;
+  z-index: 10;
+  height: 2rem;
+  width: 4rem;
+  cursor: pointer;
+}
+
+.label {
+  margin: 10px 10px;
+  width: 50px;
+  height: 25px;
+  background-color: #111;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: absolute;
+  transform: scale(1);
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  position: absolute;
+  right: 5px;
+  color: pink;
+}
+
+.fa-sun {
+  position: absolute;
+  left: 5px;
+  color: yellow;
 }
   
