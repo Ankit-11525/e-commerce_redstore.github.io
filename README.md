@@ -132,6 +132,13 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/MahendraBishnoi29">
+            <img src="https://avatars.githubusercontent.com/u/74294202?v=4" width="100;" alt="MahendraBishnoi29"/>
+            <br />
+            <sub><b>Browny</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/SandeshGC">
             <img src="https://avatars.githubusercontent.com/u/59115123?v=4" width="100;" alt="SandeshGC"/>
             <br />
@@ -153,32 +160,25 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/MahendraBishnoi29">
-            <img src="https://avatars.githubusercontent.com/u/74294202?v=4" width="100;" alt="MahendraBishnoi29"/>
+        <a href="https://github.com/Rohitprasad83">
+            <img src="https://avatars.githubusercontent.com/u/66221637?v=4" width="100;" alt="Rohitprasad83"/>
             <br />
-            <sub><b>Browny</b></sub>
+            <sub><b>Rohit Prasad</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/harikesh409">
             <img src="https://avatars.githubusercontent.com/u/3501554?v=4" width="100;" alt="harikesh409"/>
             <br />
             <sub><b>Harikesh Pallantla</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/rtewari056">
             <img src="https://avatars.githubusercontent.com/u/75976169?v=4" width="100;" alt="rtewari056"/>
             <br />
             <sub><b>Rohit Tewari</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/Rohitprasad83">
-            <img src="https://avatars.githubusercontent.com/u/66221637?v=4" width="100;" alt="Rohitprasad83"/>
-            <br />
-            <sub><b>Rohit Prasad</b></sub>
         </a>
     </td>
     <td align="center">
