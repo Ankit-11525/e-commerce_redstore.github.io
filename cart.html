@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,75 +9,50 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="icon" type="image/x-icon" href="images/logo-white.png" />
+</head>
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="https://kit.fontawesome.com/f390425e8d.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="images/logo-white.png" />
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="theme.js"></script>
-  </head>
-
-  <body>
+<body>
     <div class="container">
-      <div class="navbar">
-        <div class="logo">
-          <a href="index.html">
-            <img src="images/logo.png" width="125px" class="icon"/>
-          </a>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" width="125px" />
+                </a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="allproducts.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html">
+                <img src="images/cart.png" width="30px" height="30px" />
+            </a>
+            <div class="toggle">
+                <i class="fa-solid fa-moon toggle-icon"></i>
+                <i class="fa-solid fa-sun toggle-icon"></i>
+                <div class="toggle-ball"></div>
+            </div>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
         </div>
-        <nav>
-          <ul id="MenuItems">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="allproducts.html">Products</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="account.html">Account</a></li>
-          </ul>
-
-          <input type="checkbox" id="light" class="checkbox" style="margin: 3px 50px;">
-          <label for="checkbox" class="label" style="margin: 3px 50px;">
-              <i class="fa-solid fa-sun"></i>
-              <i class='fa-solid fa-moon'></i>
-              <div class='ball'>
-          </label>
-        </nav>
-        <a href="cart.html">
-          <img src="images/cart.png" width="30px" height="30px" class="cart"/>
-        </a>
-        <div class="toggle">
-          <i class="fa-solid fa-moon toggle-icon"></i>
-          <i class="fa-solid fa-sun toggle-icon"></i>
-          <div class="toggle-ball"></div>
-       </div>
-        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
-      </div>
     </div>
     <!-- --------------------cart item details--------->
     <div class="small-container cart-page">
-      <table id="table">
-        <tr>
-          <th class="heading">Product</th>
-          <th class="heading">Quantity</th>
-          <th class="heading">Subtotal</th>
-        </tr>
-        <tbody>
-          <!-- <tr>
+        <table id="table">
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tbody>
+                <!-- <tr>
             <td>
               <div class="cartinfo" data-aos="fade-up">
                 <img src="images/buy-1.jpg" alt="img" />
@@ -121,10 +97,10 @@
             <td><input type="number" /></td>
             <td>350 Rs.</td>
           </tr> -->
-        </tbody>
-      </table>
-      <div class="total-price" data-aos="fade-up" id="subtotal-section">
-        <!-- <table>
+            </tbody>
+        </table>
+        <div class="total-price" data-aos="fade-up" id="subtotal-section">
+            <!-- <table>
           <tr>
             <td>Subtotal</td>
             <td>1300 Rs.</td>
@@ -138,149 +114,164 @@
             <td>1465 Rs.</td>
           </tr>
         </table> -->
-      </div>
-      <div id="storedItems"></div>
+        </div>
+        <div id="storedItems"></div>
     </div>
+    <div id="toast">Red Printed T-Shirt removed from the cart</div>
 
     <!------footer--------->
     <div class="footer">
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="footer-col-1">
-            <h3>Download Our App</h3>
-            <p>Download App for Android and ios mobile phone</p>
-            <div class="app-logo">
-              <img src="images/play-store.png" />
-              <img src="images/app-store.png" />
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" />
+                        <img src="images/app-store.png" />
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" />
+                    <p>
+                        Our Purpose is to Sustainably make the Pleasure and Benefits of Sports Accessible to the many
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="footer-col-2">
-            <img src="images/logo-white.png" />
-            <p>
-              Our Purpose is to Sustainably make the Pleasure and Benefits of
-              Sports Accessible to the many
+            <hr />
+            <p class="copyright">
+                Copyright &copy;
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script>
+                - RedStore
             </p>
-          </div>
-          <div class="footer-col-3">
-            <h3>Useful Links</h3>
-            <ul>
-              <li>Coupons</li>
-              <li>Blog Post</li>
-              <li>Return Policy</li>
-              <li>Join Affiliate</li>
-            </ul>
-          </div>
-          <div class="footer-col-4">
-            <h3>Follow Us</h3>
-            <ul>
-              <li>Facebook</li>
-              <li>Twitter</li>
-              <li>Instagram</li>
-              <li>Youtube</li>
-            </ul>
-          </div>
         </div>
-        <hr />
-        <p class="copyright">
-          Copyright &copy;
-          <script type="text/javascript">
-            document.write(new Date().getFullYear());
-          </script>
-          - RedStore
-        </p>
-      </div>
     </div>
     <!-- --------------JS for toggle menu--------- -->
     <script>
-      var MenuItems = document.getElementById("MenuItems");
-      MenuItems.style.maxHeight = "0px";
-      function menutoggle() {
-        if (MenuItems.style.maxHeight == "0px") {
-          MenuItems.style.maxHeight = "200px";
-        } else {
-          MenuItems.style.maxHeight = "0px";
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
         }
-      }
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
     <script>
-      const table = document.getElementById("table").innerHTML;
-      const userString = localStorage.getItem("user");
-      const retrievedUser = JSON.parse(userString);
+        const table = document.getElementById("table").innerHTML;
+        const userString = localStorage.getItem("user");
+        const retrievedUser = JSON.parse(userString);
 
-      //to update Quantity of items using the input element
-      function updateQty(element) {
-        if (element.value < 0){
-          window.alert("Quantity of items can not be negative!")
-          element.value = Math.abs(element.value);
+        //to update Quantity of items using the input element
+        function updateQty(element) {
+            if (element.value < 0) {
+                window.alert("Quantity of items can not be negative!")
+                element.value = Math.abs(element.value);
+            }
+            const idNumber = `${element.id.split("-")[1]}`;
+            retrievedUser.cart[idNumber].productQuantity = element
+                .value; //updates the productQuantity of item in the cart array using the input element's value
+            let updatedCart = {
+                    cart: retrievedUser.cart
+                } //saving the new cart array to a new variable in the format how cart items are saved
+                // console.log(updatedCart)
+            localStorage.setItem("user", JSON.stringify(updatedCart)) //updating the localStorage cart items
+            renderItemsAndCosts();
         }
-        const idNumber = `${element.id.split("-")[1]}`;
-        retrievedUser.cart[idNumber].productQuantity = element.value; //updates the productQuantity of item in the cart array using the input element's value
-        let updatedCart = {cart:retrievedUser.cart}  //saving the new cart array to a new variable in the format how cart items are saved
-        // console.log(updatedCart)
-        localStorage.setItem("user",JSON.stringify(updatedCart)) //updating the localStorage cart items
-        renderItemsAndCosts();
-      }
-      
-    function renderItemsAndCosts(){      
-      let id = -1;
-      let subTotal = 0;
-      let tbodyRef = document
-        .getElementById("table")
-        .getElementsByTagName("tbody")[1];
-      tbodyRef.innerHTML="" //clearing before rendering items from localhost
-      retrievedUser.cart.forEach((item) => {
-        id++; //id assignment starts from 0
 
-        // Insert a row at the end of table
-        let newRow = tbodyRef.insertRow();
+        function renderItemsAndCosts() {
+            let id = -1;
+            let subTotal = 0;
+            let tbodyRef = document
+                .getElementById("table")
+                .getElementsByTagName("tbody")[1];
+            tbodyRef.innerHTML = "" //clearing before rendering items from localhost
+            retrievedUser.cart.forEach((item) => {
+                id++; //id assignment starts from 0
 
-        // Insert a cell at the end of the row
-        let newCell = newRow.insertCell();
-        newCell.innerHTML = `<div class='cartinfo' data-aos='fade-up'><img src='${item.img}' /><div><p>${item.productName}</p><small>Size: ${item.productSize}, Price: ${item.productPrice} Rs.</small><br /><span class="remove-btn" id="remove-${id}" onclick="removeItem()">Remove</span></div></div>`;
+                // Insert a row at the end of table
+                let newRow = tbodyRef.insertRow();
 
-        newCell = newRow.insertCell();
-        newCell.innerHTML += `<input type='number' value='${item.productQuantity}' data-aos="fade-up" onchange="updateQty(this)" id="updateQty-${id}" min="1"/>`;
+                // Insert a cell at the end of the row
+                let newCell = newRow.insertCell();
+                newCell.innerHTML =
+                    `<div class='cartinfo' data-aos='fade-up'><img src='${item.img}' /><div><p>${item.productName}</p><small>Size: ${item.productSize}, Price: ${item.productPrice} Rs.</small><br /><span class="remove-btn" id="remove-${id}" onclick="removeItem()">Remove</span></div></div>`;
 
-        newCell = newRow.insertCell();
-        newCell.innerHTML += `<div data-aos="fade-up">Rs. ${item.productPrice * item.productQuantity}</div>`;
-        subTotal += item.productPrice * item.productQuantity;
-      });
+                newCell = newRow.insertCell();
+                newCell.innerHTML +=
+                    `<input type='number' value='${item.productQuantity}' data-aos="fade-up" onchange="updateQty(this)" id="updateQty-${id}" min="1"/>`;
 
-      document.getElementById(
-        "subtotal-section"
-      ).innerHTML = `<table><tr><td>Subtotal</td><td>Rs. ${subTotal}</td></tr><tr><td>GST</td><td>Rs. ${Number(
+                newCell = newRow.insertCell();
+                newCell.innerHTML += `<div data-aos="fade-up">Rs. ${item.productPrice * item.productQuantity}</div>`;
+                subTotal += item.productPrice * item.productQuantity;
+            });
+
+            document.getElementById(
+                "subtotal-section"
+            ).innerHTML = `<table><tr><td>Subtotal</td><td>Rs. ${subTotal}</td></tr><tr><td>GST</td><td>Rs. ${Number(
         (subTotal / 7.78).toFixed(2)
       )}</td></tr><tr><td>Total</td><td>Rs. ${Number(
         (subTotal + subTotal / 7.78).toFixed(2)
       )}</td></tr></table>`;
-    }
-    renderItemsAndCosts(); //rendering the cart items and the costs initially
-    // to remove the row of item
-    function removeItem() {
-      const idNumber = event.target.id.split("-")[1]; //eg. if remove-3 btn is clicked, idNumber = 3
-      retrievedUser.cart.splice(idNumber,1); //removing the item from the cart array, whose 'remove' button is clicked
-      let updatedCart = {cart:retrievedUser.cart}  //saving the new cart array to a new variable in the format how cart items are saved
-      // console.log(updatedCart)
-      localStorage.setItem("user",JSON.stringify(updatedCart)) //updating the localStorage cart items
-      renderItemsAndCosts();
-    }
-    const ball = document.querySelector(".toggle-ball");
+        }
+        renderItemsAndCosts(); //rendering the cart items and the costs initially
+        // to remove the row of item
+        function removeItem() {
+            const idNumber = event.target.id.split("-")[1]; //eg. if remove-3 btn is clicked, idNumber = 3
+            retrievedUser.cart.splice(idNumber, 1); //removing the item from the cart array, whose 'remove' button is clicked
+            let updatedCart = {
+                    cart: retrievedUser.cart
+                } //saving the new cart array to a new variable in the format how cart items are saved
+                // console.log(updatedCart)
+            localStorage.setItem("user", JSON.stringify(updatedCart)) //updating the localStorage cart items
+            renderItemsAndCosts();
+            showToast();
+        }
+        const ball = document.querySelector(".toggle-ball");
         const items = document.querySelectorAll(".row,body,.menu-icon,.container,.navbar,.header,.toggle");
-        ball.addEventListener("click",()=>{
+        ball.addEventListener("click", () => {
 
-            items.forEach(item=>{
+            items.forEach(item => {
                 item.classList.toggle("active")
             })
             ball.classList.toggle("active")
         })
-    </script>
 
-    <script src="theme.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  </body>
+        const showToast = () => {
+            let toast = document.getElementById("toast");
+            toast.className = "showToast";
+
+            setTimeout(function() {
+                toast.className = toast.className.replace("showToast", "");
+            }, 3000);
+        }
+    </script>
+</body>
+
 </html>
