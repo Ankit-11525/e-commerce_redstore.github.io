@@ -1065,7 +1065,6 @@ form a {
     border-radius: 3px;
 }
 
-
 /*footer image mouse style to pointer*/
 
 .footer-img {
@@ -1158,7 +1157,7 @@ form a {
 .btn-quantity {
     padding: 2px 12px;
     font-size: 24px;
-    border-radius: 50%;
+    border-radius: 5%;
     cursor: pointer;
     background-color: #ff523b;
     color: #fff;
@@ -1216,4 +1215,9 @@ form a {
     left: 5px;
     color: yellow;
  }
-    
+
+.white
+{
+    color: #ff523b;
+}
+

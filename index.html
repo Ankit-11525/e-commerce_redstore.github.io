@@ -521,6 +521,7 @@
       const ball = document.querySelector(".toggle-ball");
         const items = document.querySelectorAll(".row,body,.menu-icon,.container,.navbar,.header,.toggle");
         const cartImage = document.querySelector(".cart-image");
+        const effects = document.querySelector(".effects");
         // const menuItems = document.querySelector('#menuItems');
         ball.addEventListener("click",()=>{
 
@@ -530,6 +531,7 @@
             ball.classList.toggle("active")
             MenuItems.classList.toggle("active")
             cartImage.classList.toggle("bgm-change")
+            effects.classList.toggle("white")
         })
 
       const btnScrollToTop = document.getElementById("btnScrollToTop");
@@ -551,7 +553,7 @@
   var myVar;
 
   function myFunction() {
-  myVar = setTimeout(showPage, 3000);
+  myVar = setTimeout(showPage, 1750);
   }
 
   function showPage() {
