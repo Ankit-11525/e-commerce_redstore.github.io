@@ -1141,6 +1141,7 @@ body.active {
 
 .cart-image.bgm-change {
     background-color: white;
+    filter: invert(100%);
 }
 
 
