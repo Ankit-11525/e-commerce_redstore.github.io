@@ -315,6 +315,25 @@
                 toast.className = toast.className.replace("showToast", "");
             }, 3000);
         }
+
+
+        const increaseQuantity = () => {
+            const productQuantity = document.querySelector("#productQuantity");
+            productQuantity.value = Number(productQuantity.value) + 1;
+        }
+
+        const decreaseQuantity = () => {
+            const productQuantity = document.querySelector("#productQuantity");
+            if (productQuantity.value >= 2)
+                productQuantity.value = Number(productQuantity.value) - 1;
+        }
+
+        const checkValid = () => {
+            const productQuantity = document.querySelector("#productQuantity");
+            if (Number(productQuantity.value) < 1) {
+                productQuantity.value = 1;
+            }
+        }
     </script>
 
     <!-- JS for quantity buttons -->
