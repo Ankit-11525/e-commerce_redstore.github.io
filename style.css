@@ -1244,3 +1244,7 @@ body.active {
     margin-left: -10px;
     border: 1px solid black;
 }
+.white
+{
+    color: #ff523b;
+}
