@@ -1237,7 +1237,7 @@ body.active {
 .btn-quantity {
     padding: 2px 12px;
     font-size: 24px;
-    border-radius: 50%;
+    border-radius: 5%;
     cursor: pointer;
     background-color: #ff523b;
     color: #fff;
