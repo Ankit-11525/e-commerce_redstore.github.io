@@ -8,6 +8,7 @@
     <title>Account Details</title>
     <!-- <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/f390425e8d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -56,7 +57,10 @@
                 </ul>
             </nav>
             <a href="cart.html">
-                <img class="cart-image" src="images/cart.png" width="30px" height="30px">
+
+                <i class="cartIcon fa-sharp fa-solid fa-bag-shopping"></i>
+
+                <img class="cart-image" src="images/cart.png" width="30px" height="30px"
             </a>
             <div class="toggle">
                 <i class="fa-solid fa-moon toggle-icon"></i>
@@ -171,8 +175,12 @@
             Indicator.style.transform = "translateX(0px)";
         }
         const ball = document.querySelector(".toggle-ball");
+
+        const items = document.querySelectorAll(".row,body,.cartIcon,.container,.menu-icon,.navbar,.header,.toggle");
+
         const items = document.querySelectorAll(".row,body,.container,.menu-icon,.navbar,.header,.toggle");
         const cartImage = document.querySelector(".cart-image");
+
         ball.addEventListener("click",()=>{
 
             items.forEach(item=>{

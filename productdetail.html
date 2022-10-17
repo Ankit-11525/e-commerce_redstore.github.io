@@ -8,10 +8,19 @@
     <title>Product Details</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script src="https://kit.fontawesome.com/f390425e8d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://kit.fontawesome.com/f390425e8d.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
     <link rel="icon" type="image/x-icon" href="images/logo.png" />
 </head>
 
@@ -42,6 +51,27 @@
             </div>
             <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
         </div>
+
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="allproducts.html">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html">
+          <i class="cartIcon fa-sharp fa-solid fa-bag-shopping"></i>
+        </a>
+        <div class="toggle">
+          <i class="fa-solid fa-moon toggle-icon"></i>
+          <i class="fa-solid fa-sun toggle-icon"></i>
+          <div class="toggle-ball"></div>
+       </div>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+      </div>
+
     </div>
     <!----------single product details-------->
     <div class="small-container single-product" data-aos="fade-up">
@@ -296,9 +326,15 @@
             showToast();
         };
 
+
+      const ball = document.querySelector(".toggle-ball");
+        const items = document.querySelectorAll(".row,body,.cartIcon,.menu-icon,.container,.navbar,.header,.toggle");
+        ball.addEventListener("click",()=>{
+
         const ball = document.querySelector(".toggle-ball");
         const items = document.querySelectorAll(".row,body,.menu-icon,.container,.navbar,.header,.toggle");
         ball.addEventListener("click", () => {
+
 
                 items.forEach(item => {
                     item.classList.toggle("active")

@@ -14,6 +14,7 @@
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f390425e8d.js" crossorigin="anonymous"></script>
     
     <link rel="icon" type="image/x-icon" href="images/logo-white.png"> -->
     <link rel="stylesheet" href="style.css" />
@@ -59,7 +60,11 @@
                 </ul>
             </nav>
             <a href="cart.html">
+
+                <i class="cartIcon fa-sharp fa-solid fa-bag-shopping"></i>
+
                 <img class="cart-image" src="images/cart.png" width="30px" height="30px">
+
             </a>
             <div class="toggle">
                 <i class="fa-solid fa-moon toggle-icon"></i>
@@ -314,8 +319,12 @@
             }
         }
         const ball = document.querySelector(".toggle-ball");
+
+        const items = document.querySelectorAll(".row,body,.cartIcon,.page-btn,.menu-icon,.container,.navbar,.header,.toggle");
+
         const items = document.querySelectorAll(".row,body,.menu-icon,.container,.navbar,.header,.toggle");
         const cartImage = document.querySelector('.cart-image');
+
         ball.addEventListener("click",()=>{
 
             items.forEach(item=>{
