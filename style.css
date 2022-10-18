@@ -127,27 +127,24 @@ nav {
 }
 
 nav li {
-    display: inline-block;
+    overflow: hidden;
     position: relative;
-    color: #ff523b;
+    display: inline-block;
 }
 
 nav li:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #ff523b;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: #54b3d6;
+   
 }
 
 nav li:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+    transform: translate3d(0, 0, 0);
 }
 
 nav ul {
@@ -159,16 +156,50 @@ nav ul li {
     display: inline-block;
     margin-right: 20px;
 }
-
+a span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+a:hover span {
+    transform: translate3d(-200%, 0, 0);
+  }
 a {
-    text-decoration: none;
-    color: #555;
-}
-
-p {
-    color: #555;
-}
-
+    color:#555;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+  }
+  a::before,
+  a::after {
+   content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  a::before {
+    background-color: #54b3d6;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  a::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: #54b3d6;
+  }
+  a:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+  a:hover::after {
+    transform: translate3d(0, 0, 0);
+  }
 .container {
     /* border: 2px solid red; */
     max-width: 1300px;
@@ -1142,6 +1173,9 @@ body.active {
 .cart-image.bgm-change {
     background-color: white;
     filter: invert(100%);
+}
+.cart-image:hover .img-top {
+    display: inline;
 }
 
 
