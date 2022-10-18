@@ -254,6 +254,13 @@ git push -u origin <your_branch_name>
     </td></tr>
 <tr>
     <td align="center">
+        <a href="https://github.com/abhay-raj19">
+            <img src="https://avatars.githubusercontent.com/u/96302417?v=4" width="100;" alt="abhay-raj19"/>
+            <br />
+            <sub><b>Abhay Rajpoot</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/bobbyy16">
             <img src="https://avatars.githubusercontent.com/u/62874675?v=4" width="100;" alt="bobbyy16"/>
             <br />
@@ -287,15 +294,15 @@ git push -u origin <your_branch_name>
             <br />
             <sub><b>Burhanuddin</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/Dharmik3">
             <img src="https://avatars.githubusercontent.com/u/78194918?v=4" width="100;" alt="Dharmik3"/>
             <br />
             <sub><b>Dharmik Patel</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/Dimterion">
             <img src="https://avatars.githubusercontent.com/u/87036699?v=4" width="100;" alt="Dimterion"/>
@@ -330,15 +337,15 @@ git push -u origin <your_branch_name>
             <br />
             <sub><b>Hari</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/PrajwalDhule">
             <img src="https://avatars.githubusercontent.com/u/89639472?v=4" width="100;" alt="PrajwalDhule"/>
             <br />
             <sub><b>Prajwal Dhule</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/prakhar-1005">
             <img src="https://avatars.githubusercontent.com/u/94559623?v=4" width="100;" alt="prakhar-1005"/>
@@ -373,15 +380,15 @@ git push -u origin <your_branch_name>
             <br />
             <sub><b>Smruti Ranjan Nayak</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/SreenikaMyakala">
             <img src="https://avatars.githubusercontent.com/u/115220632?v=4" width="100;" alt="SreenikaMyakala"/>
             <br />
             <sub><b>Null</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/atom540">
             <img src="https://avatars.githubusercontent.com/u/102367845?v=4" width="100;" alt="atom540"/>
@@ -416,15 +423,15 @@ git push -u origin <your_branch_name>
             <br />
             <sub><b>Joana Rijo</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/Jyotiraditya24">
             <img src="https://avatars.githubusercontent.com/u/93746326?v=4" width="100;" alt="Jyotiraditya24"/>
             <br />
             <sub><b>Jyotiraditya</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/nayyyhaa">
             <img src="https://avatars.githubusercontent.com/u/46138150?v=4" width="100;" alt="nayyyhaa"/>
