@@ -52,73 +52,13 @@
                 <th>Subtotal</th>
             </tr>
             <tbody>
-                <!-- <tr>
-            <td>
-              <div class="cartinfo" data-aos="fade-up">
-                <img src="images/buy-1.jpg" alt="img" />
-                <div>
-                  <p>Printed Red T-Shirt</p>
-                  <small>Price: 450 Rs.</small>
-                  <br />
-                  <a href="">Remove</a>
-                </div>
-              </div>
-            </td>
-            <td><input type="number" /></td>
-            <td>450 Rs.</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="cartinfo" data-aos="fade-up">
-                <img src="images/buy-2.jpg" />
-                <div>
-                  <p>Black new shoes</p>
-                  <small>Price: 500 Rs.</small>
-                  <br />
-                  <a href="">Remove</a>
-                </div>
-              </div>
-            </td>
-            <td><input type="number" /></td>
-            <td>500 Rs.</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="cartinfo" data-aos="fade-up">
-                <img src="images/buy-3.jpg" />
-                <div>
-                  <p>Lower Grey Colour</p>
-                  <small>Price: 350 Rs.</small>
-                  <br />
-                  <a href="">Remove</a>
-                </div>
-              </div>
-            </td>
-            <td><input type="number" /></td>
-            <td>350 Rs.</td>
-          </tr> -->
             </tbody>
         </table>
         <div class="total-price" data-aos="fade-up" id="subtotal-section">
-            <!-- <table>
-          <tr>
-            <td>Subtotal</td>
-            <td>1300 Rs.</td>
-          </tr>
-          <tr>
-            <td>GST</td>
-            <td>165 Rs.</td>
-          </tr>
-          <tr>
-            <td>Total</td>
-            <td>1465 Rs.</td>
-          </tr>
-        </table> -->
         </div>
         <div id="storedItems"></div>
     </div>
     <div id="toast">Red Printed T-Shirt removed from the cart</div>
-
     <!------footer--------->
     <div class="footer">
         <div class="container" data-aos="fade-up">
@@ -228,7 +168,8 @@
                     `<input type='number' value='${item.productQuantity}' data-aos="fade-up" onchange="updateQty(this)" id="updateQty-${id}" min="1"/>`;
 
                 newCell = newRow.insertCell();
-                newCell.innerHTML += `<div data-aos="fade-up">Rs. ${item.productPrice * item.productQuantity}</div>`;
+                newCell.innerHTML +=
+                    `<div data-aos="fade-up">Rs. ${item.productPrice * item.productQuantity}</div>`;
                 subTotal += item.productPrice * item.productQuantity;
             });
 
@@ -244,7 +185,8 @@
         // to remove the row of item
         function removeItem() {
             const idNumber = event.target.id.split("-")[1]; //eg. if remove-3 btn is clicked, idNumber = 3
-            retrievedUser.cart.splice(idNumber, 1); //removing the item from the cart array, whose 'remove' button is clicked
+            retrievedUser.cart.splice(idNumber,
+                1); //removing the item from the cart array, whose 'remove' button is clicked
             let updatedCart = {
                     cart: retrievedUser.cart
                 } //saving the new cart array to a new variable in the format how cart items are saved
