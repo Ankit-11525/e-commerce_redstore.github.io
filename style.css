@@ -1125,17 +1125,20 @@ body.active {
     transform: translateX(-20px);
 }
 
+
 /* change color of navbar heading to white on toggle */
 
-#MenuItems.active > li > a {
+#MenuItems.active>li>a {
     color: white;
 }
+
 
 /* change color of contact page heading to white on toggle */
 
 .form-title.active {
     color: white;
 }
+
 
 /* cart image in dark mode */
 
@@ -1244,7 +1247,27 @@ body.active {
     margin-left: -10px;
     border: 1px solid black;
 }
-.white
-{
+
+.white {
     color: #ff523b;
+}
+
+.hidden {
+    display: none;
+}
+
+#empty-cart {
+    font-size: 1.6em;
+    text-align: center;
+    margin: 10rem 0;
+}
+
+.btn-add {
+    font-size: 1.2rem;
+    background-color: #ff523b;
+    color: #fff;
+    padding: 0.8rem;
+    border-radius: 1.6em;
+    margin-top: 20px;
+    display: inline-block;
 }

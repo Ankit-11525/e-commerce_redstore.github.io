@@ -57,6 +57,10 @@
         <div class="total-price" data-aos="fade-up" id="subtotal-section">
         </div>
         <div id="storedItems"></div>
+        <div id="empty-cart">
+            <p>No products added to the cart.</p>
+            <a href="allproducts.html" class="btn-add">Add Products</a>
+        </div>
     </div>
     <div id="toast">Red Printed T-Shirt removed from the cart</div>
     <!------footer--------->
@@ -194,6 +198,7 @@
             localStorage.setItem("user", JSON.stringify(updatedCart)) //updating the localStorage cart items
             renderItemsAndCosts();
             showToast();
+            checkForItemsInCart();
         }
         const ball = document.querySelector(".toggle-ball");
         const items = document.querySelectorAll(".row,body,.menu-icon,.container,.navbar,.header,.toggle");
@@ -213,6 +218,25 @@
                 toast.className = toast.className.replace("showToast", "");
             }, 3000);
         }
+
+        const checkForItemsInCart = () => {
+            const productTable = document.getElementById("table");
+            const subtotalSection = document.getElementById("subtotal-section");
+            const storedItems = document.getElementById("storedItems");
+            const emptyCart = document.getElementById("empty-cart");
+            if (retrievedUser.cart.length === 0) {
+                productTable.classList.add("hidden");
+                subtotalSection.classList.add("hidden");
+                storedItems.classList.add("hidden");
+                emptyCart.classList.remove("hidden")
+            } else {
+                emptyCart.classList.add("hidden");
+                productTable.classList.remove("hidden")
+                subtotalSection.classList.remove("hidden")
+                storedItems.classList.remove("hidden")
+            }
+        }
+        checkForItemsInCart();
     </script>
 </body>
 
