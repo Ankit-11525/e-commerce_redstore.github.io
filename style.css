@@ -1255,3 +1255,19 @@ body.active {
 .hidden {
     display: none;
 }
+
+#empty-cart {
+    font-size: 1.6em;
+    text-align: center;
+    margin: 10rem 0;
+}
+
+.btn-add {
+    font-size: 1.2rem;
+    background-color: #ff523b;
+    color: #fff;
+    padding: 0.8rem;
+    border-radius: 1.6em;
+    margin-top: 20px;
+    display: inline-block;
+}
