@@ -1,5 +1,9 @@
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
+:root{
+    --textColor:#555;
+}
+
 /* Center the loader */
 
 #loader {
@@ -162,11 +166,11 @@ nav ul li {
 
 a {
     text-decoration: none;
-    color: #555;
+    color: var(--textColor);
 }
 
 p {
-    color: #555;
+    color: var(--textColor);
 }
 
 .container {
@@ -302,7 +306,7 @@ linear for gradiancy on basis to vertically  */
     margin: 0 auto 80px;
     position: relative;
     line-height: 60px;
-    color: #555;
+    color: var(--textColor);
 }
 
 .title::after {
@@ -318,7 +322,7 @@ linear for gradiancy on basis to vertically  */
 }
 
 h4 {
-    color: #555;
+    color: var(--textColor);
     font-weight: normal;
 }
 
@@ -348,7 +352,7 @@ h4 {
 }
 
 small {
-    color: #555;
+    color: var(--textColor);
 }
 
 
@@ -389,7 +393,7 @@ small {
 
 .testimonial .col-3 h3 {
     font-weight: 600;
-    color: #555;
+    color: var(--textColor);
     font-size: 16px;
 }
 
@@ -790,7 +794,7 @@ th:last-child {
 .form-container span {
     font-weight: bold;
     padding: 0 10px;
-    color: #555;
+    color: var(--textColor);
     cursor: pointer;
     width: 100px;
     display: inline-block;
@@ -1062,6 +1066,7 @@ form a {
 }
 
 
+
 /* THEME BUTTON */
 
 .toggle {
@@ -1146,6 +1151,7 @@ body.active {
     background-color: white;
     filter: invert(100%);
 }
+
 
 
 /*footer image mouse style to pointer*/
@@ -1248,6 +1254,59 @@ body.active {
     border: 1px solid black;
 }
 
+
+/* Toogle Button */ 
+.checkbox {
+    margin: 10px 10px;
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    height: 2rem;
+    width: 4rem;
+    cursor: pointer;
+  }
+  
+  .label {
+    margin: 10px 10px;
+    width: 50px;
+    height: 25px;
+    background-color: #111;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: absolute;
+    transform: scale(1);
+  }
+  
+  .ball {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .label .ball {
+    transform: translateX(24px);
+  }
+  
+  .fa-moon {
+    position: absolute;
+    right: 5px;
+    color: pink;
+  }
+  
+  .fa-sun {
+    position: absolute;
+    left: 5px;
+    color: yellow;
+ }
+
+
 .white {
     color: #ff523b;
 }
@@ -1271,3 +1330,4 @@ body.active {
     margin-top: 20px;
     display: inline-block;
 }
+
