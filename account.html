@@ -6,34 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Details</title>
-    <!-- <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/x-icon" href="images/logo-white.png"> -->
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="https://kit.fontawesome.com/f390425e8d.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="images/logo-white.png" />
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="path-to-fontawesome/font-awesome.css"
-    />
+    <link type="text/css" rel="stylesheet" href="path-to-fontawesome/font-awesome.css" />
 
     <link rel="icon" type="image/x-icon" href="images/logo-white.png" />
     
@@ -72,7 +54,13 @@
             <a href="cart.html">
                 <img class="cart-image" src="images/cart.png" width="30px" height="30px" class="cart">
             </a>
-            
+
+            <div class="toggle">
+                <i class="fa-solid fa-moon toggle-icon"></i>
+                <i class="fa-solid fa-sun toggle-icon"></i>
+                <div class="toggle-ball"></div>
+            </div>
+
             <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
 
         </div>
@@ -137,17 +125,23 @@
                     <h3>Follow Us</h3>
                     <div class="socialbtns" align="center">
                         <ul>
-                            <li><a href="#" class="fa fa-lg fa-facebook"></a>Facebook</li><br>
-                            <li><a href="#" class="fa fa-lg fa-twitter"></a>Twitter</li><br>
-                            <li><a href="#" class="fa fa-lg fa-instagram"></a>Instagram</li><br>
-                            <li><a href="#" class="fa fa-lg fa-youtube"></a>Youtube</li><br>
+                            <li>
+                                <a href="#" class="fa fa-lg fa-facebook"></a>Facebook</li><br>
+                            <li>
+                                <a href="#" class="fa fa-lg fa-twitter"></a>Twitter</li><br>
+                            <li>
+                                <a href="#" class="fa fa-lg fa-instagram"></a>Instagram</li><br>
+                            <li>
+                                <a href="#" class="fa fa-lg fa-youtube"></a>Youtube</li><br>
                         </ul>
                     </div>
                 </div>
             </div>
             <hr>
             <p class="copyright">Copyright &copy
-                <script type="text/javascript"> document.write(new Date().getFullYear());</script> - RedStore
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script> - RedStore
             </p>
         </div>
     </div>
@@ -155,11 +149,11 @@
     <script>
         var MenuItems = document.getElementById("MenuItems");
         MenuItems.style.maxHeight = "0px";
+
         function menutoggle() {
             if (MenuItems.style.maxHeight == "0px") {
                 MenuItems.style.maxHeight = "200px";
-            }
-            else {
+            } else {
                 MenuItems.style.maxHeight = "0px";
             }
         }
@@ -169,12 +163,14 @@
         var LoginForm = document.getElementById("LoginForm");
         var RegForm = document.getElementById("RegForm");
         var Indicator = document.getElementById("Indicator");
+
         function register() {
             RegForm.style.transform = "translateX(0px)";
             LoginForm.style.transform = "translateX(0px)";
             Indicator.style.transform = "translateX(100px)";
 
         }
+
         function login() {
             RegForm.style.transform = "translateX(300px)";
             LoginForm.style.transform = "translateX(300px)";
@@ -183,18 +179,17 @@
         const ball = document.querySelector(".toggle-ball");
         const items = document.querySelectorAll(".row,body,.container,.menu-icon,.navbar,.header,.toggle");
         const cartImage = document.querySelector(".cart-image");
-        ball.addEventListener("click",()=>{
+        ball.addEventListener("click", () => {
 
-            items.forEach(item=>{
+            items.forEach(item => {
                 item.classList.toggle("active")
             })
             ball.classList.toggle("active")
             MenuItems.classList.toggle("active")
             cartImage.classList.toggle("bgm-change")
         })
-
-
     </script>
+
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
@@ -203,6 +198,12 @@
     <script src="theme.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

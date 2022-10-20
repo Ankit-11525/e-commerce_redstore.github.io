@@ -1065,6 +1065,95 @@ form a {
     border-radius: 3px;
 }
 
+
+
+/* THEME BUTTON */
+
+.toggle {
+    width: 40px;
+    height: 22px;
+    margin-left: 25px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.toggle-icon {
+    color: goldenrod;
+}
+
+.toggle-ball {
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header.active {
+    background-color: #000;
+}
+
+.container.active {
+    background-color: #000;
+}
+
+.navbar.active {
+    background-color: #000;
+    color: white;
+}
+
+.menu-icon.active {
+    color: white;
+}
+
+.row.active {
+    background-color: #000;
+    color: white;
+}
+
+body.active {
+    background-color: #000;
+}
+
+.toggle.active {
+    background-color: #000;
+}
+
+.toggle-ball.active {
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+
+/* change color of navbar heading to white on toggle */
+
+#MenuItems.active>li>a {
+    color: white;
+}
+
+
+/* change color of contact page heading to white on toggle */
+
+.form-title.active {
+    color: white;
+}
+
+
+/* cart image in dark mode */
+
+.cart-image.bgm-change {
+    background-color: white;
+    filter: invert(100%);
+}
+
+
+
 /*footer image mouse style to pointer*/
 
 .footer-img {
@@ -1165,6 +1254,7 @@ form a {
     border: 1px solid black;
 }
 
+
 /* Toogle Button */ 
 .checkbox {
     margin: 10px 10px;
@@ -1216,8 +1306,28 @@ form a {
     color: yellow;
  }
 
-.white
-{
+
+.white {
     color: #ff523b;
+}
+
+.hidden {
+    display: none;
+}
+
+#empty-cart {
+    font-size: 1.6em;
+    text-align: center;
+    margin: 10rem 0;
+}
+
+.btn-add {
+    font-size: 1.2rem;
+    background-color: #ff523b;
+    color: #fff;
+    padding: 0.8rem;
+    border-radius: 1.6em;
+    margin-top: 20px;
+    display: inline-block;
 }
 
