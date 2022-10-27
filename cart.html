@@ -9,13 +9,18 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="icon" type="image/x-icon" href="images/logo-white.png" />
 </head>
 
 <body>
+
+    <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
+    </div>
     <div class="container">
         <div class="navbar">
             <div class="logo">
@@ -142,9 +147,9 @@
             retrievedUser.cart[idNumber].productQuantity = element
                 .value; //updates the productQuantity of item in the cart array using the input element's value
             let updatedCart = {
-                    cart: retrievedUser.cart
-                } //saving the new cart array to a new variable in the format how cart items are saved
-                // console.log(updatedCart)
+                cart: retrievedUser.cart
+            } //saving the new cart array to a new variable in the format how cart items are saved
+            // console.log(updatedCart)
             localStorage.setItem("user", JSON.stringify(updatedCart)) //updating the localStorage cart items
             renderItemsAndCosts();
         }
@@ -180,10 +185,10 @@
             document.getElementById(
                 "subtotal-section"
             ).innerHTML = `<table><tr><td>Subtotal</td><td>Rs. ${subTotal}</td></tr><tr><td>GST</td><td>Rs. ${Number(
-        (subTotal / 7.78).toFixed(2)
-      )}</td></tr><tr><td>Total</td><td>Rs. ${Number(
-        (subTotal + subTotal / 7.78).toFixed(2)
-      )}</td></tr></table>`;
+                (subTotal / 7.78).toFixed(2)
+            )}</td></tr><tr><td>Total</td><td>Rs. ${Number(
+                (subTotal + subTotal / 7.78).toFixed(2)
+            )}</td></tr></table>`;
         }
         renderItemsAndCosts(); //rendering the cart items and the costs initially
         // to remove the row of item
@@ -192,9 +197,9 @@
             retrievedUser.cart.splice(idNumber,
                 1); //removing the item from the cart array, whose 'remove' button is clicked
             let updatedCart = {
-                    cart: retrievedUser.cart
-                } //saving the new cart array to a new variable in the format how cart items are saved
-                // console.log(updatedCart)
+                cart: retrievedUser.cart
+            } //saving the new cart array to a new variable in the format how cart items are saved
+            // console.log(updatedCart)
             localStorage.setItem("user", JSON.stringify(updatedCart)) //updating the localStorage cart items
             renderItemsAndCosts();
             showToast();
@@ -214,7 +219,7 @@
             let toast = document.getElementById("toast");
             toast.className = "showToast";
 
-            setTimeout(function() {
+            setTimeout(function () {
                 toast.className = toast.className.replace("showToast", "");
             }, 3000);
         }
@@ -237,6 +242,27 @@
             }
         }
         checkForItemsInCart();
+
+        let calcScrollValue = () => {
+            let scrollProgress = document.getElementById("progress");
+            let progressValue = document.getElementById("progress-value");
+            let pos = document.documentElement.scrollTop;
+            let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollValue = Math.round((pos * 100) / calcHeight);
+
+            if (pos > 100) {
+                scrollProgress.style.display = "grid";
+            }
+            else {
+                scrollProgress.style.display = "none";
+            }
+            scrollProgress.addEventListener("click", () => {
+                document.documentElement.scrollTop = 0;
+            })
+            scrollProgress.style.background = `conic-gradient(#ff523b ${scrollValue}%, #000 ${scrollValue}%)`;
+            // console.log(scrollValue);
+        }
+        window.onscroll = calcScrollValue;
     </script>
 </body>
 
