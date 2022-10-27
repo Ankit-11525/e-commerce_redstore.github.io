@@ -311,13 +311,6 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/DishaChaurasia">
-            <img src="https://avatars.githubusercontent.com/u/90978273?v=4" width="100;" alt="DishaChaurasia"/>
-            <br />
-            <sub><b>Null</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/Juhii16">
             <img src="https://avatars.githubusercontent.com/u/88276540?v=4" width="100;" alt="Juhii16"/>
             <br />
@@ -337,15 +330,15 @@ git push -u origin <your_branch_name>
             <br />
             <sub><b>Mohasin Haque</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/NateNear">
             <img src="https://avatars.githubusercontent.com/u/92938055?v=4" width="100;" alt="NateNear"/>
             <br />
             <sub><b>Hari</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/PrajwalDhule">
             <img src="https://avatars.githubusercontent.com/u/89639472?v=4" width="100;" alt="PrajwalDhule"/>
@@ -380,15 +373,15 @@ git push -u origin <your_branch_name>
             <br />
             <sub><b>Null</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/SM8UTI">
             <img src="https://avatars.githubusercontent.com/u/56423859?v=4" width="100;" alt="SM8UTI"/>
             <br />
             <sub><b>Smruti Ranjan Nayak</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/SreenikaMyakala">
             <img src="https://avatars.githubusercontent.com/u/115220632?v=4" width="100;" alt="SreenikaMyakala"/>
@@ -423,15 +416,15 @@ git push -u origin <your_branch_name>
             <br />
             <sub><b>Aaheli Sadhukhan</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/joanarijo">
             <img src="https://avatars.githubusercontent.com/u/10657720?v=4" width="100;" alt="joanarijo"/>
             <br />
             <sub><b>Joana Rijo</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/Jyotiraditya24">
             <img src="https://avatars.githubusercontent.com/u/93746326?v=4" width="100;" alt="Jyotiraditya24"/>
