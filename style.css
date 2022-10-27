@@ -11,6 +11,36 @@
     background: #fff url('shopping.gif') no-repeat center center;
 }
 
+/* scroll to top */
+#progress {
+    background: #ff523b;
+    color: black;
+    /* background: #d7d7d7; */
+    position: fixed;
+    bottom: 20px;
+    right: 10%;
+    height: 70px;
+    width: 70px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 40;
+}
+
+#progress-value {
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    font-size: 35px;
+    height: calc(100% - 15%);
+    width: calc(100% - 15%);
+    background: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 /* Add animation to "page content" */
 
@@ -27,6 +57,7 @@
         bottom: -100px;
         opacity: 0
     }
+
     to {
         bottom: 0px;
         opacity: 1
@@ -38,6 +69,7 @@
         bottom: -100px;
         opacity: 0
     }
+
     to {
         bottom: 0;
         opacity: 1
@@ -510,13 +542,16 @@ ul {
         width: 100%;
         z-index: 9999;
     }
+
     nav ul li {
         display: block;
         margin: 10px 50px 10px 0;
     }
+
     nav ul li a {
         color: #fff;
     }
+
     .menu-icon {
         display: block;
         cursor: pointer;
@@ -866,25 +901,31 @@ form a {
     .row {
         text-align: center;
     }
+
     .col-2,
     .col-3,
     .col-4 {
         flex-basis: 100%;
     }
+
     .col-2 p {
         margin: auto;
     }
+
     .single-product .row {
         text-align: left;
     }
+
     .single-product .col-2 {
         padding: 20px 0;
         /* border: 2px solid #2113e4; */
     }
+
     .single-product h1 {
         font-size: 26px;
         line-height: 32px;
     }
+
     .cartinfo p {
         /* display: none; */
         font-size: 0.9rem;
@@ -1193,6 +1234,7 @@ body.active {
         bottom: 0;
         opacity: 0;
     }
+
     to {
         bottom: 5%;
         opacity: 1;
@@ -1204,6 +1246,7 @@ body.active {
         bottom: 0;
         opacity: 0;
     }
+
     to {
         bottom: 5%;
         opacity: 1;
@@ -1215,6 +1258,7 @@ body.active {
         bottom: 5%;
         opacity: 1;
     }
+
     to {
         bottom: 0;
         opacity: 0;
@@ -1226,6 +1270,7 @@ body.active {
         bottom: 5%;
         opacity: 1;
     }
+
     to {
         bottom: 0;
         opacity: 0;

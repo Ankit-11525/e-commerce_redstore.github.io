@@ -1,39 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RedStore | Ecommerce Website Design</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="https://kit.fontawesome.com/f390425e8d.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="images/logo-white.png" />
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="path-to-fontawesome/font-awesome.css"
-    />
-  </head>
 
-  <body onload="myFunction()" style="margin:0;">
-    <button id = "btnScrollToTop">
-      <i class = "material-icons">arrow_upward</i>
-    </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RedStore | Ecommerce Website Design</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://kit.fontawesome.com/f390425e8d.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="images/logo-white.png" />
+  <link type="text/css" rel="stylesheet" href="path-to-fontawesome/font-awesome.css" />
+</head>
 
-    <div id="loader"></div>
-    <div style="display:none;" id="myDiv" class="animate-bottom">
+<body onload="myFunction()" style="margin:0;">
+  <div id="progress">
+    <span id="progress-value">&#x1F815;</span>
+  </div>
+
+  <div id="loader"></div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
 
     <div class="header">
       <div class="container">
@@ -59,7 +51,7 @@
             <i class="fa-solid fa-moon toggle-icon"></i>
             <i class="fa-solid fa-sun toggle-icon"></i>
             <div class="toggle-ball"></div>
-         </div>
+          </div>
 
           <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
         </div>
@@ -74,8 +66,7 @@
               consistency.Consistent<br />
               hard work gains success .Greatness will come.
             </p>
-            <a href="./allproducts.html"
-              ><button class="btn">Explore Now &#8594;</button>
+            <a href="./allproducts.html"><button class="btn">Explore Now &#8594;</button>
             </a>
           </div>
           <div class="col-2">
@@ -87,7 +78,7 @@
     <!-------------feature categories------->
     <div class="categories">
       <div class="small-container" data-aos="fade-up">
-      <h2 class="title">Top Categories</h2>
+        <h2 class="title">Top Categories</h2>
         <div class="row">
           <div class="col-3 position-relative">
             <img class="zoom position-absolute" src="images/category-1.jpg" />
@@ -308,13 +299,10 @@
           <div class="col-2">
             <p>Exclusively Available on RedStore</p>
             <h1>Smart Band 4</h1>
-            <small
-              >The Mi Smart Band 4 feature a 39.9% larger(than Mi Band 3) AMOLCD
+            <small>The Mi Smart Band 4 feature a 39.9% larger(than Mi Band 3) AMOLCD
               color full touch display with adjustable brightness ,so everything
-              is clear as can be.</small
-            >
-            <a href="./allproducts.html"
-              ><button class="btn">Buy Now &#8594;</button>
+              is clear as can be.</small>
+            <a href="./allproducts.html"><button class="btn">Buy Now &#8594;</button>
             </a>
           </div>
         </div>
@@ -331,7 +319,8 @@
           <div class="col-3">
             <i class="fa fa-quote-left"></i>
             <p>
-              The variety of products which are available in the website is amazing. The customers get a wide variety of options to choose from and select their favourite one. I would highly recommend everyone to check it out.
+              The variety of products which are available in the website is amazing. The customers get a wide variety of
+              options to choose from and select their favourite one. I would highly recommend everyone to check it out.
             </p>
             <div class="rating">
               <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
@@ -347,7 +336,9 @@
           <div class="col-3">
             <i class="fa fa-quote-left"></i>
             <p>
-              This is the one website which has all what you need for your fashion needs like wrist watches, shoes, tshirts, shirts, jeans, smart watches and a variety of other items. The customer service is also excellent.
+              This is the one website which has all what you need for your fashion needs like wrist watches, shoes,
+              tshirts, shirts, jeans, smart watches and a variety of other items. The customer service is also
+              excellent.
             </p>
             <div class="rating">
               <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
@@ -363,7 +354,8 @@
           <div class="col-3">
             <i class="fa fa-quote-left"></i>
             <p>
-              What I liked most about this website is it's delivery time. I received my order one day after I placed the order which is super fast. Also the prices are very nominal for the quality which you get.
+              What I liked most about this website is it's delivery time. I received my order one day after I placed the
+              order which is super fast. Also the prices are very nominal for the quality which you get.
             </p>
             <div class="rating">
               <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
@@ -384,44 +376,24 @@
       <div class="small-container" data-aos="fade-up">
         <div class="row">
           <div class="col-5">
-            <a
-              href="https://www.godrej.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img src="images/logo-godrej.png"
-            /></a>
+            <a href="https://www.godrej.com/" target="_blank" rel="noopener noreferrer"><img
+                src="images/logo-godrej.png" /></a>
           </div>
           <div class="col-5">
-            <a
-              href="https://www.oppo.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img src="images/logo-oppo.png"
-            /></a>
+            <a href="https://www.oppo.com/" target="_blank" rel="noopener noreferrer"><img
+                src="images/logo-oppo.png" /></a>
           </div>
           <div class="col-5">
-            <a
-              href="https://www.coca-colacompany.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img src="images/logo-coca-cola.png"
-            /></a>
+            <a href="https://www.coca-colacompany.com/" target="_blank" rel="noopener noreferrer"><img
+                src="images/logo-coca-cola.png" /></a>
           </div>
           <div class="col-5">
-            <a
-              href="https://www.paypal.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img src="images/logo-paypal.png"
-            /></a>
+            <a href="https://www.paypal.com/" target="_blank" rel="noopener noreferrer"><img
+                src="images/logo-paypal.png" /></a>
           </div>
           <div class="col-5">
-            <a
-              href="https://www.philips.co.in/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img src="images/logo-philips.png"
-            /></a>
+            <a href="https://www.philips.co.in/" target="_blank" rel="noopener noreferrer"><img
+                src="images/logo-philips.png" /></a>
           </div>
         </div>
       </div>
@@ -434,8 +406,8 @@
             <h3>Download Our App</h3>
             <p>Download App for Android and ios mobile phone</p>
             <div class="app-logo">
-              <img src="images/play-store.png" class="footer-img"/>
-              <img src="images/app-store.png" class="footer-img"/>
+              <img src="images/play-store.png" class="footer-img" />
+              <img src="images/app-store.png" class="footer-img" />
             </div>
           </div>
           <div class="footer-col-2">
@@ -460,23 +432,19 @@
               <div class="socialbtns">
                 <ul>
                   <li>
-                    <a href="#" class="fa fa-lg fa-facebook center"></a
-                    ><span>Facebook</span>
+                    <a href="#" class="fa fa-lg fa-facebook center"></a><span>Facebook</span>
                   </li>
                   <br />
                   <li>
-                    <a href="#" class="fa fa-lg fa-twitter center"></a
-                    ><span>Twitter</span>
+                    <a href="#" class="fa fa-lg fa-twitter center"></a><span>Twitter</span>
                   </li>
                   <br />
                   <li>
-                    <a href="#" class="fa fa-lg fa-instagram center"></a
-                    ><span>Instagram</span>
+                    <a href="#" class="fa fa-lg fa-instagram center"></a><span>Instagram</span>
                   </li>
                   <br />
                   <li>
-                    <a href="#" class="fa fa-lg fa-youtube center"></a
-                    ><span>Youtube</span>
+                    <a href="#" class="fa fa-lg fa-youtube center"></a><span>Youtube</span>
                   </li>
                   <br />
                 </ul>
@@ -495,62 +463,90 @@
       </div>
     </div>
   </div>
-    <script>
-      var MenuItems = document.getElementById('MenuItems')
-      MenuItems.style.maxHeight = '0px'
-      function menutoggle() {
-        if (MenuItems.style.maxHeight == '0px') {
-          MenuItems.style.maxHeight = '250px'
-          MenuItems.style.maxWidth = '100%'
-        } else {
-          MenuItems.style.maxHeight = '0px'
-        }
+  <script>
 
+
+
+
+    var MenuItems = document.getElementById('MenuItems')
+    MenuItems.style.maxHeight = '0px'
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == '0px') {
+        MenuItems.style.maxHeight = '250px'
+        MenuItems.style.maxWidth = '100%'
+      } else {
+        MenuItems.style.maxHeight = '0px'
       }
 
-
-      const ball = document.querySelector(".toggle-ball");
-        const items = document.querySelectorAll(".row,body,.menu-icon,.container,.navbar,.header,.toggle");
-        const cartImage = document.querySelector(".cart-image");
-        const effects = document.querySelector(".effects");
-        // const menuItems = document.querySelector('#menuItems');
-        ball.addEventListener("click",()=>{
-
-            items.forEach(item=>{
-                item.classList.toggle("active")
-            })
-            ball.classList.toggle("active")
-            MenuItems.classList.toggle("active")
-            cartImage.classList.toggle("bgm-change")
-            effects.classList.toggle("white")
-        })
-
-      const btnScrollToTop = document.getElementById("btnScrollToTop");
-      btnScrollToTop.addEventListener("click", function(){
-        window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth"
-        });
-      });
+    }
 
 
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init()
-    </script>
-    <script>
-  var myVar;
+    const ball = document.querySelector(".toggle-ball");
+    const items = document.querySelectorAll(".row,body,.menu-icon,.container,.navbar,.header,.toggle");
+    const cartImage = document.querySelector(".cart-image");
+    const effects = document.querySelector(".effects");
+    // const menuItems = document.querySelector('#menuItems');
+    ball.addEventListener("click", () => {
 
-  function myFunction() {
-  myVar = setTimeout(showPage, 1750);
-  }
+      items.forEach(item => {
+        item.classList.toggle("active")
+      })
+      ball.classList.toggle("active")
+      MenuItems.classList.toggle("active")
+      cartImage.classList.toggle("bgm-change")
+      effects.classList.toggle("white")
+    })
 
-  function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-  }
-</script>
-  </body>
+    // const btnScrollToTop = document.getElementById("btnScrollToTop");
+    // btnScrollToTop.addEventListener("click", function () {
+    //   window.scrollTo({
+    //     top: 0,
+    //     left: 0,
+    //     behavior: "smooth"
+    //   });
+    // });
+
+
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init()
+  </script>
+  <script>
+    var myVar;
+
+    function myFunction() {
+      showPage();
+      myVar = setTimeout(showPage, 1750);
+      // myVar = setTimeout(showPage, 1750);
+    }
+
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+
+    let calcScrollValue = () => {
+      let scrollProgress = document.getElementById("progress");
+      let progressValue = document.getElementById("progress-value");
+      let pos = document.documentElement.scrollTop;
+      let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      let scrollValue = Math.round((pos * 100) / calcHeight);
+
+      if (pos > 100) {
+        scrollProgress.style.display = "grid";
+      }
+      else {
+        scrollProgress.style.display = "none";
+      }
+      scrollProgress.addEventListener("click", () => {
+        document.documentElement.scrollTop = 0;
+      })
+      scrollProgress.style.background = `conic-gradient(#ff523b ${scrollValue}%, #000 ${scrollValue}%)`;
+      // console.log(scrollValue);
+    }
+    window.onscroll = calcScrollValue;
+  </script>
+</body>
+
 </html>
