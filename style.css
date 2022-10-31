@@ -206,6 +206,7 @@ p {
     outline: none;
     cursor: pointer;
     z-index: 1;
+    transition: all 400ms ease;
 }
 
 #btnScrollToTop:hover {
