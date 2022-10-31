@@ -210,14 +210,14 @@ p {
 }
 
 #btnScrollToTop:hover {
-    width: 52px;
-    height: 52px;
+    width: 55px;
+    height: 55px;
     margin: 2px;
     background: #b41919;
 }
 
 #btnScrollToTop:active {
-    background: rgb(12, 214, 12);
+    background: rgb(12, 214, 10);
 }
 
 
