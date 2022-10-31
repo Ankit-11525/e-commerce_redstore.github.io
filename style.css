@@ -1240,6 +1240,7 @@ body.active {
 .useful-links,
 .socialbtns {
     color: #D3D3D3;
+    transition: all 400ms ease;
 }
 
 .btn-quantity {
