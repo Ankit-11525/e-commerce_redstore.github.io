@@ -332,13 +332,20 @@ git push -u origin <your_branch_name>
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/Juhii16">
+            <img src="https://avatars.githubusercontent.com/u/88276540?v=4" width="100;" alt="Juhii16"/>
+            <br />
+            <sub><b>Null</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
         <a href="https://github.com/khsh13">
             <img src="https://avatars.githubusercontent.com/u/96431469?v=4" width="100;" alt="khsh13"/>
             <br />
             <sub><b>Khushi Sharma</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/Mohasin-Haque">
             <img src="https://avatars.githubusercontent.com/u/72180173?v=4" width="100;" alt="Mohasin-Haque"/>
@@ -373,15 +380,15 @@ git push -u origin <your_branch_name>
             <br />
             <sub><b>Praphulla Mishra</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/rushikesh1799">
             <img src="https://avatars.githubusercontent.com/u/68096217?v=4" width="100;" alt="rushikesh1799"/>
             <br />
             <sub><b>Rushikesh Bunge</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/Shivank12batra">
             <img src="https://avatars.githubusercontent.com/u/84995784?v=4" width="100;" alt="Shivank12batra"/>
@@ -416,15 +423,15 @@ git push -u origin <your_branch_name>
             <br />
             <sub><b>Tushar Pathak</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/Vineet-0">
             <img src="https://avatars.githubusercontent.com/u/79512518?v=4" width="100;" alt="Vineet-0"/>
             <br />
             <sub><b>Vineet</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/aaheli8">
             <img src="https://avatars.githubusercontent.com/u/66815283?v=4" width="100;" alt="aaheli8"/>
