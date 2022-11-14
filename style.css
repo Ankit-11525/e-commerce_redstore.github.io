@@ -133,7 +133,7 @@ nav {
 nav li {
     display: inline-block;
     position: relative;
-    color: #ff523b;
+    color: #ff5050;
 }
 
 nav li:after {
@@ -144,7 +144,7 @@ nav li:after {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #ff523b;
+    background-color: #ff5050;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -228,7 +228,7 @@ p {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #ff523b;
+    background: #ff5050;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     color: #FFFFFF;
     border: none;
@@ -270,13 +270,13 @@ p {
 
 .btn {
     display: inline-block;
-    background-color: #ff523b;
+    background-color: #ff5050;
     color: #fff;
     padding: 8px 30px;
     margin: 30px 60px;
     border-radius: 30px;
     transition: background 0.5s;
-    border: #ff523b;
+    border: #ff5050;
     cursor: pointer;
     /* border:2px solid black; */
 }
@@ -341,7 +341,7 @@ linear for gradiancy on basis to vertically  */
 
 .title::after {
     content: '';
-    background: #ff523b;
+    background: #ff5050;
     width: 80px;
     height: 5px;
     border-radius: 5px;
@@ -361,7 +361,7 @@ h4 {
 }
 
 .rating .fa {
-    color: #ff523b;
+    color: #ff5050;
 }
 
 .col-4:hover {
@@ -412,7 +412,7 @@ small {
 
 .fa.fa-quote-left {
     font-size: 34px;
-    color: #ff523b;
+    color: #ff5050;
 }
 
 .col-3 p {
@@ -576,7 +576,7 @@ ul {
 }
 
 select {
-    border: 1px solid #ff523b;
+    border: 1px solid #ff5050;
     padding: 5px;
     cursor: pointer;
 }
@@ -591,7 +591,7 @@ select:focus {
 
 .page-btn span {
     display: inline-block;
-    border: 1px solid #ff523b;
+    border: 1px solid #ff5050;
     margin-left: 10px;
     width: 40px;
     height: 40px;
@@ -602,7 +602,7 @@ select:focus {
 }
 
 .page-btn span:hover {
-    background: #ff523b;
+    background: #ff5050;
     color: #fff;
 }
 
@@ -645,16 +645,16 @@ select:focus {
     padding-left: 10px;
     margin-right: 10px;
     font-size: 20px;
-    border: 1px solid #ff523b;
+    border: 1px solid #ff5050;
 }
 
 input:focus {
     outline: none;
-    /* same color after click ff523b  */
+    /* same color after click ff5050  */
 }
 
 .single-product h3 i {
-    color: #ff523b;
+    color: #ff5050;
     margin-left: 10px;
 }
 
@@ -704,7 +704,7 @@ th {
     text-align: left;
     padding: 5px;
     color: #fff;
-    background-color: #ff523b;
+    background-color: #ff5050;
     font-weight: normal;
 }
 
@@ -719,7 +719,7 @@ td input {
 }
 
 td .remove-btn {
-    color: #ff523b;
+    color: #ff5050;
     font-size: 12px;
     cursor: pointer;
     transition: color 250ms ease-in-out;
@@ -742,7 +742,7 @@ td img {
 }
 
 .total-price table {
-    border-top: 3px solid #ff523b;
+    border-top: 3px solid #ff5050;
     width: 100%;
     max-width: 400px;
 }
@@ -801,7 +801,7 @@ th:last-child {
     font-family: 'Poppins', sans-serif;
     width: 70%;
     color: white;
-    background-color: #ff523b;
+    background-color: #ff5050;
     border: none;
     border-radius: 20px;
 }
@@ -885,7 +885,7 @@ form .btn:focus {
     padding: 10px 5px;
     margin: 15px 0;
     border: none;
-    border-bottom: 2px solid #ff523b;
+    border-bottom: 2px solid #ff5050;
     font-size: 16px;
 }
 
@@ -896,7 +896,7 @@ form a {
 #Indicator {
     width: 100px;
     border: none;
-    background: #ff523b;
+    background: #ff5050;
     height: 3px;
     margin: 9px;
     transform: translateX(100px);
@@ -1297,14 +1297,14 @@ body.active {
     font-size: 24px;
     border-radius: 5%;
     cursor: pointer;
-    background-color: #ff523b;
+    background-color: #ff5050;
     color: #fff;
     margin-left: -10px;
     border: 1px solid black;
 }
 
 .white {
-    color: #ff523b;
+    color: #ff5050;
 }
 
 .hidden {
@@ -1319,7 +1319,7 @@ body.active {
 
 .btn-add {
     font-size: 1.2rem;
-    background-color: #ff523b;
+    background-color: #ff5050;
     color: #fff;
     padding: 0.8rem;
     border-radius: 1.6em;
