@@ -84,16 +84,15 @@
             <option>Small</option>
           </select> -->
                 <select id="productSize">
-                    <option>XXL</option>
-                    <option>XL</option>
-                    <option>Large</option>
-                    <option selected>Medium</option>
-                    <option>Small</option>
-                </select>
-                <button class="btn-quantity" onClick="decreaseQuantity()">-</button>
-                <input type="number" value="1" min="1" id="productQuantity" oninput="checkValid()" />
-                <button type="button" class="btn-quantity" onClick="increaseQuantity()">+</button>
-
+          <option>XXL</option>
+          <option>XL</option>
+          <option>Large</option>
+          <option selected>Medium</option>
+          <option>Small</option>
+        </select>
+                <button type="button" class="decreaseButton btn-quantity" onClick="decreaseQuantity()">-</button>
+                <input type="text" value="1" id="productQuantity" readonly  />
+                <button type="button" class="increaseButton btn-quantity" onClick="increaseQuantity()">+</button>
                 <!-- <a href="" class="btn">Add To Cart</a> -->
                 <p onclick="func()" class="btn">Add To Cart</p>
                 <h3>Product Details<i class="fa fa-indent"></i></h3>
@@ -340,6 +339,23 @@
             }
         }
     </script>
+
+    <!-- JS for quantity buttons -->
+
+    <script>
+        
+        const increaseQuantity = () => {
+            const productQuantity = document.querySelector("#productQuantity");
+            productQuantity.value ++;
+        }
+
+        const decreaseQuantity = () => {
+            const productQuantity = document.querySelector("#productQuantity");
+            if (productQuantity.value >= 2)
+                productQuantity.value--;
+        }
+    </script>
+   
 </body>
 
 </html>

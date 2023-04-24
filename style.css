@@ -608,6 +608,25 @@ select:focus {
 
 
 /* ------single product details-------- */
+.single-product .increaseButton{
+    width: 50px;
+    height: 40px;
+    /* padding-left: 10px;
+    margin-right: 10px; */
+    font-size: 20px;
+    border: 1px solid #ff523b;
+}
+.single-product .decreaseButton{
+    width: 50px;
+    height: 40px;
+    /* padding-left: 10px;
+    margin-right: 10px; */
+    font-size: 20px;
+    border: 1px solid #ff523b;
+}
+#productQuantity{
+    text-align: center;
+}
 
 .single-product {
     margin-top: 80px;
@@ -642,10 +661,18 @@ select:focus {
 .single-product input {
     width: 50px;
     height: 40px;
-    padding-left: 10px;
-    margin-right: 10px;
+    /* padding-left: 10px;
+    margin-right: 10px; */
     font-size: 20px;
     border: 1px solid #ff523b;
+}
+.btn-quantity {
+    padding: 2px 12px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #ff523b;
+    color: #fff;
+    border: 1px solid black;
 }
 
 input:focus {
@@ -925,6 +952,9 @@ form a {
     .col-4 {
         flex-basis: 100%;
     }
+   #productSize{
+    margin-bottom:10px;
+   }
     .col-2 p {
         margin: auto;
     }
